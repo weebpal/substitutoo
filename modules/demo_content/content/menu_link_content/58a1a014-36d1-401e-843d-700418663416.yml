@@ -1,0 +1,76 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 58a1a014-36d1-401e-843d-700418663416
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    671a979d-9c20-4c4d-90d5-ce1ca9a494f9: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: Shifts
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/shifts'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:671a979d-9c20-4c4d-90d5-ce1ca9a494f9'
+  revision_translation_affected:
+    -
+      value: true
+  menu_item_override_children:
+    -
+      value: false
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_status:
+    -
+      value: true
+translations:
+  de:
+    title:
+      -
+        value: Schichten
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 1
+    content_translation_status:
+      -
+        value: true
+    content_translation_created:
+      -
+        value: 1730971460

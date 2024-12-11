@@ -1,0 +1,20 @@
+uuid: 02890999-989c-4eac-85d0-860f7a14e95f
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+    - taxonomy
+id: sub_availability_scheduler.field_days_of_the_month
+field_name: field_days_of_the_month
+entity_type: sub_availability_scheduler
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

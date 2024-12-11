@@ -1,0 +1,11 @@
+uuid: 51b6bf8e-aa5f-4f43-ab05-61100940282b
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.nested_location
+label: 'Nested Location'
+description: ''
+targetEntityType: sub_location
+cache: true

@@ -1,0 +1,5 @@
+sub_shift_scheduler.add_form:
+  title: 'Add Service Contract'
+  route_name: entity.sub_shift_scheduler.add_form
+  appears_on:
+    - entity.sub_shift_scheduler.collection

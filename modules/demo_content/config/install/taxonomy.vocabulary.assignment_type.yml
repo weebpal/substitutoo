@@ -1,0 +1,9 @@
+uuid: b2821b0b-2d55-4920-a8f2-fe1139b5879d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Assignment Type'
+vid: assignment_type
+description: 'Permanent, Temporary, Substitute'
+weight: 0
+new_revision: false

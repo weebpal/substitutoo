@@ -1,0 +1,19 @@
+uuid: d246f38b-2fdd-422a-a8fc-6d65d8bcfb0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+    - time_field
+id: sub_availability_scheduler.field_time_frames
+field_name: field_time_frames
+entity_type: sub_availability_scheduler
+type: time_range
+settings: {  }
+module: time_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

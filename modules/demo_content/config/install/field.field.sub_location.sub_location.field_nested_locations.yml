@@ -1,0 +1,27 @@
+uuid: 2cf0cb6d-f1a2-4d35-9a79-6942941f75f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_location.field_nested_locations
+  module:
+    - sub_location
+id: sub_location.sub_location.field_nested_locations
+field_name: field_nested_locations
+entity_type: sub_location
+bundle: sub_location
+label: 'Nested Locations'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:sub_location'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

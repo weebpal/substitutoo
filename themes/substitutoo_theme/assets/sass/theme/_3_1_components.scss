@@ -1,0 +1,264 @@
+.component-builder{
+  .field--name-field-media-image{
+    img{
+      border-radius: 4px;
+    }
+  }
+
+  &.component-wrapper--type-embed_block{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: inline-block;
+    width: 100%;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  &.component-wrapper--type-banner_grid{
+    .component-item--content{
+      img{
+        border-radius: 4px;
+      }
+      .component-banner-grid--first{
+        .field--name-field-large-image{
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &.component-wrapper--type-basic_component .field--name-field-image img{
+    border-radius: 4px;
+  }
+
+  &.component-wrapper--type-introduction {
+    margin-bottom: 60px;
+    .text-formatted{
+      >*{
+        max-width: 448px;
+      }
+      >h2{
+        max-width: 405px;
+        @include media-breakpoint-down(lg) {
+          font-size: 32px;
+          line-height: 38px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 28px;
+          line-height: 35px;
+          margin-bottom: 24px;
+        }
+
+        span{
+          width: 100%;
+          display: block;
+        }
+      }
+      >h6{
+        max-width: 294px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 24px;
+
+      + h6 {
+        margin-top: 40px;
+      }
+    }
+
+    h6 {
+      font-size: 20px;
+      line-height: 24px;
+      font-family: $font-yeseva-one;
+    }
+
+    .introduction-image{
+      .field--name-field-introduction-left-image, .field--name-field-introduction-right-image{
+        @media (min-width: 991px) {
+          max-height: 672px;
+        }
+      }
+    }
+  }
+
+  &.component-wrapper--type-composite {
+
+    .component-wrapper--type-embed_block {
+      margin: 0 0;
+    }
+
+    .component-wrapper--type-basic_component {
+      margin-bottom: 0;
+      @include media-breakpoint-down(lg) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .field--name-title {
+      display: none;
+    }
+
+    &.styles--layout--column-6-6 {
+      justify-content: space-between;
+      margin-left: 0;
+      margin-right: 0;
+
+      .column-6 {
+        max-width: 447px;
+        flex: 0 0 447px;
+
+        &:nth-child(1) {
+          height: 610px;
+          background: url(../../images/get-in-touch.png) no-repeat;
+          background-size: 100% 100%;
+          padding: 40px 40px;
+          color: $background-body;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: flex-end;
+          position: relative;
+          border-radius: 4px;
+          @include media-breakpoint-down(lg) {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 32px;
+          }
+          @include media-breakpoint-down(md) {
+            padding: 20px 20px;
+            height: 410px;
+          }
+
+          .contextual-region {
+            position: static;
+          }
+        }
+  
+        &:nth-child(2) {
+          max-width: 543px;
+          flex: 0 0 543px;
+          padding-left: 24px;
+          padding-right: 0;
+          @include media-breakpoint-down(xl) {
+            flex: 1;
+            max-width: unset;
+          }
+          @include media-breakpoint-down(lg) {
+            max-width: 100%;
+            flex: 0 0 100%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+
+      .text-formatted {
+        position: static;
+
+        img {
+          position: absolute;
+          top: 40px;
+          left: 40px;
+          max-width: 150px;
+          @include media-breakpoint-down(md) {
+            top: 20px;
+            left: 20px;
+          }
+        }
+
+        h3 {
+          font-size: 20px;
+          line-height: 24px;
+          font-family: $font-yeseva-one;
+          font-weight: 400;
+          margin-bottom: 48px;
+          color: $background-body;
+          @include media-breakpoint-down(md) {
+            margin-bottom: 24px;
+          }
+        }
+      }
+
+      .social-contact {
+        padding-left: 0;
+        margin-bottom: 0;
+
+        a {
+          font-weight: 400;
+        }
+      }
+    }
+
+    .block-webform {
+      >h2 {
+        font-size: 48px;
+        line-height: 58px;
+        color: $color-default;
+        font-family: $font-yeseva-one;
+        margin-bottom: 24px;
+        @include media-breakpoint-down(md) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    form.webform-submission-form {
+      column-gap: 24px;
+      row-gap: 24px;
+      padding: 0 0;
+      > .js-form-item {
+        max-width: calc(50% - 12px);
+        flex: 0 0 calc(50% - 12px);
+        @include media-breakpoint-down(sm) {
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+
+      .form-type-email,
+      .form-item-subject,
+      .form-type-textarea {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+
+      .form-item label {
+        margin-bottom: 8px;
+      }
+
+      .form-actions input {
+        margin-top: 0;
+        width: 100%;
+        height: 44px;
+      }
+    }
+  }
+
+  &.component-wrapper--type-push_image{
+    .component-item--type-push-image img{
+      border-radius: 4px;
+    }
+    .component-item .field--name-field-pi-body{
+      h1, h2, h3, h4, h5, h6{
+        font-family: 'Yeseva One';
+      }
+      h6{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.field--name-components{
+  >*{
+    margin-bottom: 60px;
+  }
+}

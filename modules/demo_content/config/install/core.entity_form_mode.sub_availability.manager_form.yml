@@ -1,0 +1,11 @@
+uuid: a65ad0ad-9f62-4e78-8f4b-28dcd92396f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability
+id: sub_availability.manager_form
+label: 'Manager form'
+description: ''
+targetEntityType: sub_availability
+cache: true

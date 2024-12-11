@@ -1,0 +1,19 @@
+uuid: 3da48e19-6edb-46ad-b5d7-8c9d703cd5cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_key
+    - taxonomy.vocabulary.certification
+id: taxonomy_term.certification.field_key
+field_name: field_key
+entity_type: taxonomy_term
+bundle: certification
+label: Key
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 009e8fdf-9f9e-4c10-8b38-10947bf80693
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+    - taxonomy
+id: sub_availability_scheduler.field_days_of_the_week
+field_name: field_days_of_the_week
+entity_type: sub_availability_scheduler
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

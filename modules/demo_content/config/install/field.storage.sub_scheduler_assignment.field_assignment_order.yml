@@ -1,0 +1,20 @@
+uuid: 1c552d56-4c41-4300-a135-581735c3fdde
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.field_assignment_order
+field_name: field_assignment_order
+entity_type: sub_scheduler_assignment
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

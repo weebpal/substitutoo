@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location_save_action
+label: 'Save substitutoo locations'
+type: sub_location
+plugin: entity:save_action:sub_location
+configuration: {  }

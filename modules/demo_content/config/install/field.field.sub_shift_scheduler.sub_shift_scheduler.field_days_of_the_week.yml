@@ -1,0 +1,30 @@
+uuid: df5c3366-10aa-4cba-8c30-c80db0420a40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_days_of_the_week
+    - taxonomy.vocabulary.days_of_week
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_days_of_the_week
+field_name: field_days_of_the_week
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Days of the Week'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      days_of_week: days_of_week
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

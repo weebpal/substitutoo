@@ -1,0 +1,11 @@
+uuid: 6e20d0ee-133a-4417-b0d2-02d35d721384
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift
+id: sub_shift.manager_form
+label: 'Manager Form'
+description: ''
+targetEntityType: sub_shift
+cache: true

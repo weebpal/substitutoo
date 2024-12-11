@@ -1,0 +1,6 @@
+services:
+  sub_activity.utils:
+    class: Drupal\sub_activity\Service\Utils
+  sub_activity.activity_service:
+    class: Drupal\sub_activity\ActivityManager
+    arguments: ['@entity_type.manager', '@token']

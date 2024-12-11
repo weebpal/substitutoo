@@ -1,0 +1,94 @@
+uuid: 55207937-cede-4c64-8763-f2df4b2b74a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.sub_availability_scheduler.manager_form
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_between_dates
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_calendar_type
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_days_of_the_month
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_days_of_the_week
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_delete_avail_on_update
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_employee
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_time_frames
+  module:
+    - datetime_range
+    - sub_availability_scheduler
+    - text
+    - time_field
+id: sub_availability_scheduler.sub_availability_scheduler.manager_form
+targetEntityType: sub_availability_scheduler
+bundle: sub_availability_scheduler
+mode: manager_form
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_between_dates:
+    type: daterange_default
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_calendar_type:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_days_of_the_month:
+    type: options_buttons
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_days_of_the_week:
+    type: options_buttons
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_delete_avail_on_update:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_employee:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_time_frames:
+    type: time_range_widget
+    weight: 7
+    region: content
+    settings:
+      enabled: false
+      step: 5
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

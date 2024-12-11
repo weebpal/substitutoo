@@ -1,0 +1,25 @@
+uuid: ebf122ff-a271-4104-b874-55ec6d64eac5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - we_core
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: we_core_site_branding
+theme: we_core
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: d2914a5d-fba9-4677-a5cd-e7f11873c517
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.unavailable_type
+  module:
+    - text
+id: taxonomy_term.unavailable_type.description
+field_name: description
+entity_type: taxonomy_term
+bundle: unavailable_type
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

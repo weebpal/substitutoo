@@ -1,0 +1,21 @@
+uuid: 8331e8c7-c71c-4467-9c98-197f1653f37d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.assignment_status
+  module:
+    - text
+id: taxonomy_term.assignment_status.description
+field_name: description
+entity_type: taxonomy_term
+bundle: assignment_status
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

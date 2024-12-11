@@ -1,0 +1,50 @@
+label: Mitarbeiter
+display:
+  default:
+    display_options:
+      title: Mitarbeiter
+      fields:
+        field_email:
+          label: E-Mail
+        field_first_name:
+          label: Vorname
+        field_last_name:
+          label: Nachname
+        field_phone:
+          label: Telefon
+        status:
+          label: Benutzerstatus
+          settings:
+            format_custom_false: Blockiert
+            format_custom_true: Aktiv
+        operations:
+          label: Operationen
+      exposed_form:
+        options:
+          submit_button: Bewerben
+      filters:
+        uid:
+          expose:
+            label: Benutzername
+        combine:
+          expose:
+            label: Vor-/Nachname
+        mail:
+          expose:
+            label: E-Mail
+        status:
+          group_info:
+            label: Benutzerstatus
+            group_items:
+              1:
+                title: Aktiv
+              2:
+                title: Blockiert
+      header:
+        area_text_custom:
+          content: '<a href="/de/admin/people/create">Benutzer hinzufügen</a>'
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'

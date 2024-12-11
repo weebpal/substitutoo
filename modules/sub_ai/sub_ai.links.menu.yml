@@ -1,0 +1,14 @@
+sub_ai.admin_config:
+  title: 'Sub OpenAI'
+  parent: system.admin_config
+  route_name: sub_ai.admin_config
+
+sub_ai.api_settings:
+  title: Settings
+  parent: sub_ai.admin_config
+  route_name: sub_ai.api_settings
+
+sub_ai.prompt:
+  title: Prompt
+  parent: sub_ai.admin_config
+  route_name: sub_ai.demo_form

@@ -1,0 +1,22 @@
+uuid: 3e3c3ac6-7de0-4759-994c-ce1d22b9e099
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - we_core
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: we_core_content
+theme: we_core
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

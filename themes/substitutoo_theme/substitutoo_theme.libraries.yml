@@ -1,0 +1,19 @@
+global-styling:
+  css:
+    theme:
+      dist/css/style.css: { }
+      libraries/Slick/dist/css/slick.min.css: { }
+      css/daterangepicker.css: { }
+  js:
+    js/jquery.mousewheel.min.js: { }
+    js/main.js: { }
+    js/moment.min.js: { }
+    js/daterangepicker.js: { }
+    libraries/Slick/dist/js/slick.min.js: { }
+    js/jquery.redirect.js: { }
+    libraries/jqueryMatchHeight/jquery.matchHeight-min.js: { }
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

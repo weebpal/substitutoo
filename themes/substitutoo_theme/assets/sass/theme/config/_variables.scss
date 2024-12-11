@@ -1,0 +1,112 @@
+// ====================
+// TYPOGRAPHY
+$font-family: "Inter";
+$font-bold: "Inter Bold";
+$font-yeseva-one: "Yeseva One";
+
+$color-default: #17405D;
+$background-body: #FBF5ED;
+$color-active: #9B8741;
+$background-body-dark: #f1ebe4;
+
+// Breakpoint
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// ====================
+// Font Size Rem
+// Default: 1rem = 16px
+// ---
+$size-default: 16px;
+$line-height-default: 1.42857143;
+$grid-gutter-width: 30px !default;
+// ====================
+// Colors scheme for Themes
+// ---
+
+// ====================
+// Devices
+// ---
+$desktop: 1200px;
+$tablet-ht: 992px; // Tablet Horizontal
+$tablet-vt: 768px; // Tablet Vertical
+$mobile: 640px;
+$mobile-md: 480px;
+$mobile-sm: 360px;
+$mobile-xs: 320px;
+$grid-breakpoints: (
+				xs: 0,
+				sm: 576px,
+				md: 768px,
+				lg: 992px,
+				xl: 1200px
+) !default;
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+								(
+												0: 0,
+												1: (
+																$spacer * 0.25
+												),
+												2: (
+																$spacer * 0.5
+												),
+												3: $spacer,
+												4: (
+																$spacer * 1.5
+												),
+												5: (
+																$spacer * 3
+												),
+												10: (
+																$spacer * 0.625
+												),
+												15: (
+																$spacer * 0.9375
+												),
+												20: (
+																$spacer * 1.25
+												),
+												25: (
+																$spacer * 1.5625
+												),
+												30: (
+																$spacer * 1.875
+												),
+												40: (
+																$spacer * 2.5
+												),
+												50: (
+																$spacer * 3.125
+												),
+												60: (
+																$spacer * 3.75
+												)
+								),
+								$spacers
+);
+$zindex: (
+				modal: 9000,
+				overlay: 8000,
+				dropdown: 7000,
+				header: 6000,
+				footer: 5000
+);
+$list-gutters: (
+				5: 5px,
+				10: 10px,
+				20: 15px
+) !default;

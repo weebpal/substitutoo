@@ -1,0 +1,18 @@
+uuid: 3d669987-95d7-44c4-b79c-9bc4fc29590b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.unavailable_type
+id: taxonomy_term.unavailable_type.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: unavailable_type
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

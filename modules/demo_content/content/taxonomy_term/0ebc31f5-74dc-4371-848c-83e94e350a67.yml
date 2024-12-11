@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 0ebc31f5-74dc-4371-848c-83e94e350a67
+  bundle: experience_level
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Intern (0-1 years)'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1731554090
+  field_key:
+    -
+      value: 'Intern (0-1 years)'

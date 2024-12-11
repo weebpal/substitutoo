@@ -1,0 +1,69 @@
+uuid: 01c78607-df9f-4ee8-b94f-202b5d8326f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_assignment_order
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_employee
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_reset_assignment_on_update
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_shift_scheduler
+  module:
+    - sub_scheduler_assignment
+    - text
+id: sub_scheduler_assignment.sub_scheduler_assignment.default
+targetEntityType: sub_scheduler_assignment
+bundle: sub_scheduler_assignment
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_assignment_order:
+    type: number
+    weight: 7
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_employee:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_reset_assignment_on_update:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_shift_scheduler:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

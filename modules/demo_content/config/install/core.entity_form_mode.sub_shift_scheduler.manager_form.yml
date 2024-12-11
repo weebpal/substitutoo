@@ -1,0 +1,11 @@
+uuid: f4b7d51e-a615-48d5-844f-77ae7684c89f
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.manager_form
+label: 'Manager form'
+description: ''
+targetEntityType: sub_shift_scheduler
+cache: true

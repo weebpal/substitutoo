@@ -1,0 +1,13 @@
+entity.sub_availability.settings:
+  title: 'Availability'
+  description: 'Configure a Substitutoo Availability entity type.'
+  route_name:  entity.sub_availability.settings
+  parent: substitutoo_core.structure
+  weight: 40
+
+entity.sub_availability.collection:
+  title: 'Availabilities'
+  description: 'List of substitutoo availabilities.'
+  route_name: entity.sub_availability.collection
+  parent: substitutoo_core.content
+  weight: 40

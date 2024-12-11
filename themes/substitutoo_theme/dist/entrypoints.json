@@ -1,0 +1,13 @@
+{
+  "entrypoints": {
+    "css/style": {
+      "js": [
+        "/profiles/custom/substitutoo/themes/substitutoo_theme/dist/runtime.js",
+        "/profiles/custom/substitutoo/themes/substitutoo_theme/dist/css/style.js"
+      ],
+      "css": [
+        "/profiles/custom/substitutoo/themes/substitutoo_theme/dist/css/style.css"
+      ]
+    }
+  }
+}

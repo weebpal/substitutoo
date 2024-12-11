@@ -1,0 +1,13 @@
+entity.sub_activity.collection:
+  title: 'Activities Log'
+  route_name: 'entity.sub_activity.collection'
+  parent: substitutoo_core.content
+  description: 'Manage your activity items.'
+  weight: 90
+
+entity.sub_activity_type.collection:
+  title: 'Activity Log'
+  route_name: 'entity.sub_activity_type.collection'
+  parent: substitutoo_core.structure
+  description: 'Manage fields, form and display settings for your activity types.'
+  weight: 90

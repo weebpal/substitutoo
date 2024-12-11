@@ -1,0 +1,77 @@
+uuid: f642fc1d-458f-49f6-b196-b52ab3be43c6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.sub_location.sub_location.field_address
+    - field.field.sub_location.sub_location.field_assignment_count
+    - field.field.sub_location.sub_location.field_deep
+    - field.field.sub_location.sub_location.field_is_root_location
+    - field.field.sub_location.sub_location.field_location_trail
+    - field.field.sub_location.sub_location.field_nested_locations
+    - field.field.sub_location.sub_location.field_order_value
+  module:
+    - address
+    - sub_location
+    - text
+id: sub_location.sub_location.default
+targetEntityType: sub_location
+bundle: sub_location
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_address:
+    type: address_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_assignment_count:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_location_trail:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: nested_location
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_nested_locations:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: nested_location
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_deep: true
+  field_is_root_location: true
+  field_order_value: true
+  status: true
+  uid: true

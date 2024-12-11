@@ -1,0 +1,20 @@
+uuid: 70f6c6ab-aa7d-49df-beab-b1eed673cf9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - sub_availability_scheduler
+id: sub_availability_scheduler.field_between_dates
+field_name: field_between_dates
+entity_type: sub_availability_scheduler
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,9 @@
+uuid: 08ff2849-dea3-4bf2-8cba-4c27c470bfcf
+langcode: en
+status: true
+dependencies: {  }
+name: 'Days of the Week'
+vid: days_of_week
+description: 'Days of the Week (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)'
+weight: 0
+new_revision: false

@@ -1,0 +1,18 @@
+uuid: da3413f4-7227-4e68-9164-b40de15feb87
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.days_of_month
+id: taxonomy_term.days_of_month.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: days_of_month
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

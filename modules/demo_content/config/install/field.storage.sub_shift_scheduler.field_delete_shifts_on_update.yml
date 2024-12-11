@@ -1,0 +1,18 @@
+uuid: 73087e71-5844-49ff-8fed-8dfc9d97db54
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.field_delete_shifts_on_update
+field_name: field_delete_shifts_on_update
+entity_type: sub_shift_scheduler
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

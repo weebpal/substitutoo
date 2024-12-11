@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+id: sub_availability_scheduler_save_action
+label: 'Save substitutoo availability schedulers'
+type: sub_availability_scheduler
+plugin: entity:save_action:sub_availability_scheduler
+configuration: {  }

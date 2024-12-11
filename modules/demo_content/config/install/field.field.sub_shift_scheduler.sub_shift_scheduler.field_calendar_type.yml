@@ -1,0 +1,30 @@
+uuid: cbf2ee40-57dc-490d-aa81-083fdd4ef239
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_calendar_type
+    - taxonomy.vocabulary.calendar_type
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_calendar_type
+field_name: field_calendar_type
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Calendar Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      calendar_type: calendar_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

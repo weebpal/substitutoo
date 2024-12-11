@@ -1,0 +1,11 @@
+uuid: c81cc86f-084e-44c3-bf9c-c20cfe14aaaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_unavailability
+id: sub_unavailability.sub_unavailability
+target_entity_type_id: sub_unavailability
+target_bundle: sub_unavailability
+default_langcode: site_default
+language_alterable: false

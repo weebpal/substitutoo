@@ -1,0 +1,30 @@
+uuid: 90a8fea1-3dd0-45b7-9b91-b6920f9228b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_genders
+    - taxonomy.vocabulary.gender
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_genders
+field_name: field_genders
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: Genders
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      gender: gender
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

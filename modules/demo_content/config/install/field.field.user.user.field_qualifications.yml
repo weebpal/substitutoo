@@ -1,0 +1,30 @@
+uuid: f42504a1-28fd-4302-931f-506ae31470e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_qualifications
+    - taxonomy.vocabulary.qualification
+  module:
+    - user
+id: user.user.field_qualifications
+field_name: field_qualifications
+entity_type: user
+bundle: user
+label: Qualifications
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      qualification: qualification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

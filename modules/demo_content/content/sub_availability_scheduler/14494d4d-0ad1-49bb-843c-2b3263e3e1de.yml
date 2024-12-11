@@ -1,0 +1,58 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_availability_scheduler
+  uuid: 14494d4d-0ad1-49bb-843c-2b3263e3e1de
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    c409e6d5-fe94-4ad9-93d6-6d56e088cd1a: taxonomy_term
+    1c0cd69e-cdd1-4608-814d-7ac5a27df44e: taxonomy_term
+    1869ddf5-2b45-47aa-9581-c398588bae45: taxonomy_term
+    0c042431-16ab-40b8-8a86-60de5ca713c2: taxonomy_term
+    6d7bb134-f4ac-4262-aa5a-97f07a5cea39: taxonomy_term
+    43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02: taxonomy_term
+    46e32a42-2dc6-4f7a-b083-878698855030: user
+default:
+  label:
+    -
+      value: 'Jakob schedule'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Jakob schedule Description</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730862528
+  field_between_dates:
+    -
+      value: '2024-12-01'
+      end_value: '2024-12-31'
+  field_calendar_type:
+    -
+      entity: c409e6d5-fe94-4ad9-93d6-6d56e088cd1a
+  field_days_of_the_week:
+    -
+      entity: 1c0cd69e-cdd1-4608-814d-7ac5a27df44e
+    -
+      entity: 1869ddf5-2b45-47aa-9581-c398588bae45
+    -
+      entity: 0c042431-16ab-40b8-8a86-60de5ca713c2
+    -
+      entity: 6d7bb134-f4ac-4262-aa5a-97f07a5cea39
+    -
+      entity: 43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02
+  field_delete_avail_on_update:
+    -
+      value: false
+  field_employee:
+    -
+      entity: 46e32a42-2dc6-4f7a-b083-878698855030
+  field_time_frames:
+    -
+      from: 48600
+      to: 63000

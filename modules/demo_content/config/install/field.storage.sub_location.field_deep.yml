@@ -1,0 +1,20 @@
+uuid: d445288a-47f7-47fb-a45d-a7b513724f1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.field_deep
+field_name: field_deep
+entity_type: sub_location
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

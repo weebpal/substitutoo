@@ -1,0 +1,21 @@
+name: WeebPal core
+type: theme
+description: 'Base theme for WeebPal projects.'
+core_version_requirement: ^8.9 || ^9 || ^10
+base theme: false
+
+libraries:
+  - 'we_core/global-styling'
+
+regions:
+  header: 'Header'
+  main_menu: 'Main Menu'
+  mobile_menu: 'Mobile Menu'
+  content_above: 'Content Above'
+  content: 'Content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  content_bellow: 'Content Bellow'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+  disabled: 'Disabled'

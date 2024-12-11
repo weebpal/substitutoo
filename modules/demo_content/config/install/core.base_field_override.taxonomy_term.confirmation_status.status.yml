@@ -1,0 +1,22 @@
+uuid: 31cde6ef-3639-41f1-9019-35dc37123d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.confirmation_status
+id: taxonomy_term.confirmation_status.status
+field_name: status
+entity_type: taxonomy_term
+bundle: confirmation_status
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

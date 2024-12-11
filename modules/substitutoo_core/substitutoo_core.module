@@ -1,0 +1,484 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides a substitutoo shift entity type.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Language\LanguageInterface;
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preprocess_entity() for sub_shift entities.
+ */
+function substitutoo_core_preprocess_page(&$variables) {
+  $route_name = Drupal::routeMatch()->getRouteName();
+  $current_user = \Drupal::currentUser();
+
+  if ($current_user->hasRole('employee') && $route_name == 'substitutoo_core.dashboard_manage') {
+    $user_id = $current_user->id();
+    $url = \Drupal\Core\Url::fromRoute('substitutoo_core.dashboard_employee', ['user' => $user_id]);
+    
+    $response = new \Symfony\Component\HttpFoundation\RedirectResponse($url->toString());
+    $response->send();
+    exit;
+  }
+
+  if ($route_name == 'entity.sub_shift_scheduler.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'shift-schedulers wrapper-content-entity',
+    ];
+  }
+  if ($route_name == 'entity.sub_location.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'entity-location wrapper-content-entity',
+    ];
+  }
+  if ($route_name == 'entity.sub_unavailability.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'entity-unavailability wrapper-content-entity',
+    ];
+  }
+  if ($route_name == 'entity.sub_availability_scheduler.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'available-scheduler-entity wrapper-content-entity',
+    ];
+  }
+  if ($route_name == 'entity.sub_shift.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'entity-shift wrapper-content-entity',
+    ];
+  }
+  if ($route_name == 'entity.sub_availability.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'availability-entity wrapper-content-entity',
+    ];
+  }
+  if ($route_name == 'entity.sub_assignment.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'assignment-entity wrapper-content-entity',
+    ];
+  }
+  if ($route_name == 'entity.sub_scheduler_assignment.canonical') {
+    $variables['page']['content']['substitutoo_theme_content']['#attributes'] = [
+      'class' => 'scheduler-assignment-entity wrapper-content-entity',
+    ];
+  }
+}
+
+/**
+ * Implements hook_entity_type_build().
+ */
+function substitutoo_core_entity_type_build(array &$entity_types) {
+  if (isset($entity_types['sub_location'])) {
+    // Register the 'sub_location' form mode with the default entity form class.
+    $entity_types['sub_location']->setFormClass('sub_location', 'Drupal\substitutoo_core\Form\ModeForm');
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function substitutoo_core_preprocess_html(&$variables) {
+  $current_user = \Drupal::currentUser();
+  $roles = $current_user->getRoles();
+  foreach ($roles as $id => $role) {
+    $variables['attributes']['class'][] = 'role-' . $role;
+  }
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function substitutoo_core_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  $user = \Drupal::currentUser();
+  $list_unavailability = '/unavailabilities';
+  if ($user->hasRole('employee')) {
+    $list_unavailability = '/my-unavailabilities';
+  }
+  
+  $redirects = [
+    'sub_location' => '/locations',
+    'sub_shift_scheduler' => '/service-contracts',
+    'user' => '/employees',
+    'sub_assignment' => '/assignments',
+    'sub_availability_scheduler' => '/employee-schedules',
+    //'sub_unavailability' => $list_unavailability,
+    'sub_scheduler_assignment' => '/scheduler-assignments',
+  ];
+  
+  if (isset($redirects[$entity->getEntityTypeId()]) && $user->hasRole('manager')) {
+    $current_request = \Drupal::requestStack()->getCurrentRequest();
+    $current_request->query->set('destination', $redirects[$entity->getEntityTypeId()]);
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function substitutoo_core_entity_update(Drupal\Core\Entity\EntityInterface $entity) {
+  $redirects = [
+    'sub_location' => '/locations',
+    'sub_shift_scheduler' => '/service-contracts',
+    'user' => '/employees',
+    //'sub_assignment' => '/assignments',
+    'sub_availability_scheduler' => '/employee-schedules',
+    'sub_scheduler_assignment' => '/scheduler-assignments',
+  ];
+  $user = \Drupal::currentUser();
+  if (isset($redirects[$entity->getEntityTypeId()]) && $user->hasRole('manager')) {
+    $current_request = \Drupal::requestStack()->getCurrentRequest();
+    $current_request->query->set('destination', $redirects[$entity->getEntityTypeId()]);
+  }
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function substitutoo_core_entity_delete(Drupal\Core\Entity\EntityInterface $entity) {
+  $redirects = [
+    'sub_location' => '/locations',
+    'sub_shift_scheduler' => '/service-contracts',
+    'user' => '/employees',
+    //'sub_assignment' => '/assignments',
+    'sub_availability_scheduler' => '/employee-schedules',
+  ];
+  $user = \Drupal::currentUser();
+  if (isset($redirects[$entity->getEntityTypeId()]) && $user->hasRole('manager')) {
+    $current_request = \Drupal::requestStack()->getCurrentRequest();
+    $current_request->query->set('destination', $redirects[$entity->getEntityTypeId()]);
+  }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function substitutoo_core_entity_type_alter(array &$entity_types) {
+  $form_entities = [
+    'sub_location' => 'Drupal\sub_location\Form\SubstitutooLocationForm',
+    'sub_shift_scheduler' => 'Drupal\sub_shift_scheduler\Form\SubstitutooShiftSchedulerForm',
+    'user' => 'Drupal\user\RegisterForm',
+    'sub_assignment' => 'Drupal\sub_assignment\Form\SubstitutooAssignmentForm',
+    'sub_availability_scheduler' => 'Drupal\sub_availability_scheduler\Form\SubstitutooAvailabilitySchedulerForm',
+    'sub_shift' => 'Drupal\sub_shift\Form\SubstitutooShiftForm',
+    'sub_availability' => 'Drupal\sub_availability\Form\SubstitutooAvailabilityForm',
+    'sub_unavailability' => 'Drupal\sub_unavailability\Form\SubstitutooUnavailabilityForm',
+    'sub_scheduler_assignment' => 'Drupal\sub_scheduler_assignment\Form\SubstitutooSchedulerAssignmentForm',
+  ];
+
+  foreach ($form_entities as $entity_type => $form_class) {
+    if (isset($entity_types[$entity_type])) {
+      $entity_types[$entity_type]->setFormClass('manager_form', $form_class);
+      $entity_types[$entity_type]->setFormClass('employee_form', $form_class);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view().
+ */
+function substitutoo_core_preprocess_views_view(&$variables) {
+  //dump(456);
+  $user = \Drupal::currentUser();
+  if ($user->hasRole('manager') || $user->hasRole('employee')) {
+    unset($variables['header']);
+  }
+  $language = \Drupal::service('language_manager')->getCurrentLanguage(LanguageInterface::TYPE_CONTENT);
+  $langcode = $language->getId();
+  // if ($langcode == 'en') {
+  //   $langcode = '';
+  // }
+  
+  if ($variables['view']->id() === 'locations' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-location/manager-form/add">'. t('Add Location') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-location/manager-form/add">'. t('Add Location') .'</a></div>'
+      ];
+    }
+  }
+  if ($variables['view']->id() === 'employees' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/user/manager-form/add">'. t('Add User') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/user/manager-form/add">'. t('Add User') .'</a></div>'
+      ];
+    }
+  }
+  if ($variables['view']->id() === 'shift_schedulers' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-shift-scheduler/manager-form/add">'. t('Add Shift Scheduler') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-shift-scheduler/manager-form/add">'. t('Add Shift Scheduler') .'</a></div>'
+      ];
+    }
+  }
+  if ($variables['view']->id() === 'availability_schedulers' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-availability-scheduler/manager-form/add">'. t('Add Availability Scheduler') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-availability-scheduler/manager-form/add">'. t('Add Availability Scheduler') .'</a></div>'
+      ];
+    }
+  }
+  if ($variables['view']->id() === 'shifts' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-shift/manager-form/add">'. t('Add Shift') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-shift/manager-form/add">'. t('Add Shift') .'</a></div>'
+      ];
+    }
+  }
+  if ($variables['view']->id() === 'availabilities' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-availability/manager-form/add">'. t('Add Availability') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-availability/manager-form/add">'. t('Add Availability') .'</a></div>'
+      ];
+    }
+  }
+
+  if ($variables['view']->id() === 'unavailabilities') {
+    if ($variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-unavailability/manager-form/add">'. t('Add Unavailability') .'</a></div>'
+      ];
+      if ($langcode == 'en') {
+        $variables['header']['manager'] = [
+          '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-unavailability/manager-form/add">'. t('Add Unavailability') .'</a></div>'
+        ];
+      }
+    }
+    if ($variables['view']->current_display === 'page_2' && $user->hasRole('employee')) {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-unavailability/employee-form/add">'. t('Add Unavailability') .'</a></div>'
+      ];
+      if ($langcode == 'en') {
+        $variables['header']['manager'] = [
+          '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-unavailability/employee-form/add">'. t('Add Unavailability') .'</a></div>'
+        ];
+      }
+    }
+  }
+  if ($variables['view']->id() === 'assignments' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-assignment/manager-form/add">'. t('Add Assignment') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-assignment/manager-form/add">'. t('Add Assignment') .'</a></div>'
+      ];
+    }
+  }
+  if ($variables['view']->id() === 'scheduler_assignments' && $variables['view']->current_display === 'page_1' && $user->hasRole('manager')) {
+    $variables['header']['manager'] = [
+      '#markup' => '<div class="custom-header"><a href="/'. $langcode .'/substitutoo/sub-scheduler-assignment/manager-form/add">'. t('Add Scheduler Assignment') .'</a></div>'
+    ];
+    if ($langcode == 'en') {
+      $variables['header']['manager'] = [
+        '#markup' => '<div class="custom-header"><a href="/substitutoo/sub-scheduler-assignment/manager-form/add">'. t('Add Scheduler Assignment') .'</a></div>'
+      ];
+    }
+  }
+}
+
+
+/**
+ * Implements hook_entity_form_display_alter()
+ */
+function substitutoo_core_entity_form_display_alter(&$form_display, $context) {
+  $user = \Drupal::currentUser();
+  $role = 'manager';
+  if (in_array($role, $user->getRoles()) && $form_display->id() != 'sub_location.sub_location.nested_location') {
+    $storage = \Drupal::service('entity_type.manager')->getStorage('entity_form_display');
+    $id_form_display = $context['entity_type'] . '.' . $context['entity_type'] . '.' . $role . '_form';
+    if ($storage->load($id_form_display)) {
+      $form_display = $storage->load($id_form_display);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_operation()
+ */
+function substitutoo_core_entity_operation(EntityInterface $entity) {
+  $operations = [];
+  $user = \Drupal::currentUser();
+
+  if (in_array('manager', $user->getRoles())) {
+    $entity_type = $entity->bundle();
+    $entity_name = str_replace("_","-",$entity_type);
+    $operations = [];
+    $urlEdit = Url::fromRoute('substitutoo_core.form_mode_edit', [
+      'entity_id' => $entity->id(),
+      'type' => 'manager-form',
+      'entity_name' => $entity_name,
+    ]);
+    $operations['custom_edit_manager'] = [
+      'title' => t('Edit'),
+      'weight' => 0,
+      'url' => $urlEdit,
+      'class' => ['test'],
+    ];
+  }
+  // dump($entity->bundle());
+  if ($entity->bundle() == 'sub_shift_scheduler') {
+    $url_bulk_assign_service_contract = \Drupal\Core\Url::fromRoute(
+      'substitutoo_core.bulk_employee_service_contract',
+      ['shift_scheduler' => $entity->id()],
+      [
+        'attributes' => [
+          'class' => ['use-ajax'],
+          'data-dialog-type' => 'modal',
+          'data-dialog-options' => json_encode([
+            'width' => 700,
+            'title' => t('Contract Assign'),
+          ]),
+        ],
+      ]
+    );
+  
+    $operations['custom_contract_assign'] = [
+      'title' => t('Contract Assign'),
+      'weight' => 999,
+      'url' => $url_bulk_assign_service_contract,
+    ];
+  }
+  
+
+  return $operations;
+}
+
+/**
+ * Implements hook_preprocess_views_view_field().
+ */
+function substitutoo_core_preprocess_views_view_field(&$variables) {
+  $view = $variables['view'];
+  $field = $variables['field'];
+  $row = $variables['row'];
+  $route_name = Drupal::routeMatch()->getRouteName();
+  if ($view->id() == 'shifts' && isset($field->options['id']) && $field->options['id'] == 'operations') {
+    $original_output = $variables['output']->__toString();
+    
+    $shift_id = $row->id;
+    $assignment_id = $row->sub_assignment_sub_shift_id;
+
+    // Load entity 'sub_shift' , 'sub_assignment'.
+    $shift_entity = \Drupal::entityTypeManager()->getStorage('sub_shift')->load($shift_id);
+    $assignment_entity = \Drupal::entityTypeManager()->getStorage('sub_assignment')->load($assignment_id);
+    $order_assignment = $assignment_entity->get('f_assignment_order')->getString();
+
+    $type = 'assign';
+    $employee = $assignment_entity->get('f_employee')->entity;
+    if (!empty($employee)) {
+      $type = 'change';
+    }
+
+    $date = $shift_entity->get('f_datetime_start')->value; 
+    $date_parts = explode('T', $date);
+    $date_only = $date_parts[0]; // "2024-12-30"
+    list($year, $month, $day) = explode('-', $date_only);
+
+    $url_assign_change = \Drupal\Core\Url::fromRoute('substitutoo_core.assign_employee', [
+      'date' => $day,
+      'month' => $month,
+      'year' => $year,
+      'shift' => $shift_id,
+      'assignment' => $assignment_id,
+      'type' => $type,
+      'action' => 'shifts'
+    ])->toString();
+
+    $url_bulk_assign = \Drupal\Core\Url::fromRoute('substitutoo_core.bulk_employee', [
+      'date' => $day,
+      'month' => $month,
+      'year' => $year,
+      'shift' => $shift_id,
+      'order_assignment' => $order_assignment,
+      'action' => 'shifts'
+    ])->toString();
+
+    $new_link = '<li class="custom-link">
+      <a href="' . $url_assign_change . '" 
+        class="use-ajax" 
+        data-dialog-type="modal" 
+        data-dialog-options=\'{"width":700, "title":"' . t('Assign Employee') . '"}\'>
+        ' . t('Assign') . '
+      </a>
+      <a href="' . $url_bulk_assign . '" 
+        class="use-ajax" 
+        data-dialog-type="modal" 
+        data-dialog-options=\'{"width":700, "title":"' . t('Bulk Assign Employee') . '"}\'>
+        ' . t('Bulk Assign') . '
+      </a>
+  </li>';
+  
+    
+    if ($type == 'change') {
+      $new_link = '<li class="custom-link">
+        <a href="' . $url_assign_change . '" 
+          class="use-ajax" 
+          data-dialog-type="modal" 
+          data-dialog-options=\'{"width":700, "title":"' . t('Change Employee') . '"}\'>
+          ' . t('Change') . '
+        </a>
+        <a href="' . $url_bulk_assign . '" 
+          class="use-ajax" 
+          data-dialog-type="modal" 
+          data-dialog-options=\'{"width":700, "title":"' . t('Bulk Assign Employee') . '"}\'>
+          ' . t('Bulk Assign') . '
+        </a>
+      </li>';
+    }
+  
+
+    if (strpos($original_output, '<ul class="dropbutton">') !== false) {
+      $output_with_link = str_replace(
+        '</ul>',
+        $new_link . '</ul>', 
+        $original_output
+      );
+    } else {
+      $output_with_link = $original_output . $new_link;
+    }
+
+    $variables['output'] = [
+      '#markup' => $output_with_link,
+      '#allowed_tags' => ['a', 'li', 'ul', 'div'],
+    ];
+  }
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function substitutoo_core_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, $view_mode, $langcode) {
+  if ($entity->getEntityTypeId() === 'sub_scheduler_assignment') {
+    if (!empty($entity->get('description')->value)) {
+      $build['description'] = [
+        '#type' => 'processed_text',
+        '#text' => '<div class="wrapper-description"><div class="field__label">'. t('Descriptions') .'</div><div class="field__item">'. $entity->get('description')->value .'</div></div>',
+        '#format' => 'full_html',
+      ];
+    }
+  }
+}
+ 

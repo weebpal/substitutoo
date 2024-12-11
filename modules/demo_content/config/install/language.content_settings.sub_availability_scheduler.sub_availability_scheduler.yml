@@ -1,0 +1,11 @@
+uuid: fabe2bbb-9c9b-4723-8962-ca081f2fbbe0
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+id: sub_availability_scheduler.sub_availability_scheduler
+target_entity_type_id: sub_availability_scheduler
+target_bundle: sub_availability_scheduler
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,34 @@
+<?php
+ 
+/**
+ * @file
+ * Install, update and uninstall functions
+ */
+ 
+use Drupal\Core\Field\BaseFieldDefinition;
+
+function sub_assignment_update_10000()  {
+  $storage_definition = BaseFieldDefinition::create('entity_reference')
+  ->setLabel(t('Availability'))
+  ->setSetting('target_type', 'sub_availability')
+  ->setDisplayOptions('view', [
+    'label' => 'above',
+    'type' => 'entity_reference_label',
+  ])
+  ->setDisplayOptions('form', [
+    'type' => 'entity_reference_autocomplete',
+    'weight' => 1,
+    'settings' => [
+      'match_operator' => 'CONTAINS',
+      'size' => '60',
+      'autocomplete_type' => 'tags',
+      'placeholder' => '',
+    ],
+  ])
+  ->setDisplayConfigurable('form', TRUE)
+  ->setDisplayConfigurable('view', TRUE);
+ 
+  $update_manager = \Drupal::entityDefinitionUpdateManager();
+  $update_manager->installFieldStorageDefinition('f_availability', 'sub_assignment', 'sub_assignment', $storage_definition);
+
+}

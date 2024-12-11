@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ *
+ * Default template for notification item.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - sub_notification: The rendered sub_notification fields.
+ *   Use 'sub_notification' to print them all, or print a subset such as
+ *   'sub_notification.name'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ sub_notification|without('name') }}
+ *   @endcode
+ * - sub_notification_entity: The sub_notification entity.
+ * - sub_notification_url: The sub_notification URL.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes }}>
+  {{ sub_notification }}
+</article>

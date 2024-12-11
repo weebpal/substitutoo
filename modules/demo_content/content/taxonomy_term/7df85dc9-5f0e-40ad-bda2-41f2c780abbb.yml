@@ -1,0 +1,41 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 7df85dc9-5f0e-40ad-bda2-41f2c780abbb
+  bundle: certification
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Background Check Clearance'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1731559144
+  field_key:
+    -
+      value: 'Background Check Clearance'

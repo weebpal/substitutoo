@@ -1,0 +1,5 @@
+sub_availability_scheduler.add_form:
+  title: 'Add substitutoo availability scheduler'
+  route_name: entity.sub_availability_scheduler.add_form
+  appears_on:
+    - entity.sub_availability_scheduler.collection

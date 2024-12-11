@@ -1,0 +1,20 @@
+uuid: 1a9e4de6-3501-46ba-be84-c9cf5fba561c
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.field_required_number_employees
+field_name: field_required_number_employees
+entity_type: sub_shift_scheduler
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

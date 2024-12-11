@@ -1,0 +1,19 @@
+uuid: 9c952731-5d95-4aa2-a14a-7c9a35abe015
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_key
+    - taxonomy.vocabulary.unavailable_type
+id: taxonomy_term.unavailable_type.field_key
+field_name: field_key
+entity_type: taxonomy_term
+bundle: unavailable_type
+label: Key
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

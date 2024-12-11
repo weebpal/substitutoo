@@ -1,0 +1,32 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 05b1c3ff-90a0-4ddf-bacd-224072f83f00
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    4a468046-376f-408a-b9a5-b71e850e2a07: sub_location
+default:
+  label:
+    -
+      value: 'Floor 4'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730860032
+  field_deep:
+    -
+      value: 2
+  field_location_trail:
+    -
+      entity: 4a468046-376f-408a-b9a5-b71e850e2a07
+  field_nested_locations:
+    -
+      target_id: 50
+  field_order_value:
+    -
+      value: 35001000

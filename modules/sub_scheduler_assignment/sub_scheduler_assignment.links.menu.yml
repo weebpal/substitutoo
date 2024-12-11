@@ -1,0 +1,13 @@
+entity.sub_scheduler_assignment.settings:
+  title: 'Contract Assignment'
+  description: 'Configure a Substitutoo Contract Assignment entity type.'
+  route_name:  entity.sub_scheduler_assignment.settings
+  parent: substitutoo_core.structure
+  weight: 55
+
+entity.sub_scheduler_assignment.collection:
+  title: 'Contract Assignments'
+  description: 'List of substitutoo Contract Assignments.'
+  route_name: entity.sub_scheduler_assignment.collection
+  parent: substitutoo_core.content
+  weight: 55

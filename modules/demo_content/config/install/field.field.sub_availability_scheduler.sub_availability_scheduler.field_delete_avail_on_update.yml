@@ -1,0 +1,22 @@
+uuid: ec328417-dfea-4575-b45e-c47162b6b722
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_availability_scheduler.field_delete_avail_on_update
+  module:
+    - sub_availability_scheduler
+id: sub_availability_scheduler.sub_availability_scheduler.field_delete_avail_on_update
+field_name: field_delete_avail_on_update
+entity_type: sub_availability_scheduler
+bundle: sub_availability_scheduler
+label: 'Delete Availabilities on Update'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,60 @@
+uuid: b40a2da7-5513-4ae6-8836-1d72eee63fef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.days_of_week.field_key
+    - taxonomy.vocabulary.days_of_week
+  module:
+    - path
+    - text
+id: taxonomy_term.days_of_week.default
+targetEntityType: taxonomy_term
+bundle: days_of_week
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_key:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

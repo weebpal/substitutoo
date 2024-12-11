@@ -1,0 +1,38 @@
+uuid: 0cc8d1ee-2f8e-4394-a937-e2a12e76b908
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.assignments
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - substitutoo_theme
+id: substitutoo_theme_views_block__assignments_block_3
+theme: substitutoo_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:assignments-block_3'
+settings:
+  id: 'views_block:assignments-block_3'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      employee: employee

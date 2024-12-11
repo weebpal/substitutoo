@@ -1,0 +1,9 @@
+uuid: 69de825d-6d51-4530-a95f-7395e604babd
+langcode: en
+status: true
+dependencies: {  }
+name: 'Confirmation Status'
+vid: confirmation_status
+description: '(Confirmed, Pending, Rejected)'
+weight: 0
+new_revision: false

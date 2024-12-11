@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Template for the sub_notification add/edit form.
+ *
+ * Available variables:
+ * - form: The form.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="layout-notification-form clearfix">
+  <div class="layout-region layout-region-notification-main">
+    {{ form|without('advanced', 'actions') }}
+  </div>
+  <div class="layout-region layout-region-notification-secondary">
+    {{ form.advanced }}
+  </div>
+  <div class="layout-region layout-region-notification-footer">
+    {{ form.actions }}
+  </div>
+</div>

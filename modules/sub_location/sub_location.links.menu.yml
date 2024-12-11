@@ -1,0 +1,13 @@
+entity.sub_location.settings:
+  title: 'Location'
+  description: 'Configure a Substitutoo Location entity type.'
+  route_name:  entity.sub_location.settings
+  parent: substitutoo_core.structure
+  weight: 0
+
+entity.sub_location.collection:
+  title: 'Locations'
+  description: 'List of substitutoo locations.'
+  route_name: entity.sub_location.collection
+  parent: substitutoo_core.content
+  weight: 0

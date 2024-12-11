@@ -1,0 +1,71 @@
+<?php
+/*
+ * @file
+ * Functions to support theming in the substitutoo theme.
+ */
+
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function substitutoo_theme_preprocess_html(&$variables) {
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-two-sidebars';
+  }
+  elseif (!empty($variables['page']['sidebar_first'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-first';
+  }
+  elseif (!empty($variables['page']['sidebar_second'])) {
+    $variables['attributes']['class'][] = 'layout-one-sidebar';
+    $variables['attributes']['class'][] = 'layout-sidebar-second';
+  }
+  else {
+    $variables['attributes']['class'][] = 'layout-no-sidebars';
+  }
+
+  $current_path = \Drupal::service('path.current')->getPath();
+  $path_alias = \Drupal::service('path_alias.manager')->getAliasByPath($current_path);
+  $path_alias = ltrim($path_alias, '/');
+  $path_alias_parts = explode('/', $path_alias);
+  foreach ($path_alias_parts as $alias_part) {
+    $variables['attributes']['class'][] = 'path-' . Html::cleanCssIdentifier($alias_part);
+  }
+
+  $variables['language']= \Drupal::languageManager()->getCurrentLanguage()->getId();
+
+  //**Skin */
+  $skin_type = theme_get_setting('skin_type');
+  if (isset($skin_type)) {  
+    $variables['attributes']['class'][] = $skin_type;
+  }
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function substitutoo_theme_theme_preprocess_page(&$variables) {
+  $site_config = Drupal::config('system.site');
+  $variables['logo'] = theme_get_setting('logo.url');
+  $variables['site_name'] = $site_config->get('name');
+  $variables['hide_site_name'] = TRUE;
+  $variables['site_slogan'] = $site_config->get('slogan');
+  $variables['hide_site_slogan'] = TRUE;
+
+  $variables['main_content_width'] = 12;
+  if (!empty($variables['page']['sidebar_first'])) {
+    $variables['main_content_width'] = 9;
+    $variables['sidebar_first_width'] = 3;
+  }
+  if (!empty($variables['page']['sidebar_second'])) {
+    $variables['main_content_width'] = 9;
+    $variables['sidebar_second_width'] = 3;
+
+  }
+  if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
+    $variables['main_content_width'] = 6;
+    $variables['sidebar_first_width'] = 3;
+    $variables['sidebar_second_width'] = 3;
+  }
+}

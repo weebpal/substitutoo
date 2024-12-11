@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location_delete_action
+label: 'Delete substitutoo locations'
+type: sub_location
+plugin: entity:delete_action:sub_location
+configuration: {  }

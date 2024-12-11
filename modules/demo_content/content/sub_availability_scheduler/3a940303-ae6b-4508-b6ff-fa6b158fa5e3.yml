@@ -1,0 +1,146 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_availability_scheduler
+  uuid: 3a940303-ae6b-4508-b6ff-fa6b158fa5e3
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    c409e6d5-fe94-4ad9-93d6-6d56e088cd1a: taxonomy_term
+    fc06e362-8c08-4c01-b74e-0369f91414a4: taxonomy_term
+    2020f1eb-6903-4104-9bdf-94c714998fcc: taxonomy_term
+    beb5e229-904e-4743-86f8-dbbb3f96e02c: taxonomy_term
+    ecdbf6b7-d132-4415-9e2a-ecca2c4430a4: taxonomy_term
+    d864701b-ff5e-45f9-a01e-5f7453d38427: taxonomy_term
+    79094033-62ae-40da-b671-4c139f9c0da6: taxonomy_term
+    1779919a-dc11-4bcd-a1dc-d8b4773d12ff: taxonomy_term
+    d69de529-fff7-4351-9ca1-b2bdf3e95052: taxonomy_term
+    789bb15a-e847-4e3e-8f71-e0ac248b555f: taxonomy_term
+    2d9c04f2-5691-4417-8ce1-355248c61446: taxonomy_term
+    e4d790f7-00dc-4005-b6b7-a5935a0b4af5: taxonomy_term
+    2275ff57-ae3b-4a5d-b1a4-420b7131893e: taxonomy_term
+    70756850-59ad-412d-8c03-b65f067ff37f: taxonomy_term
+    cfd47636-b5f4-4fee-a9cf-0599e7555be9: taxonomy_term
+    d107eec7-2db3-47d0-9780-ec6dea2ff810: taxonomy_term
+    966a7952-080f-4341-860b-eb6bb02b51f1: taxonomy_term
+    6a173f56-7ea5-4166-89d1-7128b1dca725: taxonomy_term
+    f7ba3279-5db2-47ed-a260-151a9cb8ed8e: taxonomy_term
+    269fd445-8911-475b-b339-5c44cc980de0: taxonomy_term
+    9bef930a-75ba-4eee-8e1a-9ffb753796ab: taxonomy_term
+    94965563-5376-4290-be3a-aa435ad8ef13: taxonomy_term
+    b0e34e13-b9c0-461c-bace-b4256bdc4748: taxonomy_term
+    d7571c2f-720a-4cd4-82c7-690dc2123c0d: taxonomy_term
+    80a5fa5f-89c5-40b9-bbff-27cb7b56e4b6: taxonomy_term
+    e7f53484-d5ba-4fa4-83d5-a6f1f240f227: taxonomy_term
+    d534e798-7160-48c8-ab6a-ca1c2a2d8845: taxonomy_term
+    091bb12a-e0ac-476f-85ce-0ac516a1250d: taxonomy_term
+    24eff3a0-99c3-4dd5-8ca3-2102e83960e2: taxonomy_term
+    0dccc50b-4436-4418-b12a-508896b29073: taxonomy_term
+    1c0cd69e-cdd1-4608-814d-7ac5a27df44e: taxonomy_term
+    1869ddf5-2b45-47aa-9581-c398588bae45: taxonomy_term
+    0c042431-16ab-40b8-8a86-60de5ca713c2: taxonomy_term
+    6d7bb134-f4ac-4262-aa5a-97f07a5cea39: taxonomy_term
+    43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02: taxonomy_term
+    3d5fc35e-c1cc-409c-8446-543d8b41203c: user
+default:
+  label:
+    -
+      value: 'Johnatan Verfügbarkeit'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Johnatan schedule Description</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730861771
+  field_between_dates:
+    -
+      value: '2024-12-01'
+      end_value: '2024-12-31'
+  field_calendar_type:
+    -
+      entity: c409e6d5-fe94-4ad9-93d6-6d56e088cd1a
+  field_days_of_the_month:
+    -
+      entity: fc06e362-8c08-4c01-b74e-0369f91414a4
+    -
+      entity: 2020f1eb-6903-4104-9bdf-94c714998fcc
+    -
+      entity: beb5e229-904e-4743-86f8-dbbb3f96e02c
+    -
+      entity: ecdbf6b7-d132-4415-9e2a-ecca2c4430a4
+    -
+      entity: d864701b-ff5e-45f9-a01e-5f7453d38427
+    -
+      entity: 79094033-62ae-40da-b671-4c139f9c0da6
+    -
+      entity: 1779919a-dc11-4bcd-a1dc-d8b4773d12ff
+    -
+      entity: d69de529-fff7-4351-9ca1-b2bdf3e95052
+    -
+      entity: 789bb15a-e847-4e3e-8f71-e0ac248b555f
+    -
+      entity: 2d9c04f2-5691-4417-8ce1-355248c61446
+    -
+      entity: e4d790f7-00dc-4005-b6b7-a5935a0b4af5
+    -
+      entity: 2275ff57-ae3b-4a5d-b1a4-420b7131893e
+    -
+      entity: 70756850-59ad-412d-8c03-b65f067ff37f
+    -
+      entity: cfd47636-b5f4-4fee-a9cf-0599e7555be9
+    -
+      entity: d107eec7-2db3-47d0-9780-ec6dea2ff810
+    -
+      entity: 966a7952-080f-4341-860b-eb6bb02b51f1
+    -
+      entity: 6a173f56-7ea5-4166-89d1-7128b1dca725
+    -
+      entity: f7ba3279-5db2-47ed-a260-151a9cb8ed8e
+    -
+      entity: 269fd445-8911-475b-b339-5c44cc980de0
+    -
+      entity: 9bef930a-75ba-4eee-8e1a-9ffb753796ab
+    -
+      entity: 94965563-5376-4290-be3a-aa435ad8ef13
+    -
+      entity: b0e34e13-b9c0-461c-bace-b4256bdc4748
+    -
+      entity: d7571c2f-720a-4cd4-82c7-690dc2123c0d
+    -
+      entity: 80a5fa5f-89c5-40b9-bbff-27cb7b56e4b6
+    -
+      entity: e7f53484-d5ba-4fa4-83d5-a6f1f240f227
+    -
+      entity: d534e798-7160-48c8-ab6a-ca1c2a2d8845
+    -
+      entity: 091bb12a-e0ac-476f-85ce-0ac516a1250d
+    -
+      entity: 24eff3a0-99c3-4dd5-8ca3-2102e83960e2
+    -
+      entity: 0dccc50b-4436-4418-b12a-508896b29073
+  field_days_of_the_week:
+    -
+      entity: 1c0cd69e-cdd1-4608-814d-7ac5a27df44e
+    -
+      entity: 1869ddf5-2b45-47aa-9581-c398588bae45
+    -
+      entity: 0c042431-16ab-40b8-8a86-60de5ca713c2
+    -
+      entity: 6d7bb134-f4ac-4262-aa5a-97f07a5cea39
+    -
+      entity: 43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02
+  field_delete_avail_on_update:
+    -
+      value: false
+  field_employee:
+    -
+      entity: 3d5fc35e-c1cc-409c-8446-543d8b41203c
+  field_time_frames:
+    -
+      from: 24300
+      to: 64800

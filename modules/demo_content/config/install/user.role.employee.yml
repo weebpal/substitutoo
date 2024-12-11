@@ -1,0 +1,28 @@
+uuid: a148d80d-6105-4af8-82fa-81e36b426f29
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_assignment
+    - sub_availability
+    - sub_availability_scheduler
+    - sub_location
+    - sub_shift
+    - sub_shift_scheduler
+    - sub_unavailability
+id: employee
+label: Employee
+weight: -7
+is_admin: null
+permissions:
+  - 'access sub_location overview'
+  - 'access user profiles'
+  - 'create sub_unavailability'
+  - 'update own sub_unavailability'
+  - 'view sub_assignment'
+  - 'view sub_availability'
+  - 'view sub_availability_scheduler'
+  - 'view sub_location'
+  - 'view sub_shift'
+  - 'view sub_shift_scheduler'
+  - 'view sub_unavailability'

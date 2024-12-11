@@ -1,0 +1,20 @@
+uuid: 481bed59-8194-4719-a784-ee35a2a92ff2
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+    - sub_shift_scheduler
+id: sub_shift_scheduler.field_location
+field_name: field_location
+entity_type: sub_shift_scheduler
+type: entity_reference
+settings:
+  target_type: sub_location
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

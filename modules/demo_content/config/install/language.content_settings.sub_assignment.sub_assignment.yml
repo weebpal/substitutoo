@@ -1,0 +1,11 @@
+uuid: ac125e77-a025-4bdd-833a-06c58b992cc3
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_assignment
+id: sub_assignment.sub_assignment
+target_entity_type_id: sub_assignment
+target_bundle: sub_assignment
+default_langcode: site_default
+language_alterable: false

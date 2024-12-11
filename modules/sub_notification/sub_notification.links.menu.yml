@@ -1,0 +1,13 @@
+entity.sub_notification.collection:
+  title: 'Notifications'
+  route_name: 'entity.sub_notification.collection'
+  parent: substitutoo_core.content
+  description: 'Manage your notification items.'
+  weight: 80
+
+entity.sub_notification_type.collection:
+  title: 'Notification'
+  route_name: 'entity.sub_notification_type.collection'
+  parent: substitutoo_core.structure
+  description: 'Manage fields, form and display settings for your notification types.'
+  weight: 80

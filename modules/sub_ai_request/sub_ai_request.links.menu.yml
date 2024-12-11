@@ -1,0 +1,13 @@
+entity.sub_ai_request.settings:
+  title: 'AI Request'
+  description: 'Configure a AI Request entity type.'
+  route_name:  entity.sub_ai_request.settings
+  parent: substitutoo_core.structure
+  weight: 65
+
+entity.sub_ai_request.collection:
+  title: 'AI Requests'
+  description: 'List of ai requests.'
+  route_name: entity.sub_ai_request.collection
+  parent: substitutoo_core.content
+  weight: 65

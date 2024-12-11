@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_shift
+  uuid: 51c99894-59b7-4791-b6aa-0034313f0c1e
+  depends:
+    797383ed-b512-4685-9f02-e1fa9001a4ae: sub_location
+    5a13c7de-95fc-484a-89c6-cefcd26c6254: sub_shift_scheduler
+default:
+  label:
+    -
+      value: 'Shift item for Raum Gelb on Wednesday, 2024-12-25, from 11:00 to 14:15'
+  status:
+    -
+      value: true
+  f_location:
+    -
+      entity: 797383ed-b512-4685-9f02-e1fa9001a4ae
+  f_date:
+    -
+      value: '2024-12-25'
+  f_time_start:
+    -
+      value: '11:00'
+  f_time_end:
+    -
+      value: '14:15'
+  f_datetime_start:
+    -
+      value: '2024-12-25T11:00:00'
+  f_datetime_end:
+    -
+      value: '2024-12-25T14:15:00'
+  f_timestamp_start:
+    -
+      value: 1735124400
+  f_timestamp_end:
+    -
+      value: 1735136100
+  f_shift_scheduler:
+    -
+      entity: 5a13c7de-95fc-484a-89c6-cefcd26c6254
+  f_duration:
+    -
+      value: 11700
+  f_required_number_employees:
+    -
+      value: 3
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733733437

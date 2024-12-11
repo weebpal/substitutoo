@@ -1,0 +1,18 @@
+uuid: 63c28f44-1159-41e7-a2d4-76397c622122
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.field_is_root_location
+field_name: field_is_root_location
+entity_type: sub_location
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

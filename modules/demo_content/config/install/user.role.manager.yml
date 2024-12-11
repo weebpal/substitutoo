@@ -1,0 +1,98 @@
+uuid: fb87cf08-f194-4355-8083-c7415383f13c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - path
+    - sub_assignment
+    - sub_assignment_history
+    - sub_availability
+    - sub_availability_scheduler
+    - sub_location
+    - sub_scheduler_assignment
+    - sub_shift
+    - sub_shift_scheduler
+    - sub_unavailability
+    - system
+    - toolbar
+id: manager
+label: Manager
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access sub_assignment overview'
+  - 'access sub_availability overview'
+  - 'access sub_availability_scheduler overview'
+  - 'access sub_location overview'
+  - 'access sub_scheduler_assignment overview'
+  - 'access sub_shift overview'
+  - 'access sub_shift_scheduler overview'
+  - 'access sub_unavailability overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer content types'
+  - 'administer sub_assignment'
+  - 'administer sub_assignment_history'
+  - 'administer sub_availability'
+  - 'administer sub_availability_scheduler'
+  - 'administer sub_location'
+  - 'administer sub_scheduler_assignment'
+  - 'administer sub_shift'
+  - 'administer sub_shift_scheduler'
+  - 'administer sub_unavailability'
+  - 'administer users'
+  - 'bypass node access'
+  - 'cancel account'
+  - 'create sub_assignment'
+  - 'create sub_availability'
+  - 'create sub_availability_scheduler'
+  - 'create sub_location'
+  - 'create sub_scheduler_assignment'
+  - 'create sub_shift'
+  - 'create sub_shift_scheduler'
+  - 'create sub_unavailability'
+  - 'create url aliases'
+  - 'delete any sub_assignment'
+  - 'delete any sub_availability'
+  - 'delete any sub_availability_scheduler'
+  - 'delete any sub_location'
+  - 'delete any sub_scheduler_assignment'
+  - 'delete any sub_shift'
+  - 'delete any sub_shift_scheduler'
+  - 'delete any sub_unavailability'
+  - 'delete own sub_assignment'
+  - 'delete own sub_availability'
+  - 'delete own sub_availability_scheduler'
+  - 'delete own sub_location'
+  - 'delete own sub_scheduler_assignment'
+  - 'delete own sub_shift'
+  - 'delete own sub_shift_scheduler'
+  - 'delete own sub_unavailability'
+  - 'update any sub_assignment'
+  - 'update any sub_availability'
+  - 'update any sub_availability_scheduler'
+  - 'update any sub_location'
+  - 'update any sub_scheduler_assignment'
+  - 'update any sub_shift'
+  - 'update any sub_shift_scheduler'
+  - 'update any sub_unavailability'
+  - 'update own sub_assignment'
+  - 'update own sub_availability'
+  - 'update own sub_availability_scheduler'
+  - 'update own sub_location'
+  - 'update own sub_scheduler_assignment'
+  - 'update own sub_shift'
+  - 'update own sub_shift_scheduler'
+  - 'update own sub_unavailability'
+  - 'view sub_assignment'
+  - 'view sub_availability'
+  - 'view sub_availability_scheduler'
+  - 'view sub_location'
+  - 'view sub_scheduler_assignment'
+  - 'view sub_shift'
+  - 'view sub_shift_scheduler'
+  - 'view sub_unavailability'
+  - 'view the administration theme'
+  - 'view user email addresses'

@@ -1,0 +1,18 @@
+uuid: 348c2d51-0681-4f8c-8093-4a985f3d4c90
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.field_reset_assignment_on_update
+field_name: field_reset_assignment_on_update
+entity_type: sub_scheduler_assignment
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

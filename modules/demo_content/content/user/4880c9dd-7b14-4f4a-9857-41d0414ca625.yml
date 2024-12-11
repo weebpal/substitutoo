@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 4880c9dd-7b14-4f4a-9857-41d0414ca625
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: Nela
+  pass:
+    -
+      value: $2y$10$bn.ikrEw60kJ3fwrgixitev3nhFf4ByZErx2yDONo6sK2TmAQzywm
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: Nela@gmail.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730425055
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: Nela@gmail.com
+  roles:
+    -
+      target_id: employee
+  field_address:
+    -
+      langcode: en
+      country_code: CH
+      administrative_area: ''
+      locality: Würenlos
+      dependent_locality: ''
+      postal_code: '5436'
+      sorting_code: ''
+      address_line1: 'Püntstrasse 143'
+      address_line2: ''
+      address_line3: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_date_of_birth:
+    -
+      value: '1984-07-05'
+  field_email:
+    -
+      value: Nela@gmail.com
+  field_first_name:
+    -
+      value: Nela
+  field_last_name:
+    -
+      value: Donald
+  field_phone:
+    -
+      value: '056 336 80 12'

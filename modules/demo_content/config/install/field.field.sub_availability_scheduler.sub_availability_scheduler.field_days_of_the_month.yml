@@ -1,0 +1,30 @@
+uuid: 9c1dd2f3-610c-438e-a6d3-489fc160b647
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_availability_scheduler.field_days_of_the_month
+    - taxonomy.vocabulary.days_of_month
+  module:
+    - sub_availability_scheduler
+id: sub_availability_scheduler.sub_availability_scheduler.field_days_of_the_month
+field_name: field_days_of_the_month
+entity_type: sub_availability_scheduler
+bundle: sub_availability_scheduler
+label: 'Days of the Month'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      days_of_month: days_of_month
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

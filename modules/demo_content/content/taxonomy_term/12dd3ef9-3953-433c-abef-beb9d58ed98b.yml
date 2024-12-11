@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 12dd3ef9-3953-433c-abef-beb9d58ed98b
+  bundle: age_range
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 25-34
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_created:
+    -
+      value: 1731553670
+  field_from:
+    -
+      value: 25
+  field_key:
+    -
+      value: 25-34
+  field_to:
+    -
+      value: 34

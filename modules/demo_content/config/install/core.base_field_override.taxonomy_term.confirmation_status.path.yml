@@ -1,0 +1,20 @@
+uuid: 6eb79272-6e09-47a2-b27d-80e8444c253e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.confirmation_status
+  module:
+    - path
+id: taxonomy_term.confirmation_status.path
+field_name: path
+entity_type: taxonomy_term
+bundle: confirmation_status
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

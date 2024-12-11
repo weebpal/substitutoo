@@ -1,0 +1,20 @@
+uuid: a8c086b5-816c-4007-8e48-c79b5dcae827
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.assignment_status
+  module:
+    - path
+id: taxonomy_term.assignment_status.path
+field_name: path
+entity_type: taxonomy_term
+bundle: assignment_status
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

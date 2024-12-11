@@ -1,0 +1,26 @@
+uuid: ec0bad2b-c43c-4107-861a-ec3fb2d45f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_availability_scheduler.field_employee
+  module:
+    - sub_availability_scheduler
+id: sub_availability_scheduler.sub_availability_scheduler.field_employee
+field_name: field_employee
+entity_type: sub_availability_scheduler
+bundle: sub_availability_scheduler
+label: Employee
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: employees
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

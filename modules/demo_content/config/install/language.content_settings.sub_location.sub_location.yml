@@ -1,0 +1,11 @@
+uuid: 73d06079-e1b7-4349-88bf-fe258a9c73b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.sub_location
+target_entity_type_id: sub_location
+target_bundle: sub_location
+default_langcode: site_default
+language_alterable: false

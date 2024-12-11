@@ -1,0 +1,7 @@
+entity.sub_unavailability.settings:
+  path: 'admin/substitutoo-structure/sub-unavailability'
+  defaults:
+    _form: '\Drupal\sub_unavailability\Form\SubstitutooUnavailabilitySettingsForm'
+    _title: 'Substitutoo Unavailability'
+  requirements:
+    _permission: 'administer sub_unavailability'

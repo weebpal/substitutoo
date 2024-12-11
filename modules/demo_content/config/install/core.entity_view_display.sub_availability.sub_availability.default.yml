@@ -1,0 +1,93 @@
+uuid: 1af3d7f9-bf71-4960-b630-e0a89bafc451
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability
+    - text
+id: sub_availability.sub_availability.default
+targetEntityType: sub_availability
+bundle: sub_availability
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  f_availability_scheduler:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  f_employee:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  f_timestamp_end:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+        description: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  f_timestamp_start:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: short
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: long
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+        description: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  f_date: true
+  f_datetime_end: true
+  f_datetime_start: true
+  f_duration: true
+  f_time_end: true
+  f_time_start: true
+  status: true
+  uid: true

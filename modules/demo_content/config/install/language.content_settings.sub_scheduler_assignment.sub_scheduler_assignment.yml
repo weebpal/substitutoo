@@ -1,0 +1,11 @@
+uuid: 1a7a1329-6de7-4810-a32b-20de9f7d8167
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.sub_scheduler_assignment
+target_entity_type_id: sub_scheduler_assignment
+target_bundle: sub_scheduler_assignment
+default_langcode: site_default
+language_alterable: false

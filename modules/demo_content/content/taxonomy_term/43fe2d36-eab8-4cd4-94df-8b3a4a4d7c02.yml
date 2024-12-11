@@ -1,0 +1,65 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02
+  bundle: days_of_week
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Friday
+  weight:
+    -
+      value: 4
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_key:
+    -
+      value: Friday
+translations:
+  de:
+    status:
+      -
+        value: true
+    name:
+      -
+        value: Freitag
+    revision_translation_affected:
+      -
+        value: true
+    path:
+      -
+        alias: ''
+        langcode: de
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 1
+    content_translation_created:
+      -
+        value: 1731054199
+    field_key:
+      -
+        value: Friday

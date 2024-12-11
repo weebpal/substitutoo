@@ -1,0 +1,10 @@
+entity.sub_availability.edit_form:
+  route_name: entity.sub_availability.edit_form
+  group: sub_availability
+  title: 'Edit'
+
+entity.sub_availability.delete_form:
+  route_name: entity.sub_availability.delete_form
+  group: sub_availability
+  title: 'Delete'
+  weight: 10

@@ -1,0 +1,25 @@
+uuid: d9b46e80-93c4-4797-a8c4-1ab29495dd1a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:29f7874b-5454-48c0-9f8f-f7c2d95ea8f3'
+  module:
+    - block_content
+  theme:
+    - substitutoo_theme
+id: substitutoo_theme_copyright
+theme: substitutoo_theme
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:29f7874b-5454-48c0-9f8f-f7c2d95ea8f3'
+settings:
+  id: 'block_content:29f7874b-5454-48c0-9f8f-f7c2d95ea8f3'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 64fded4a-b3fb-4d4d-8ac7-b5e0f5de1850
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_location.field_is_root_location
+  module:
+    - sub_location
+id: sub_location.sub_location.field_is_root_location
+field_name: field_is_root_location
+entity_type: sub_location
+bundle: sub_location
+label: 'Is Root Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

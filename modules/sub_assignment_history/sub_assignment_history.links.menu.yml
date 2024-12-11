@@ -1,0 +1,13 @@
+entity.sub_assignment_history.settings:
+  title: 'Assignment History'
+  description: 'Configure a Substitutoo Assignment History entity type.'
+  route_name:  entity.sub_assignment_history.settings
+  parent: substitutoo_core.structure
+  weight: 70
+
+entity.sub_assignment_history.collection:
+  title: 'Assignment Histories'
+  description: 'List of substitutoo assignment histories.'
+  route_name: entity.sub_assignment_history.collection
+  parent: substitutoo_core.content
+  weight: 70

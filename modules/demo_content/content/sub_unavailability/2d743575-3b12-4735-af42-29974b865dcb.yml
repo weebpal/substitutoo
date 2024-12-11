@@ -1,0 +1,60 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_unavailability
+  uuid: 2d743575-3b12-4735-af42-29974b865dcb
+  depends:
+    26ecbdaf-786d-432a-9d08-c074ef8ad7e7: taxonomy_term
+    682ddd28-c6d3-4add-bfe0-5f73b3a0a7f2: taxonomy_term
+    3d5fc35e-c1cc-409c-8446-543d8b41203c: user
+    ac01b426-6a04-4056-8999-6e1d8d19dc66: sub_shift
+    006464bf-1ddf-47d7-a911-8ae8d41db14a: sub_assignment
+default:
+  label:
+    -
+      value: 'Unavailability item for Johnatan on Wednesday, 2024-12-11, from 06:45 to 08:15'
+  status:
+    -
+      value: true
+  f_unavailable_type:
+    -
+      entity: 26ecbdaf-786d-432a-9d08-c074ef8ad7e7
+  f_reason:
+    -
+      value: 'Assigned to a Shift'
+      format: ''
+  f_confirmation_status:
+    -
+      entity: 682ddd28-c6d3-4add-bfe0-5f73b3a0a7f2
+  f_employee:
+    -
+      entity: 3d5fc35e-c1cc-409c-8446-543d8b41203c
+  f_datetime_start:
+    -
+      value: '2024-12-11T06:45:00'
+  f_datetime_end:
+    -
+      value: '2024-12-11T08:15:00'
+  f_timestamp_start:
+    -
+      value: 1733899500
+  f_timestamp_end:
+    -
+      value: 1733904900
+  f_duration:
+    -
+      value: 5400
+  uid:
+    -
+      target_id: 1
+  f_shift:
+    -
+      entity: ac01b426-6a04-4056-8999-6e1d8d19dc66
+  f_assignment:
+    -
+      entity: 006464bf-1ddf-47d7-a911-8ae8d41db14a
+  f_assignment_order:
+    -
+      value: 1
+  created:
+    -
+      value: 1733735295

@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 8210f595-fb66-4853-9cc3-4cf2839797da
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: Michele
+  pass:
+    -
+      value: $2y$10$SrutnQPLfCXa9i76dR.hg.gqKISvMsWvIiDwxS26X1G7LqMyK/qxq
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: Michele@gmail.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730094683
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: employee2@gmail.com
+  roles:
+    -
+      target_id: employee
+  field_address:
+    -
+      langcode: en
+      country_code: CH
+      administrative_area: ''
+      locality: Villars-epeney
+      dependent_locality: ''
+      postal_code: '1404'
+      sorting_code: ''
+      address_line1: 'Via Stauffacher 28'
+      address_line2: ''
+      address_line3: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_date_of_birth:
+    -
+      value: '1964-03-03'
+  field_email:
+    -
+      value: Michele@gmail.com
+  field_first_name:
+    -
+      value: Michele
+  field_last_name:
+    -
+      value: Jason
+  field_phone:
+    -
+      value: '024 660 50 23'

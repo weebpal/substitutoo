@@ -1,0 +1,18 @@
+uuid: d678b364-0e9d-457d-b82e-5288c7268ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.assignment_type
+id: taxonomy_term.assignment_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: assignment_type
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

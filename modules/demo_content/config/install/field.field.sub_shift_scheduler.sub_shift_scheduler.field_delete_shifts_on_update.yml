@@ -1,0 +1,22 @@
+uuid: 7ca488a3-b7ec-4a9f-9c2a-ac5abcf62434
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_delete_shifts_on_update
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_delete_shifts_on_update
+field_name: field_delete_shifts_on_update
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Delete Shifts on Update'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

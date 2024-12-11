@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_availability
+  uuid: 77e5fe84-f77a-459f-8ec9-c2a41c91af10
+  depends:
+    4880c9dd-7b14-4f4a-9857-41d0414ca625: user
+    473b4256-752a-4255-9f16-568184e792fd: sub_availability_scheduler
+default:
+  label:
+    -
+      value: 'Availability item for Nela on Friday, 2024-12-27, from 11:00 to 14:15'
+  status:
+    -
+      value: true
+  f_employee:
+    -
+      entity: 4880c9dd-7b14-4f4a-9857-41d0414ca625
+  f_date:
+    -
+      value: '2024-12-27'
+  f_time_start:
+    -
+      value: '11:00'
+  f_time_end:
+    -
+      value: '14:15'
+  f_datetime_start:
+    -
+      value: '2024-12-27T11:00:00'
+  f_datetime_end:
+    -
+      value: '2024-12-27T14:15:00'
+  f_timestamp_start:
+    -
+      value: 1735297200
+  f_timestamp_end:
+    -
+      value: 1735308900
+  f_duration:
+    -
+      value: 11700
+  f_availability_scheduler:
+    -
+      entity: 473b4256-752a-4255-9f16-568184e792fd
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733735092

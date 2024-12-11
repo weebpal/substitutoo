@@ -1,0 +1,11 @@
+uuid: 71f437b3-ccd8-43ab-b689-ad6628fd7204
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.qualification
+id: taxonomy_term.qualification
+target_entity_type_id: taxonomy_term
+target_bundle: qualification
+default_langcode: site_default
+language_alterable: false

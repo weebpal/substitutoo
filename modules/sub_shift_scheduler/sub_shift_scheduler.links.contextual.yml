@@ -1,0 +1,10 @@
+entity.sub_shift_scheduler.edit_form:
+  route_name: entity.sub_shift_scheduler.edit_form
+  group: sub_shift_scheduler
+  title: 'Edit'
+
+entity.sub_shift_scheduler.delete_form:
+  route_name: entity.sub_shift_scheduler.delete_form
+  group: sub_shift_scheduler
+  title: 'Delete'
+  weight: 10

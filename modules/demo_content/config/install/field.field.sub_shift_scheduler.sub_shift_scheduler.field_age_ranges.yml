@@ -1,0 +1,30 @@
+uuid: c9d84b97-753c-4355-af6d-84e8be9a200d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_age_ranges
+    - taxonomy.vocabulary.age_range
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_age_ranges
+field_name: field_age_ranges
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Age ranges'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      age_range: age_range
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b0e34e13-b9c0-461c-bace-b4256bdc4748
+  bundle: days_of_month
+  default_langcode: en
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: '22'
+  weight:
+    -
+      value: 22
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  field_key:
+    -
+      value: '22'

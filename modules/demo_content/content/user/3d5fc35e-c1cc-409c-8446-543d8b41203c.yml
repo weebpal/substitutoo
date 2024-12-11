@@ -1,0 +1,74 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 3d5fc35e-c1cc-409c-8446-543d8b41203c
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: Johnatan
+  pass:
+    -
+      value: $2y$10$lY.khorcMNLp1UoLrIi3fOtkB70xt2wYPgoZt.s3BdPwqZClLXRfK
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: Johnatan@gmail.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730424963
+  access:
+    -
+      value: 1731566701
+  login:
+    -
+      value: 1731566481
+  init:
+    -
+      value: Johnatan@gmail.com
+  roles:
+    -
+      target_id: employee
+  field_address:
+    -
+      langcode: en
+      country_code: CH
+      administrative_area: ''
+      locality: Feutersoey
+      dependent_locality: ''
+      postal_code: '3784'
+      sorting_code: ''
+      address_line1: 'Via Luzzas 6'
+      address_line2: ''
+      address_line3: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_date_of_birth:
+    -
+      value: '1974-06-08'
+  field_email:
+    -
+      value: Johnatan@gmail.com
+  field_first_name:
+    -
+      value: Johnatan
+  field_last_name:
+    -
+      value: Devlin
+  field_phone:
+    -
+      value: '031 485 59 53'

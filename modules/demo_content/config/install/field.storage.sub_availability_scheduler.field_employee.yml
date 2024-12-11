@@ -1,0 +1,20 @@
+uuid: 0940e475-9825-4069-915c-189ad0332677
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+    - user
+id: sub_availability_scheduler.field_employee
+field_name: field_employee
+entity_type: sub_availability_scheduler
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

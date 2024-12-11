@@ -1,0 +1,5 @@
+sub_assignment.add_form:
+  title: 'Add substitutoo assignment'
+  route_name: entity.sub_assignment.add_form
+  appears_on:
+    - entity.sub_assignment.collection

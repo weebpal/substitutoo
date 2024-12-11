@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.sub_notification.default.field_body
+    - sub_notification.sub_notification_type.default
+  module:
+    - text
+id: sub_notification.default.default
+targetEntityType: sub_notification
+bundle: default
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  uid: true

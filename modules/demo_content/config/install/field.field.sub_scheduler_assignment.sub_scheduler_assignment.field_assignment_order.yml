@@ -1,0 +1,24 @@
+uuid: f8d9407b-eff3-48e0-b3af-9b51d8a546ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_scheduler_assignment.field_assignment_order
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.sub_scheduler_assignment.field_assignment_order
+field_name: field_assignment_order
+entity_type: sub_scheduler_assignment
+bundle: sub_scheduler_assignment
+label: 'Assignment Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

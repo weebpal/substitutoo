@@ -1,0 +1,10 @@
+entity.sub_scheduler_assignment.edit_form:
+  route_name: entity.sub_scheduler_assignment.edit_form
+  group: sub_scheduler_assignment
+  title: 'Edit'
+
+entity.sub_scheduler_assignment.delete_form:
+  route_name: entity.sub_scheduler_assignment.delete_form
+  group: sub_scheduler_assignment
+  title: 'Delete'
+  weight: 10

@@ -1,0 +1,21 @@
+uuid: dcb9dd03-4e2c-4470-acd9-1f7cc3fafedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.assignment_type
+  module:
+    - text
+id: taxonomy_term.assignment_type.description
+field_name: description
+entity_type: taxonomy_term
+bundle: assignment_type
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

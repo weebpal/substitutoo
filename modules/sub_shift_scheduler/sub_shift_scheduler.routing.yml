@@ -1,0 +1,7 @@
+entity.sub_shift_scheduler.settings:
+  path: 'admin/substitutoo-structure/sub-shift-scheduler'
+  defaults:
+    _form: '\Drupal\sub_shift_scheduler\Form\SubstitutooShiftSchedulerSettingsForm'
+    _title: 'Substitutoo Shift Scheduler'
+  requirements:
+    _permission: 'administer sub_shift_scheduler'

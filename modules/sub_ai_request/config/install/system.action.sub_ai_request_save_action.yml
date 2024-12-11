@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_ai_request
+id: sub_ai_request_save_action
+label: 'Save substitutoo ai requests'
+type: sub_ai_request
+plugin: entity:save_action:sub_ai_request
+configuration: {  }

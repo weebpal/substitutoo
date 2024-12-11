@@ -1,0 +1,18 @@
+uuid: cfe1dcd0-3a6e-46fd-a392-75711b640cf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.calendar_type
+id: taxonomy_term.calendar_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: calendar_type
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

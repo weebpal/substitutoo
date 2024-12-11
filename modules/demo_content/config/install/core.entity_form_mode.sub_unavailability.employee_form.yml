@@ -1,0 +1,11 @@
+uuid: 34a5dd2e-e645-4a0e-8e8e-c1402a976dde
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_unavailability
+id: sub_unavailability.employee_form
+label: 'Employee Form'
+description: ''
+targetEntityType: sub_unavailability
+cache: true

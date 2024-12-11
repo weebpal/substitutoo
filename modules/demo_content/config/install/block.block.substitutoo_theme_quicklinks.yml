@@ -1,0 +1,25 @@
+uuid: 71f870b6-f8f0-4544-b075-9b60744fd88f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.q
+  module:
+    - system
+  theme:
+    - substitutoo_theme
+id: substitutoo_theme_quicklinks
+theme: substitutoo_theme
+region: footer_top
+weight: -8
+provider: null
+plugin: 'system_menu_block:q'
+settings:
+  id: 'system_menu_block:q'
+  label: 'Quick Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

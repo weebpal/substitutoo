@@ -1,0 +1,11 @@
+uuid: f83edea6-4897-4eee-9364-a8370891b253
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_assignment
+id: sub_assignment.manager_form
+label: 'Manager form'
+description: ''
+targetEntityType: sub_assignment
+cache: true

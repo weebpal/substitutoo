@@ -1,0 +1,5 @@
+sub_assignment_history.add_form:
+  title: 'Add substitutoo assignment history'
+  route_name: entity.sub_assignment_history.add_form
+  appears_on:
+    - entity.sub_assignment_history.collection

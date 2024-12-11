@@ -1,0 +1,30 @@
+uuid: b3cc70c1-be4b-4f63-ae47-2e7e1922d0e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_scheduler_assignment.field_employee
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.sub_scheduler_assignment.field_employee
+field_name: field_employee
+entity_type: sub_scheduler_assignment
+bundle: sub_scheduler_assignment
+label: Employee
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

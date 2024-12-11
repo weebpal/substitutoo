@@ -1,0 +1,9 @@
+uuid: 2a11a69d-91af-4c09-a35a-a9dd5af6c338
+langcode: en
+status: true
+dependencies: {  }
+name: 'Days of the Month'
+vid: days_of_month
+description: 'Days of the Month (from 1 to 28/29/30/31)'
+weight: 0
+new_revision: false

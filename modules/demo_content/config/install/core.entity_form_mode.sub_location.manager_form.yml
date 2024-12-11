@@ -1,0 +1,11 @@
+uuid: 3d269a5b-4a00-43db-8915-61ecae15e3f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.manager_form
+label: 'Manager form'
+description: ''
+targetEntityType: sub_location
+cache: true

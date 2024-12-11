@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift
+id: sub_shift_save_action
+label: 'Save substitutoo shifts'
+type: sub_shift
+plugin: entity:save_action:sub_shift
+configuration: {  }

@@ -1,0 +1,44 @@
+label: Vertragszuweisungen
+display:
+  default:
+    display_options:
+      title: Vertragszuweisungen
+      fields:
+        label:
+          label: 'Name der Vertragszuweisung'
+        field_employee:
+          label: Mitarbeiter
+        field_shift_scheduler:
+          label: Dienstleistungsvertrag
+        operations:
+          label: Operationen
+        status:
+          settings:
+            format_custom_false: Inaktiv
+            format_custom_true: Aktiv
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'
+      exposed_form:
+        options:
+          submit_button: Anwenden
+          reset_button_label: Zurücksetzen
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-scheduler-assignment/add">Planerzuweisung hinzufügen</a>'
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      filters:
+        label:
+          expose:
+            label: 'Name der Vertragszuweisung'
+        field_employee_target_id:
+          expose:
+            label: Mitarbeiter
+  page_1:
+    display_options:
+      menu:
+        title: Vertragszuweisungen

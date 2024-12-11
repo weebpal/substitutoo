@@ -1,0 +1,94 @@
+uuid: 3164ab38-cd66-46eb-ba73-88da50a03cb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_between_dates
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_calendar_type
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_days_of_the_month
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_days_of_the_week
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_delete_avail_on_update
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_employee
+    - field.field.sub_availability_scheduler.sub_availability_scheduler.field_time_frames
+  module:
+    - datetime_range
+    - sub_availability_scheduler
+    - text
+    - time_field
+id: sub_availability_scheduler.sub_availability_scheduler.default
+targetEntityType: sub_availability_scheduler
+bundle: sub_availability_scheduler
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_between_dates:
+    type: daterange_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+      from_to: both
+      separator: '-'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_calendar_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_days_of_the_month:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_days_of_the_week:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_employee:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_time_frames:
+    type: time_range_formatter
+    label: inline
+    settings:
+      time_format: 'h:i a'
+      timerange_format: 'start ~ end'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_delete_avail_on_update: true
+  status: true
+  uid: true

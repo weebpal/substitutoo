@@ -1,0 +1,7 @@
+entity.sub_availability_scheduler.settings:
+  path: 'admin/substitutoo-structure/sub-availability-scheduler'
+  defaults:
+    _form: '\Drupal\sub_availability_scheduler\Form\SubstitutooAvailabilitySchedulerSettingsForm'
+    _title: 'Substitutoo Availability Scheduler'
+  requirements:
+    _permission: 'administer sub_availability_scheduler'

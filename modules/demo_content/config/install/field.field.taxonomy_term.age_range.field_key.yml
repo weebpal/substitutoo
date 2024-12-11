@@ -1,0 +1,19 @@
+uuid: 018d9651-ae7c-485a-8357-1bb53599c471
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_key
+    - taxonomy.vocabulary.age_range
+id: taxonomy_term.age_range.field_key
+field_name: field_key
+entity_type: taxonomy_term
+bundle: age_range
+label: Key
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,150 @@
+uuid: a1dda82d-8898-41ef-9948-a539f0530982
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_age_ranges
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_between_dates
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_calendar_type
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_certifications
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_days_of_the_month
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_days_of_the_week
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_delete_shifts_on_update
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_experience_levels
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_genders
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_location
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_qualifications
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_required_number_employees
+    - field.field.sub_shift_scheduler.sub_shift_scheduler.field_time_frames
+  module:
+    - datetime_range
+    - sub_shift_scheduler
+    - text
+    - time_field
+id: sub_shift_scheduler.sub_shift_scheduler.default
+targetEntityType: sub_shift_scheduler
+bundle: sub_shift_scheduler
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_age_ranges:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_between_dates:
+    type: daterange_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: olivero_medium
+      from_to: both
+      separator: '-'
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_calendar_type:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_certifications:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_days_of_the_month:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_days_of_the_week:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_experience_levels:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_genders:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_location:
+    type: entity_reference_entity_view
+    label: inline
+    settings:
+      view_mode: nested_location
+      link: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_qualifications:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_required_number_employees:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_time_frames:
+    type: time_range_formatter
+    label: inline
+    settings:
+      time_format: 'h:i a'
+      timerange_format: 'start ~ end'
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_delete_shifts_on_update: true
+  status: true
+  uid: true

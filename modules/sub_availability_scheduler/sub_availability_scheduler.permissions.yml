@@ -1,0 +1,3 @@
+administer sub_availability_scheduler:
+  title: 'Administer substitutoo availability schedulers'
+  restrict access: true

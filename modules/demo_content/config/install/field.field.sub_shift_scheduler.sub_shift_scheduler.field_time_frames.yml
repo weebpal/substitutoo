@@ -1,0 +1,21 @@
+uuid: 719c357e-eae3-4dda-93e0-c41b8ee07490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_time_frames
+  module:
+    - sub_shift_scheduler
+    - time_field
+id: sub_shift_scheduler.sub_shift_scheduler.field_time_frames
+field_name: field_time_frames
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Time Frame'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time_range

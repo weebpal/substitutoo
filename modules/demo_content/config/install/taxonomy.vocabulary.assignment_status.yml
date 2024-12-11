@@ -1,0 +1,9 @@
+uuid: 50ec0a22-9e2c-4e5e-adc8-073190e35e6e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Assignment Status'
+vid: assignment_status
+description: 'Pending, Assigned, Completed, Incomplete, Canceled'
+weight: 0
+new_revision: false

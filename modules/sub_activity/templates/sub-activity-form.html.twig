@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Template for the sub_activity add/edit form.
+ *
+ * Available variables:
+ * - form: The form.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="layout-we-activity-form clearfix">
+  <div class="layout-region layout-region-we-activity-main">
+    {{ form|without('advanced', 'actions') }}
+  </div>
+  <div class="layout-region layout-region-we-activity-secondary">
+    {{ form.advanced }}
+  </div>
+  <div class="layout-region layout-region-we-activity-footer">
+    {{ form.actions }}
+  </div>
+</div>

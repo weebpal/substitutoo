@@ -1,0 +1,117 @@
+@media(max-width: 991px) {
+  .section {
+    &-header {
+      > .container {
+        display: flex;
+        width: 100%;
+
+        .region-header {
+          flex: 1;
+          gap: 0;
+        }
+      }
+    }
+
+    &-mobile-menu {
+      display: block;
+
+      .toggle-mobile-menu {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+
+        span {
+          position: absolute;
+          width: 32px;
+          height: 2px;
+          background: #fff;
+          border-radius: 10px;
+          transition: 0.5s;
+
+          &:nth-child(1) {
+            transform: translateY(-9px);
+            width: 25px;
+            left: 15px;
+          }
+
+          &:nth-child(2) {
+            transform: translateY(9px);
+            width: 15px;
+            left: 25px;
+          }
+        }
+      }
+
+      .region-mobile-menu {
+        position: fixed;
+        background-color: $primary-color;
+        color: #fff;
+        width: 320px;
+        height: 100vh;
+        right: -320px;
+        z-index: 10;
+        transition: all 0.35s;
+
+        h2 {
+          display: none;
+        }
+
+        .btn-close {
+          display: none;
+        }
+
+        .navbar-nav {
+          display: block;
+          padding: 20px 0;
+
+          .nav-item {
+            padding: 8px 0;
+
+            a {
+              padding: 0 20px;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &.active {
+        .toggle-mobile-menu span {
+          &:nth-child(1) {
+            width: 28px;
+            transform: translateY(0) rotate(45deg);
+            transition-delay: 0.125s;
+          }
+
+          &:nth-child(2) {
+            width: 28px;
+            transform: translateY(0) rotate(315deg);
+            transition-delay: 0.25s;
+            left: 15px;
+          }
+
+          &:nth-child(3) {
+            transform: translateX(60px);
+          }
+        }
+
+        .region-mobile-menu {
+          right: 0;
+        }
+      }
+    }
+  }
+
+  .region {
+    &-header {
+      .navigation.menu--main {
+        display: none;
+      }
+    }
+  }
+}

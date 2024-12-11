@@ -1,0 +1,38 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    7ccde883-7a10-4846-a495-fbd7e2212e8c: sub_location
+    431a3698-36aa-4279-863b-8eea203819ce: sub_location
+default:
+  label:
+    -
+      value: 'Raum Rot'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730859933
+  field_assignment_count:
+    -
+      value: 2
+  field_deep:
+    -
+      value: 3
+  field_is_root_location:
+    -
+      value: false
+  field_location_trail:
+    -
+      entity: 7ccde883-7a10-4846-a495-fbd7e2212e8c
+    -
+      entity: 431a3698-36aa-4279-863b-8eea203819ce
+  field_order_value:
+    -
+      value: 29002003

@@ -1,0 +1,25 @@
+uuid: 3ec60b4a-36d2-486e-85ac-5f6bde678adf
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - substitutoo_theme
+id: substitutoo_theme_footer
+theme: substitutoo_theme
+region: footer_top
+weight: -9
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Information links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

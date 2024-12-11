@@ -1,0 +1,108 @@
+@mixin font-regular($font-size, $line-height, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+@mixin font-medium($font-size, $line-height, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-weight: 500;
+}
+
+@mixin font-semiBold($font-size, $line-height, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-weight: 600;
+}
+
+@mixin font-bold($font-size, $line-height, $color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  font-weight: 700;
+}
+
+@mixin font($font-size, $line-height,$letter-spacing) {
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin heading($heading: null) {
+  font-weight: 700;
+  @if ($heading == heading-1) {
+    @include font(48px, 60px, -1px);
+    @media(max-width: 767px) {
+      @include font(32px, 40px, -0.6px);
+    }
+  } @else if ($heading == heading-2) {
+    @include font(39px, 48px, -0.8px);
+    @media(max-width: 767px) {
+      @include font(28px, 35px, -0.5px);
+    }
+  } @else if ($heading == heading-3) {
+    @include font(32px, 40px, -0.6px);
+    @media(max-width: 767px) {
+      @include font(24px, 31px, -0.35px);
+    }
+  } @else if ($heading == heading-4) {
+    @include font(25px, 31px, -0.4px);
+    @media(max-width: 767px) {
+      @include font(20px, 25px, -0.25px);
+    }
+  } @else if ($heading == heading-5) {
+    @include font(20px, 28px, -0.2px);
+    @media(max-width: 767px) {
+      @include font(16px, 24px, null);
+    }
+  } @else if ($heading == heading-6) {
+    @include font(16px, 28px, null);
+    @media(max-width: 767px) {
+      @include font(16px, 26px, null);
+    }
+  }
+}
+
+@mixin input() {
+  display: block;
+  padding: 9px 15px;
+  border-radius: 4px;
+  border: 1px solid #E6E9EB;
+  background: #fff;
+  font-size: inherit;
+  line-height: 28px;
+  color: $primary-color;
+  @media(max-width: 575px) {
+    line-height: 26px;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+@mixin button($type: null) {
+  font-weight: 600;
+  border-radius: 4px;
+
+  @if $type == background {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 14px 46px;
+    color: $primary-color;
+    border: 2px solid $color-theme;
+    background: $color-theme;
+    //&:hover, &:focus {
+    //  background: #fff;
+    //  color: rgba(91, 194, 169, 1);
+    //}
+  }
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 20px;
+  }
+}

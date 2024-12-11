@@ -1,0 +1,103 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 955c3073-d4e5-4f67-bb84-06b73d47a482
+  default_langcode: en
+  depends:
+    acf04168-4e0d-4248-baf5-8dba00ca0d0e: taxonomy_term
+    7df85dc9-5f0e-40ad-bda2-41f2c780abbb: taxonomy_term
+    83e87ec9-6e29-432b-ade1-ced07606127f: taxonomy_term
+    0ebc31f5-74dc-4371-848c-83e94e350a67: taxonomy_term
+    6050e6fb-f10f-4850-9029-e0b7a709737e: taxonomy_term
+    49a8d513-704e-4b05-bdf5-aeb4c9dbfd30: taxonomy_term
+    379cdbde-f3dd-4c98-9682-ee23e4560e3e: taxonomy_term
+    a997abf1-3929-40d5-94b3-337a896e7288: taxonomy_term
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: Manuela
+  pass:
+    -
+      value: $2y$10$dDMw4qmpbHtTcsLEK7Ig0.H7pJ86IhDdW4Qd82pCUeZLSY3H5EwHu
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: Manuela@gmail.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730430435
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: Manuela@gmail.com
+  roles:
+    -
+      target_id: employee
+  field_address:
+    -
+      langcode: en
+      country_code: CH
+      administrative_area: ''
+      locality: Werdenberg
+      dependent_locality: ''
+      postal_code: '9470'
+      sorting_code: ''
+      address_line1: 'Langwiesstrasse 145'
+      address_line2: ''
+      address_line3: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_certifications:
+    -
+      entity: acf04168-4e0d-4248-baf5-8dba00ca0d0e
+    -
+      entity: 7df85dc9-5f0e-40ad-bda2-41f2c780abbb
+    -
+      entity: 83e87ec9-6e29-432b-ade1-ced07606127f
+  field_date_of_birth:
+    -
+      value: '2004-02-02'
+  field_email:
+    -
+      value: Manuela@gmail.com
+  field_experience_level:
+    -
+      entity: 0ebc31f5-74dc-4371-848c-83e94e350a67
+  field_first_name:
+    -
+      value: Manuela
+  field_gender:
+    -
+      entity: 6050e6fb-f10f-4850-9029-e0b7a709737e
+  field_last_name:
+    -
+      value: Jason
+  field_phone:
+    -
+      value: '071 729 69 78'
+  field_qualifications:
+    -
+      entity: 49a8d513-704e-4b05-bdf5-aeb4c9dbfd30
+    -
+      entity: 379cdbde-f3dd-4c98-9682-ee23e4560e3e
+    -
+      entity: a997abf1-3929-40d5-94b3-337a896e7288

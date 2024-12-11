@@ -1,0 +1,23 @@
+uuid: e26fc246-5109-4f13-b5b0-806163b6cb44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_to
+    - taxonomy.vocabulary.age_range
+id: taxonomy_term.age_range.field_to
+field_name: field_to
+entity_type: taxonomy_term
+bundle: age_range
+label: to
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

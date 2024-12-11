@@ -1,0 +1,19 @@
+uuid: b673bfc0-9d58-477a-8a68-3a8c6c9e8cd8
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.field_location_trail
+field_name: field_location_trail
+entity_type: sub_location
+type: entity_reference
+settings:
+  target_type: sub_location
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

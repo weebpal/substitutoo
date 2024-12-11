@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ *
+ * Default template for activity item.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - sub_activity: The rendered sub_activity fields.
+ *   Use 'sub_activity' to print them all, or print a subset such as
+ *   'sub_activity.name'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ sub_activity|without('name') }}
+ *   @endcode
+ * - sub_activity_entity: The sub_activity entity.
+ * - sub_activity_url: The sub_activity URL.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes }}>
+  {{ sub_activity }}
+</article>

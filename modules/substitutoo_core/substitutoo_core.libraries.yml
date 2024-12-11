@@ -1,0 +1,46 @@
+manage_dashboard:
+  version: 1.x
+  css:
+    theme:
+      css/monthpicker.css: { }
+  js:
+    js/manage-dashboard.js: {}
+    js/monthpicker.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+    - jquery_ui_datepicker/datepicker
+
+location_toggle:
+  version: 1.x
+  js:
+    js/location-toggle.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+employee_toggle:
+  version: 1.x
+  js:
+    js/employee-toggle.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+toggle_assignments:
+  version: 1.x
+  js:
+    js/toggle-assignments.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/once
+
+    

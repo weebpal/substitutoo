@@ -1,0 +1,85 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides a substitutoo shift scheduler entity type.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function sub_shift_scheduler_theme(): array {
+  return [
+    'sub_shift_scheduler' => ['render element' => 'elements'],
+  ];
+}
+
+/**
+ * Prepares variables for substitutoo shift scheduler templates.
+ *
+ * Default template: sub-shift-scheduler.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the substitutoo shift scheduler information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_sub_shift_scheduler(array &$variables): void {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function sub_shift_scheduler_user_cancel($edit, UserInterface $account, $method): void {
+  switch ($method) {
+    case 'user_cancel_block_unpublish':
+      // Unpublish substitutoo shift schedulers.
+      $storage = \Drupal::entityTypeManager()->getStorage('sub_shift_scheduler');
+      $sub_shift_scheduler_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->condition('status', 1)
+        ->accessCheck(FALSE)
+        ->execute();
+      foreach ($storage->loadMultiple($sub_shift_scheduler_ids) as $sub_shift_scheduler) {
+        $sub_shift_scheduler->set('status', FALSE)->save();
+      }
+      break;
+
+    case 'user_cancel_reassign':
+      // Anonymize substitutoo shift schedulers.
+      $storage = \Drupal::entityTypeManager()->getStorage('sub_shift_scheduler');
+      $sub_shift_scheduler_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->accessCheck(FALSE)
+        ->execute();
+      foreach ($storage->loadMultiple($sub_shift_scheduler_ids) as $sub_shift_scheduler) {
+        $sub_shift_scheduler->setOwnerId(0)->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function sub_shift_scheduler_user_predelete(UserInterface $account): void {
+  // Delete substitutoo shift schedulers that belong to this account.
+  $storage = \Drupal::entityTypeManager()->getStorage('sub_shift_scheduler');
+  $sub_shift_scheduler_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->accessCheck(FALSE)
+    ->execute();
+  $storage->delete(
+    $storage->loadMultiple($sub_shift_scheduler_ids)
+  );
+}

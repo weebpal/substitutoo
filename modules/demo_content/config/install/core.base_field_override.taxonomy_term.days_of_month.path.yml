@@ -1,0 +1,20 @@
+uuid: 06c65d8a-94de-4fde-a530-3cba8b577bcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.days_of_month
+  module:
+    - path
+id: taxonomy_term.days_of_month.path
+field_name: path
+entity_type: taxonomy_term
+bundle: days_of_month
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

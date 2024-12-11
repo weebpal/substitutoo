@@ -1,0 +1,27 @@
+uuid: f47f12e7-d36b-4c45-9580-4c898705b26b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_scheduler_assignment.field_shift_scheduler
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.sub_scheduler_assignment.field_shift_scheduler
+field_name: field_shift_scheduler
+entity_type: sub_scheduler_assignment
+bundle: sub_scheduler_assignment
+label: 'Shift Scheduler'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:sub_shift_scheduler'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

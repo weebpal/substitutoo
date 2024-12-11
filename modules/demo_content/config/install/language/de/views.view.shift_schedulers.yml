@@ -1,0 +1,101 @@
+label: Schichtplaner
+display:
+  default:
+    display_options:
+      title: Schichtplaner
+      fields:
+        label:
+          label: 'Name des Schichtplaners'
+        field_location:
+          label: Standort
+        field_between_dates:
+          label: 'Zwischen den Daten'
+        field_calendar_type:
+          label: Kalendertyp
+        field_key:
+          label: Schlüssel
+        nothing:
+          label: Tage
+        field_time_frames:
+          label: Zeitrahmen
+        field_required_number_employees:
+          label: 'Erforderliche Anzahl Mitarbeiter'
+        operations:
+          label: Betrieb
+      exposed_form:
+        options:
+          submit_button: Bewerben
+      filters:
+        label:
+          expose:
+            label: 'Name des Schichtplaners'
+        label_1:
+          expose:
+            label: Standortname
+        field_calendar_type_target_id:
+          expose:
+            label: Kalendertyp
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-shift-scheduler/add">Schichtplaner hinzufügen</a>'
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'
+  block_1:
+    display_options:
+      fields:
+        label:
+          label: 'Name des Schichtplaners'
+        field_location:
+          label: Standort
+        field_between_dates:
+          label: 'Zwischen Terminen'
+        field_calendar_type:
+          label: Kalendertyp
+        nothing:
+          label: Tage
+        field_time_frames:
+          label: Zeitrahmen
+        field_required_number_employees:
+          label: 'Erforderliche Anzahl Mitarbeiter'
+        operations:
+          label: Betrieb
+      empty:
+        area_text_custom:
+          content: 'Keine Schichtplaner'
+  page_2:
+    display_title: 'Meine Planer'
+    display_options:
+      title: 'Meine Planer'
+      fields:
+        label:
+          label: 'Name des Schichtplaners'
+        field_location:
+          label: Standort
+        field_between_dates:
+          label: 'Zwischen den Daten'
+        field_calendar_type:
+          label: Kalendertyp
+        nothing:
+          label: Tage
+        field_time_frames:
+          label: Zeitraum
+        field_required_number_employees:
+          label: 'Erforderliche Anzahl Mitarbeiter'
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      filters:
+        label:
+          expose:
+            label: 'Name des Schichtplaners'
+        label_1:
+          expose:
+            label: Standortname
+        field_calendar_type_target_id:
+          expose:
+            label: Kalendertyp
+      menu:
+        title: 'Meine Planer'

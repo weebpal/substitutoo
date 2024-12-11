@@ -1,0 +1,22 @@
+entity.sub_shift.settings:
+  title: 'Settings'
+  route_name: entity.sub_shift.settings
+  base_route: entity.sub_shift.settings
+entity.sub_shift.view:
+  title: 'View'
+  route_name: entity.sub_shift.canonical
+  base_route: entity.sub_shift.canonical
+entity.sub_shift.edit_form:
+  title: 'Edit'
+  route_name: entity.sub_shift.edit_form
+  base_route: entity.sub_shift.canonical
+entity.sub_shift.delete_form:
+  title: 'Delete'
+  route_name: entity.sub_shift.delete_form
+  base_route: entity.sub_shift.canonical
+  weight: 10
+entity.sub_shift.collection:
+  title: 'Substitutoo Shifts'
+  route_name: entity.sub_shift.collection
+  base_route: system.admin_content
+  weight: 10

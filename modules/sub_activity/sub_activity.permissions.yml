@@ -1,0 +1,4 @@
+administer sub_activity_type:
+  title: 'Administer sub_activity types'
+  description: 'Maintain the types of activity types available and the fields that are associated with those types.'
+  restrict access: true

@@ -1,0 +1,13 @@
+entity.sub_unavailability.settings:
+  title: 'Unavailability'
+  description: 'Configure a Substitutoo Unavailability entity type.'
+  route_name:  entity.sub_unavailability.settings
+  parent: substitutoo_core.structure
+  weight: 50
+
+entity.sub_unavailability.collection:
+  title: 'Unavailabilities'
+  description: 'List of substitutoo unavailabilities.'
+  route_name: entity.sub_unavailability.collection
+  parent: substitutoo_core.content
+  weight: 50

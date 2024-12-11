@@ -1,0 +1,4 @@
+label: 'Schichten beim Update löschen'
+settings:
+  on_label: Ja
+  off_label: NEIN

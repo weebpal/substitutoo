@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_assignment
+id: sub_assignment_save_action
+label: 'Save substitutoo assignments'
+type: sub_assignment
+plugin: entity:save_action:sub_assignment
+configuration: {  }

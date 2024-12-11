@@ -1,0 +1,7 @@
+entity.sub_scheduler_assignment.settings:
+  path: 'admin/structure/sub-scheduler-assignment'
+  defaults:
+    _form: '\Drupal\sub_scheduler_assignment\Form\SubstitutooSchedulerAssignmentSettingsForm'
+    _title: 'Substitutoo Scheduler Assignment'
+  requirements:
+    _permission: 'administer sub_scheduler_assignment'

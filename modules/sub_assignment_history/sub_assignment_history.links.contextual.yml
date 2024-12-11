@@ -1,0 +1,10 @@
+entity.sub_assignment_history.edit_form:
+  route_name: entity.sub_assignment_history.edit_form
+  group: sub_assignment_history
+  title: 'Edit'
+
+entity.sub_assignment_history.delete_form:
+  route_name: entity.sub_assignment_history.delete_form
+  group: sub_assignment_history
+  title: 'Delete'
+  weight: 10

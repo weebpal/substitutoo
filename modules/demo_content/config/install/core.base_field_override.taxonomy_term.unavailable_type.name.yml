@@ -1,0 +1,18 @@
+uuid: f4bd39ee-75e5-4585-aba3-496ee9c12d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.unavailable_type
+id: taxonomy_term.unavailable_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: unavailable_type
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

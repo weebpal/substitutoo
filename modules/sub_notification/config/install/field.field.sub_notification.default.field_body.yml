@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_notification.field_body
+    - filter.format.basic_html
+    - sub_notification.sub_notification_type.default
+  module:
+    - text
+id: sub_notification.default.field_body
+field_name: field_body
+entity_type: sub_notification
+bundle: default
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary

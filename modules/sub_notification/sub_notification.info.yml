@@ -1,0 +1,7 @@
+name: Notification
+type: module
+description: 'Defines the SubNotification entity and associated features.'
+package: Custom Entity Modules
+core_version_requirement: ^10
+dependencies:
+  - entity:entity

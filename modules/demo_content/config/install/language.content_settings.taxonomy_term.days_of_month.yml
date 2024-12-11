@@ -1,0 +1,18 @@
+uuid: 3071fffb-ed75-4d4f-9940-95ecbe6563c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.days_of_month
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.days_of_month
+target_entity_type_id: taxonomy_term
+target_bundle: days_of_month
+default_langcode: site_default
+language_alterable: true

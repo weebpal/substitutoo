@@ -1,0 +1,18 @@
+uuid: a8dd8a0d-6d59-4599-8945-50e22f2d3653
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.days_of_week
+id: taxonomy_term.days_of_week.name
+field_name: name
+entity_type: taxonomy_term
+bundle: days_of_week
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

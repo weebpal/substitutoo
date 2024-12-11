@@ -1,0 +1,114 @@
+substitutoo_core.content:
+  path: '/admin/substitutoo'
+  defaults: 
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Substitutoo'
+  requirements:
+    _permission: 'administer site configuration'
+
+substitutoo_core.structure:
+  path: '/admin/substitutoo-structure'
+  defaults: 
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Substitutoo Structure'
+  requirements:
+    _permission: 'administer site configuration'
+
+substitutoo_core.dashboard_manage:
+  path: '/substitutoo/dashboard'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\ManageDashBoard'
+    # _title: 'Dashboard'
+    _title_callback: '\Drupal\substitutoo_core\Controller\SubstitutooController::titleDashboard'
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager+employee'
+
+substitutoo_core.run:
+  path: '/substitutoo/run'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\RunForm'
+    _title: 'Run Form'
+  requirements:
+    _permission: 'administer site configuration'
+    # _role: 'administrator+reception+manager'
+
+substitutoo_core.date:
+  path: '/substitutoo/day/date'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\DateForm'
+    _title: ''
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager'
+
+substitutoo_core.assign_employee:
+  path: '/substitutoo/assign-employee'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\AssignEmployeeForm'
+    _title: ''
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager'
+
+substitutoo_core.form_mode:
+  path: '/substitutoo/{entity_name}/{type}/add'
+  defaults:
+    _controller: '\Drupal\substitutoo_core\Controller\SubstitutooController::managerFormMode'
+    _title_callback: '\Drupal\substitutoo_core\Controller\SubstitutooController::titleFormMode'
+  requirements:
+    _role: 'administrator+manager+employee'
+
+substitutoo_core.dashboard_employee:
+  path: '/substitutoo/dashboard/{user}'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\EmployeeDashBoardForm'
+    _title_callback: '\Drupal\substitutoo_core\Controller\SubstitutooController::titleDashboard'
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager+employee'
+
+substitutoo_core.manage_employee:
+  path: '/substitutoo/manage-employee'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\ManageEmployeeForm'
+    _title: 'Manage Employee'
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager+employee'
+
+substitutoo_core.form_mode_edit:
+  path: '/substitutoo/{entity_name}/{type}/{entity_id}/edit'
+  defaults:
+    _controller: '\Drupal\substitutoo_core\Controller\SubstitutooController::managerFormModeEdit'
+    _title_callback: '\Drupal\substitutoo_core\Controller\SubstitutooController::titleFormModeEdit'
+    # _title: ''
+  requirements:
+    _role: 'administrator+manager'
+
+substitutoo_core.bulk_employee:
+  path: '/substitutoo/bulk-employee'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\BulkEmployeeForm'
+    _title: ''
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager'
+
+substitutoo_core.test_controller:
+  path: '/test'
+  defaults:
+    _controller: '\Drupal\substitutoo_core\Controller\SubstitutooController::testController'
+    _title: 'Dashboard'
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager+employee'
+
+substitutoo_core.bulk_employee_service_contract:
+  path: '/substitutoo/bulk-employee-service-contract'
+  defaults:
+    _form: '\Drupal\substitutoo_core\Form\BulkEmployeeServiceContractForm'
+    _title: ''
+  requirements:
+    # _permission: 'administer site configuration'
+    _role: 'administrator+manager'

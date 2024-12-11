@@ -1,0 +1,22 @@
+uuid: d603bee8-de21-4919-b133-5e545ba8a3c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.days_of_week
+id: taxonomy_term.days_of_week.status
+field_name: status
+entity_type: taxonomy_term
+bundle: days_of_week
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

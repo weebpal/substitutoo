@@ -1,0 +1,30 @@
+uuid: 786a9e26-d2bd-48f3-b367-10df010b4547
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_qualifications
+    - taxonomy.vocabulary.qualification
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_qualifications
+field_name: field_qualifications
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: Qualifications
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      qualification: qualification
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,85 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides a substitutoo unavailability entity type.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function sub_unavailability_theme(): array {
+  return [
+    'sub_unavailability' => ['render element' => 'elements'],
+  ];
+}
+
+/**
+ * Prepares variables for substitutoo unavailability templates.
+ *
+ * Default template: sub-unavailability.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the substitutoo unavailability information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_sub_unavailability(array &$variables): void {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function sub_unavailability_user_cancel($edit, UserInterface $account, $method): void {
+  switch ($method) {
+    case 'user_cancel_block_unpublish':
+      // Unpublish substitutoo unavailabilities.
+      $storage = \Drupal::entityTypeManager()->getStorage('sub_unavailability');
+      $sub_unavailability_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->condition('status', 1)
+        ->accessCheck(FALSE)
+        ->execute();
+      foreach ($storage->loadMultiple($sub_unavailability_ids) as $sub_unavailability) {
+        $sub_unavailability->set('status', FALSE)->save();
+      }
+      break;
+
+    case 'user_cancel_reassign':
+      // Anonymize substitutoo unavailabilities.
+      $storage = \Drupal::entityTypeManager()->getStorage('sub_unavailability');
+      $sub_unavailability_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->accessCheck(FALSE)
+        ->execute();
+      foreach ($storage->loadMultiple($sub_unavailability_ids) as $sub_unavailability) {
+        $sub_unavailability->setOwnerId(0)->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function sub_unavailability_user_predelete(UserInterface $account): void {
+  // Delete substitutoo unavailabilities that belong to this account.
+  $storage = \Drupal::entityTypeManager()->getStorage('sub_unavailability');
+  $sub_unavailability_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->accessCheck(FALSE)
+    ->execute();
+  $storage->delete(
+    $storage->loadMultiple($sub_unavailability_ids)
+  );
+}

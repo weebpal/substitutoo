@@ -1,0 +1,5 @@
+name: 'Substitutoo Shift Scheduler'
+type: module
+description: 'Substitutoo module description'
+package: 'Substitutoo'
+core_version_requirement: ^10

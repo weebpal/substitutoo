@@ -1,0 +1,20 @@
+uuid: ef6963d9-92da-464a-acbe-6ad7b539b160
+langcode: en
+status: true
+dependencies:
+  theme:
+    - we_core
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: we_core_page_title
+theme: we_core
+region: content_above
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,42 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 431a3698-36aa-4279-863b-8eea203819ce
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    7ccde883-7a10-4846-a495-fbd7e2212e8c: sub_location
+    797383ed-b512-4685-9f02-e1fa9001a4ae: sub_location
+    77f81784-a112-4cda-a50d-c9540ba35047: sub_location
+    1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b: sub_location
+    e918c042-531d-4955-9f71-da25ff28703e: sub_location
+default:
+  label:
+    -
+      value: 'Trakt C'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730859446
+  field_deep:
+    -
+      value: 2
+  field_location_trail:
+    -
+      entity: 7ccde883-7a10-4846-a495-fbd7e2212e8c
+  field_nested_locations:
+    -
+      entity: 797383ed-b512-4685-9f02-e1fa9001a4ae
+    -
+      entity: 77f81784-a112-4cda-a50d-c9540ba35047
+    -
+      entity: 1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b
+    -
+      entity: e918c042-531d-4955-9f71-da25ff28703e
+  field_order_value:
+    -
+      value: 29002000

@@ -1,0 +1,86 @@
+uuid: 9c432ac6-7a8b-4f8a-890d-965726503133
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.sub_location.manager_form
+    - core.entity_form_mode.sub_location.nested_location
+    - field.field.sub_location.sub_location.field_address
+    - field.field.sub_location.sub_location.field_assignment_count
+    - field.field.sub_location.sub_location.field_deep
+    - field.field.sub_location.sub_location.field_is_root_location
+    - field.field.sub_location.sub_location.field_location_trail
+    - field.field.sub_location.sub_location.field_nested_locations
+    - field.field.sub_location.sub_location.field_order_value
+  module:
+    - address
+    - inline_entity_form
+    - sub_location
+    - text
+id: sub_location.sub_location.manager_form
+targetEntityType: sub_location
+bundle: sub_location
+mode: manager_form
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_address:
+    type: address_default
+    weight: 4
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  field_assignment_count:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_nested_locations:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: nested_location
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_deep: true
+  field_is_root_location: true
+  field_location_trail: true
+  field_order_value: true
+  uid: true

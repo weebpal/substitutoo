@@ -1,0 +1,13 @@
+{
+  "entrypoints": {
+    "css/style": {
+      "js": [
+        "/themes/custom/we_core/dist/runtime.js",
+        "/themes/custom/we_core/dist/css/style.js"
+      ],
+      "css": [
+        "/themes/custom/we_core/dist/css/style.css"
+      ]
+    }
+  }
+}

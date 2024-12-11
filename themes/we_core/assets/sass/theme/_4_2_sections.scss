@@ -1,0 +1,23 @@
+.section {
+  &-header {
+    background-color: $primary-color;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &-mobile-menu {
+    display: none;
+  }
+
+  &-main {
+    margin: 64px 0;
+    min-height: 50vh;
+  }
+
+  &-footer {
+    padding: 80px 0;
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+

@@ -1,0 +1,13 @@
+entity.sub_shift_scheduler.settings:
+  title: 'Service Contract'
+  description: 'Configure a Substitutoo Service Contract entity type.'
+  route_name:  entity.sub_shift_scheduler.settings
+  parent: substitutoo_core.structure
+  weight: 10
+
+entity.sub_shift_scheduler.collection:
+  title: 'Service Contracts'
+  description: 'List of substitutoo Service Contract.'
+  route_name: entity.sub_shift_scheduler.collection
+  parent: substitutoo_core.content
+  weight: 10

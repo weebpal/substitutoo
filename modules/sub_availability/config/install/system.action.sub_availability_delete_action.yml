@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability
+id: sub_availability_delete_action
+label: 'Delete substitutoo availabilities'
+type: sub_availability
+plugin: entity:delete_action:sub_availability
+configuration: {  }

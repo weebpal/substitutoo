@@ -1,0 +1,13 @@
+substitutoo_core.content:
+  title: 'Substitutoo'
+  route_name: 'substitutoo_core.content'
+  parent: 'system.admin'
+  description: 'Manage substitutoo'
+  weight: -9
+
+substitutoo_core.structure:
+  title: 'Substitutoo Structure'
+  route_name: 'substitutoo_core.structure'
+  parent: 'system.admin'
+  description: 'Manage substitutoo structure'
+  weight: -8

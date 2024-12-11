@@ -1,0 +1,22 @@
+uuid: f1c04f7e-3cdc-42d4-8d13-d33d5dfe6662
+langcode: en
+status: true
+dependencies:
+  theme:
+    - substitutoo_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: substitutoo_theme_primary_local_tasks
+theme: substitutoo_theme
+region: content_above
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

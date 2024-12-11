@@ -1,0 +1,113 @@
+uuid: 1593322d-8179-4224-b58c-fa474cb73c4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.sub_unavailability.employee_form
+  module:
+    - datetime
+    - sub_unavailability
+    - text
+id: sub_unavailability.sub_unavailability.employee_form
+targetEntityType: sub_unavailability
+bundle: sub_unavailability
+mode: employee_form
+content:
+  confirmation_status:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  f_assignment_order:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  f_datetime_end:
+    type: datetime_datelist
+    weight: 3
+    region: content
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+  f_datetime_start:
+    type: datetime_datelist
+    weight: 2
+    region: content
+    settings:
+      increment: 15
+      date_order: YMD
+      time_type: '24'
+    third_party_settings: {  }
+  f_reason:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  f_scheduler_assignment:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  f_unavailable_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  reason:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  type:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unavailable_type:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: 'Select an unavailability type...'
+    third_party_settings: {  }
+hidden:
+  created: true
+  f_assignment: true
+  f_confirmation_status: true
+  f_duration: true
+  f_employee: true
+  f_shift: true
+  f_timestamp_end: true
+  f_timestamp_start: true
+  status: true
+  uid: true

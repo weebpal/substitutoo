@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------
+CSS
+-------------------------------------------------------------------*/
+//// Configuration
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+//// Layout & components
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/navbar";
+
+// Theme
+@import "theme/config/variables";
+@import "theme/config/mixins";
+@import "theme/1_elements";
+@import "theme/2_fields";
+@import "theme/3_1_components";
+@import "theme/3_2_articles";
+@import "theme/3_3_forms";
+@import "theme/3_4_views";
+@import "theme/3_5_blocks";
+@import "theme/4_1_regions";
+@import "theme/4_2_sections";
+@import "theme/5_pages";
+@import "theme/6_responsive";
+@import "theme/7_rtl";
+@import "theme/8_print";
+
+
+//skin
+@import "theme/skins/skin_blue_violet";
+@import "theme/skins/skin_bordeaux";
+@import "theme/skins/skin_burgundy";
+@import "theme/skins/skin_ocean";
+@import "theme/skins/skin_dark";

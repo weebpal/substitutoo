@@ -1,0 +1,13 @@
+entity.sub_availability_scheduler.settings:
+  title: 'Employee Schedule'
+  description: 'Configure a Substitutoo Employee Schedule entity type.'
+  route_name:  entity.sub_availability_scheduler.settings
+  parent: substitutoo_core.structure
+  weight: 30
+
+entity.sub_availability_scheduler.collection:
+  title: 'Employee Schedules'
+  description: 'List of substitutoo Employee Schedules.'
+  route_name: entity.sub_availability_scheduler.collection
+  parent: substitutoo_core.content
+  weight: 30

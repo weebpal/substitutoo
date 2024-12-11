@@ -1,0 +1,16 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_activity
+  uuid: 321fe44e-87db-42b1-a2bb-9817d9539ab4
+  bundle: default
+  default_langcode: en
+default:
+  uid:
+    -
+      target_id: 1
+  name:
+    -
+      value: 'You bulked assign for Johnatan with service contract: Frühschicht 6:45 08:15 on assignment: 1'
+  created:
+    -
+      value: 1733735295

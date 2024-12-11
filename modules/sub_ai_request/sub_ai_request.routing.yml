@@ -1,0 +1,7 @@
+entity.sub_ai_request.settings:
+  path: 'admin/structure/sub-ai-request'
+  defaults:
+    _form: '\Drupal\sub_ai_request\Form\SubstitutooAIRequestSettingsForm'
+    _title: 'Substitutoo AI Request'
+  requirements:
+    _permission: 'administer sub_ai_request'

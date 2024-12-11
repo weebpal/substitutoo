@@ -1,0 +1,116 @@
+uuid: c2feb377-598d-4f1a-86e3-8095e5d34ab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.sub_shift.manager_form
+  module:
+    - datetime
+    - sub_shift
+    - text
+id: sub_shift.sub_shift.manager_form
+targetEntityType: sub_shift
+bundle: sub_shift
+mode: manager_form
+content:
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  f_datetime_end:
+    type: datetime_default
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  f_datetime_start:
+    type: datetime_default
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  f_duration:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  f_location:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  f_required_number_employees:
+    type: number
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  f_shift_scheduler:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  f_time_end:
+    type: string_textfield
+    weight: 7
+    region: content
+    settings:
+      size: 60
+      placeholder: 'HH:MM:SS'
+    third_party_settings: {  }
+  f_time_start:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: 'HH:MM:SS'
+    third_party_settings: {  }
+  f_timestamp_end:
+    type: datetime_timestamp
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  f_timestamp_start:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 12
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  f_date: true
+  uid: true

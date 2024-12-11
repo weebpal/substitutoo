@@ -1,0 +1,47 @@
+uuid: ed19d87e-532b-4bb2-9320-fd823267afd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.sub_location.tree_mode
+    - field.field.sub_location.sub_location.field_address
+    - field.field.sub_location.sub_location.field_assignment_count
+    - field.field.sub_location.sub_location.field_deep
+    - field.field.sub_location.sub_location.field_is_root_location
+    - field.field.sub_location.sub_location.field_location_trail
+    - field.field.sub_location.sub_location.field_nested_locations
+    - field.field.sub_location.sub_location.field_order_value
+  module:
+    - sub_location
+id: sub_location.sub_location.tree_mode
+targetEntityType: sub_location
+bundle: sub_location
+mode: tree_mode
+content:
+  field_nested_locations:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  label:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  description: true
+  field_address: true
+  field_assignment_count: true
+  field_deep: true
+  field_is_root_location: true
+  field_location_trail: true
+  field_order_value: true
+  status: true
+  uid: true

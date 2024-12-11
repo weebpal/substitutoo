@@ -1,0 +1,10 @@
+entity.sub_availability_scheduler.edit_form:
+  route_name: entity.sub_availability_scheduler.edit_form
+  group: sub_availability_scheduler
+  title: 'Edit'
+
+entity.sub_availability_scheduler.delete_form:
+  route_name: entity.sub_availability_scheduler.delete_form
+  group: sub_availability_scheduler
+  title: 'Delete'
+  weight: 10

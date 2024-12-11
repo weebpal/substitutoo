@@ -1,0 +1,32 @@
+uuid: 135b5891-1b00-4c46-b8ad-a53953ec481f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_location.field_address
+  module:
+    - address
+    - sub_location
+id: sub_location.sub_location.field_address
+field_name: field_address
+entity_type: sub_location
+bundle: sub_location
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    CH: CH
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: optional
+    familyName:
+      override: optional
+    organization:
+      override: optional
+  fields: {  }
+field_type: address

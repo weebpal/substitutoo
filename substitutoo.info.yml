@@ -1,0 +1,72 @@
+name: 'Substitutoo'
+type: profile
+core_version_requirement: '^8.8 || ^9 || ^10'
+description: 'Install an Substitutoo site.'
+install:
+  - toolbar
+  - update
+  - user
+  - views
+  - views_ui
+  - announcements_feed
+  - automated_cron
+  - text
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor5
+  - comment
+  - config
+  - contact
+  - contextual
+  - menu_link_content
+  - dblog
+  - field
+  - field_ui
+  - filter
+  - help
+  - history
+  - dynamic_page_cache
+  - page_cache
+  - menu_ui
+  - mysql
+  - node
+  - path
+  - search
+  - shortcut
+  - system
+  - taxonomy
+  - editor
+  - address
+  - datetime
+  - datetime_range
+  - file
+  - image
+  - link
+  - options
+  - time_field
+  - smtp
+  - menu_item_role_access
+  - config_translation
+  - content_translation
+  - locale
+  - language
+  - lang_dropdown
+  - entity
+  - menu_link_attributes
+  - admin_toolbar
+  - admin_toolbar_tools
+  - admin_toolbar_search
+  - field_group
+  - inline_entity_form
+  - default_content
+dependencies:
+  - drupal:text
+themes:
+  - substitutoo_theme
+  - claro
+  - olivero
+  - stark
+  - we_core
+keep_english: true

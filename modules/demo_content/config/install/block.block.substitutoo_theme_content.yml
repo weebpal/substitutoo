@@ -1,0 +1,22 @@
+uuid: 6fc16265-1d60-4eff-8903-d40fac0d3c10
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - substitutoo_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: substitutoo_theme_content
+theme: substitutoo_theme
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

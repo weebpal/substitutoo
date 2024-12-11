@@ -1,0 +1,21 @@
+uuid: 240d5855-ddc4-4cbb-ad47-7bb1142d4fe3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_availability_scheduler.field_between_dates
+  module:
+    - datetime_range
+    - sub_availability_scheduler
+id: sub_availability_scheduler.sub_availability_scheduler.field_between_dates
+field_name: field_between_dates
+entity_type: sub_availability_scheduler
+bundle: sub_availability_scheduler
+label: 'Between dates'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

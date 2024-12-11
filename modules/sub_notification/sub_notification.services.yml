@@ -1,0 +1,7 @@
+services:
+  sub_notification.utils:
+    class: Drupal\sub_notification\Service\Utils
+    services:
+  sub_notification.notification_service:
+    class: Drupal\sub_notification\NotificationManager
+    arguments: ['@entity_type.manager']

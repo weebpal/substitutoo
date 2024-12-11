@@ -1,0 +1,10 @@
+entity.sub_location.edit_form:
+  route_name: entity.sub_location.edit_form
+  group: sub_location
+  title: 'Edit'
+
+entity.sub_location.delete_form:
+  route_name: entity.sub_location.delete_form
+  group: sub_location
+  title: 'Delete'
+  weight: 10

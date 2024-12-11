@@ -1,0 +1,24 @@
+uuid: 82b4b855-9acf-4d68-9f5e-b82eeb5f43af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_required_number_employees
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_required_number_employees
+field_name: field_required_number_employees
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Required Number Employees'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

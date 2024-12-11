@@ -1,0 +1,42 @@
+label: Schichten
+display:
+  default:
+    display_options:
+      title: Schichten
+      fields:
+        label:
+          label: Schichtname
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_location:
+          label: Standort
+        f_shift_scheduler:
+          label: Schichtplaner
+        operations:
+          label: Betrieb
+      exposed_form:
+        options:
+          submit_button: Bewerben
+      filters:
+        label:
+          expose:
+            label: Schichtname
+        label_1:
+          expose:
+            label: Standortname
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-shift/add">Schicht hinzufügen</a>'
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'
+  block_2:
+    display_options:
+      empty:
+        area_text_custom:
+          content: 'Heute keine Schicht'
+      block_description: 'Heute Schichten'

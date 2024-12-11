@@ -1,0 +1,11 @@
+uuid: 103a8e4d-9915-4fd8-9069-11ee75df96b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.manager_form
+label: 'Manager form'
+description: ''
+targetEntityType: sub_scheduler_assignment
+cache: true

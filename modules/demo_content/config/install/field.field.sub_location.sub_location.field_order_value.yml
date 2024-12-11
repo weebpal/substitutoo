@@ -1,0 +1,24 @@
+uuid: b9071986-eb1c-425a-85ee-1cb342606aaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_location.field_order_value
+  module:
+    - sub_location
+id: sub_location.sub_location.field_order_value
+field_name: field_order_value
+entity_type: sub_location
+bundle: sub_location
+label: 'Order value'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

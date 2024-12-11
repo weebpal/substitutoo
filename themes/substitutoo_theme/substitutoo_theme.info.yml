@@ -1,0 +1,27 @@
+name: substitutoo theme
+type: theme
+description: 'Base theme for substitutoo theme theme.'
+core_version_requirement: ^8.9 || ^9 || ^10
+base theme: we_core
+
+libraries:
+  - 'substitutoo_theme/global-styling'
+
+regions:
+  headline: 'Headline'
+  header: 'Header'
+  main_menu: 'Main Menu'
+  mobile_menu: 'Mobile Menu'
+  content_above: 'Content Above'
+  banner: 'Banner'
+  content: 'Content'
+  sidebar_first: 'Sidebar First'
+  sidebar_second: 'Sidebar Second'
+  slideshow: 'Slideshow'
+  divider: 'Divider'
+  content_bottom: 'Content bottom'
+  slide_content: 'Slide content'
+  user_guide: 'User guide'
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+  disabled: 'Disabled'

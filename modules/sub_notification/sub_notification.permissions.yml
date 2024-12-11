@@ -1,0 +1,4 @@
+administer sub_notification_type:
+  title: 'Administer sub_notification types'
+  description: 'Maintain the types of notification types available and the fields that are associated with those types.'
+  restrict access: true

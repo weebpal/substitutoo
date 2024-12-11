@@ -1,0 +1,18 @@
+uuid: e44d3b26-5486-43ea-a33f-be03fe6a368e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.days_of_month
+id: taxonomy_term.days_of_month.name
+field_name: name
+entity_type: taxonomy_term
+bundle: days_of_month
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

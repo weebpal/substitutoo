@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_availability
+  uuid: 7a55a805-f72e-4553-993e-a89934a19293
+  depends:
+    b587a0d3-126b-4387-ba0d-654f8b6a9a8b: user
+    60419437-6f4e-4dbe-819c-de0018b67114: sub_availability_scheduler
+default:
+  label:
+    -
+      value: 'Availability item for Thomas on Tuesday, 2024-12-17, from 08:00 to 12:00'
+  status:
+    -
+      value: true
+  f_employee:
+    -
+      entity: b587a0d3-126b-4387-ba0d-654f8b6a9a8b
+  f_date:
+    -
+      value: '2024-12-17'
+  f_time_start:
+    -
+      value: '08:00'
+  f_time_end:
+    -
+      value: '12:00'
+  f_datetime_start:
+    -
+      value: '2024-12-17T08:00:00'
+  f_datetime_end:
+    -
+      value: '2024-12-17T12:00:00'
+  f_timestamp_start:
+    -
+      value: 1734422400
+  f_timestamp_end:
+    -
+      value: 1734436800
+  f_duration:
+    -
+      value: 14400
+  f_availability_scheduler:
+    -
+      entity: 60419437-6f4e-4dbe-819c-de0018b67114
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733734574

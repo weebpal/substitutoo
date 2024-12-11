@@ -1,0 +1,96 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_shift_scheduler
+  uuid: bf5b02a9-95ca-4085-b889-25f0cedd7569
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    16d3633a-4c96-433e-b4b7-12a0990875ef: taxonomy_term
+    12dd3ef9-3953-433c-abef-beb9d58ed98b: taxonomy_term
+    c409e6d5-fe94-4ad9-93d6-6d56e088cd1a: taxonomy_term
+    acf04168-4e0d-4248-baf5-8dba00ca0d0e: taxonomy_term
+    7df85dc9-5f0e-40ad-bda2-41f2c780abbb: taxonomy_term
+    1c0cd69e-cdd1-4608-814d-7ac5a27df44e: taxonomy_term
+    1869ddf5-2b45-47aa-9581-c398588bae45: taxonomy_term
+    0c042431-16ab-40b8-8a86-60de5ca713c2: taxonomy_term
+    6d7bb134-f4ac-4262-aa5a-97f07a5cea39: taxonomy_term
+    43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02: taxonomy_term
+    0ebc31f5-74dc-4371-848c-83e94e350a67: taxonomy_term
+    4a03d30f-e6e1-4c33-92dd-854b52245829: taxonomy_term
+    85b4b4b5-0990-4787-88fb-a5e30f01b4ac: taxonomy_term
+    6050e6fb-f10f-4850-9029-e0b7a709737e: taxonomy_term
+    1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b: sub_location
+    49a8d513-704e-4b05-bdf5-aeb4c9dbfd30: taxonomy_term
+    379cdbde-f3dd-4c98-9682-ee23e4560e3e: taxonomy_term
+default:
+  label:
+    -
+      value: 'Schicht Nachmittag 14:45 - 15:15'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Schicht Nachmittag</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730946201
+  field_age_ranges:
+    -
+      entity: 16d3633a-4c96-433e-b4b7-12a0990875ef
+    -
+      entity: 12dd3ef9-3953-433c-abef-beb9d58ed98b
+  field_between_dates:
+    -
+      value: '2024-12-01'
+      end_value: '2024-12-31'
+  field_calendar_type:
+    -
+      entity: c409e6d5-fe94-4ad9-93d6-6d56e088cd1a
+  field_certifications:
+    -
+      entity: acf04168-4e0d-4248-baf5-8dba00ca0d0e
+    -
+      entity: 7df85dc9-5f0e-40ad-bda2-41f2c780abbb
+  field_days_of_the_week:
+    -
+      entity: 1c0cd69e-cdd1-4608-814d-7ac5a27df44e
+    -
+      entity: 1869ddf5-2b45-47aa-9581-c398588bae45
+    -
+      entity: 0c042431-16ab-40b8-8a86-60de5ca713c2
+    -
+      entity: 6d7bb134-f4ac-4262-aa5a-97f07a5cea39
+    -
+      entity: 43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02
+  field_delete_shifts_on_update:
+    -
+      value: false
+  field_experience_levels:
+    -
+      entity: 0ebc31f5-74dc-4371-848c-83e94e350a67
+    -
+      entity: 4a03d30f-e6e1-4c33-92dd-854b52245829
+  field_genders:
+    -
+      entity: 85b4b4b5-0990-4787-88fb-a5e30f01b4ac
+    -
+      entity: 6050e6fb-f10f-4850-9029-e0b7a709737e
+  field_location:
+    -
+      entity: 1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b
+  field_qualifications:
+    -
+      entity: 49a8d513-704e-4b05-bdf5-aeb4c9dbfd30
+    -
+      entity: 379cdbde-f3dd-4c98-9682-ee23e4560e3e
+  field_required_number_employees:
+    -
+      value: 2
+  field_time_frames:
+    -
+      from: 51300
+      to: 61200

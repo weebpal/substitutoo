@@ -1,0 +1,13 @@
+entity.sub_shift.settings:
+  title: 'Shift'
+  description: 'Configure a Substitutoo Shift entity type.'
+  route_name:  entity.sub_shift.settings
+  parent: substitutoo_core.structure
+  weight: 20
+
+entity.sub_shift.collection:
+  title: 'Shifts'
+  description: 'List of substitutoo shifts.'
+  route_name: entity.sub_shift.collection
+  parent: substitutoo_core.content
+  weight: 20

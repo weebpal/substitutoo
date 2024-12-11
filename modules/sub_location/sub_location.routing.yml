@@ -1,0 +1,7 @@
+entity.sub_location.settings:
+  path: 'admin/substitutoo-structure/sub-location'
+  defaults:
+    _form: '\Drupal\sub_location\Form\SubstitutooLocationSettingsForm'
+    _title: 'Substitutoo Location'
+  requirements:
+    _permission: 'administer sub_location'

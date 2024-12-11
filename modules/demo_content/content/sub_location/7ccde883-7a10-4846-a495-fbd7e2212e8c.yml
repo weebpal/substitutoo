@@ -1,0 +1,55 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 7ccde883-7a10-4846-a495-fbd7e2212e8c
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    526b2c20-21f5-4ad1-85b6-fbb8bb6c0c96: sub_location
+    431a3698-36aa-4279-863b-8eea203819ce: sub_location
+default:
+  label:
+    -
+      value: 'Tagesbetreuung Moos'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Building A description</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730859396
+  field_address:
+    -
+      langcode: ''
+      country_code: CH
+      administrative_area: ''
+      locality: Rüschlikon
+      dependent_locality: ''
+      postal_code: '8803'
+      sorting_code: ''
+      address_line1: 'Erlenweg 89'
+      address_line2: ''
+      address_line3: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_deep:
+    -
+      value: 1
+  field_is_root_location:
+    -
+      value: true
+  field_nested_locations:
+    -
+      entity: 526b2c20-21f5-4ad1-85b6-fbb8bb6c0c96
+    -
+      entity: 431a3698-36aa-4279-863b-8eea203819ce
+  field_order_value:
+    -
+      value: 29000000

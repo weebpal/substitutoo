@@ -1,0 +1,126 @@
+uuid: 7e712497-b954-4080-bc92-422974393abe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.sub_location.nested_location
+    - field.field.sub_location.sub_location.field_address
+    - field.field.sub_location.sub_location.field_assignment_count
+    - field.field.sub_location.sub_location.field_deep
+    - field.field.sub_location.sub_location.field_is_root_location
+    - field.field.sub_location.sub_location.field_location_trail
+    - field.field.sub_location.sub_location.field_nested_locations
+    - field.field.sub_location.sub_location.field_order_value
+  module:
+    - address
+    - inline_entity_form
+    - sub_location
+    - text
+id: sub_location.sub_location.default
+targetEntityType: sub_location
+bundle: sub_location
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_address:
+    type: address_default
+    weight: 2
+    region: content
+    settings:
+      wrapper_type: fieldset
+    third_party_settings: {  }
+  field_assignment_count:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_deep:
+    type: number
+    weight: 9
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_is_root_location:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_location_trail:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nested_locations:
+    type: inline_entity_form_complex
+    weight: 3
+    region: content
+    settings:
+      form_mode: nested_location
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: false
+      collapsed: false
+      revision: false
+      removed_reference: optional
+    third_party_settings: {  }
+  field_order_value:
+    type: number
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  label:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 11
+    region: content
+    settings:
+      display_label: false
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 7
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: 7db10f4b-09d1-48fb-840e-77898547c50a
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - sub_location
+id: sub_location.field_address
+field_name: field_address
+entity_type: sub_location
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

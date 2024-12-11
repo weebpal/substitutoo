@@ -1,0 +1,11 @@
+uuid: 1dda73e4-57cc-46f1-b653-c7cc6961cb56
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.tree_mode
+label: 'Tree mode'
+description: ''
+targetEntityType: sub_location
+cache: true

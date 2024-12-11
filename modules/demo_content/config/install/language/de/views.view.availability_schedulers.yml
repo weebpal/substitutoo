@@ -1,0 +1,44 @@
+label: Verfügbarkeitsplaner
+display:
+  default:
+    display_options:
+      title: Verfügbarkeitsplaner
+      fields:
+        label:
+          label: 'Name des Verfügbarkeitsplaners'
+        field_employee:
+          label: Mitarbeiter
+        field_between_dates:
+          label: 'Zwischen den Daten'
+        field_calendar_type:
+          label: Kalendertyp
+        nothing:
+          label: Tage
+        field_time_frames:
+          label: Zeitrahmen
+        operations:
+          label: Operationen
+      exposed_form:
+        options:
+          submit_button: Anwenden
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      filters:
+        label:
+          expose:
+            label: 'Name des Verfügbarkeitsplaners'
+        name:
+          expose:
+            label: 'Name des Mitarbeiters'
+        field_calendar_type_target_id:
+          expose:
+            label: Kalendertyp
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-availability-scheduler/add">Verfügbarkeitsplaner hinzufügen</a>'
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'

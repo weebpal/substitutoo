@@ -1,0 +1,18 @@
+uuid: 26d22ad8-b8dc-482f-934e-e03412ba2ef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.days_of_week
+id: taxonomy_term.days_of_week.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: days_of_week
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

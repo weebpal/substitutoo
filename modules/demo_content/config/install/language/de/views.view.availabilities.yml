@@ -1,0 +1,42 @@
+label: Verfügbarkeiten
+display:
+  default:
+    display_options:
+      title: Verfügbarkeiten
+      fields:
+        label:
+          label: Verfügbarkeitsname
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_availability_scheduler:
+          label: Verfügbarkeitsplaner
+        f_employee:
+          label: Mitarbeiter
+        operations:
+          label: Betrieb
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'
+      exposed_form:
+        options:
+          submit_button: Bewerben
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      filters:
+        label:
+          expose:
+            label: Verfügbarkeitsname
+        name:
+          expose:
+            label: Mitarbeitername
+        f_date:
+          expose:
+            label: Datum
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-availability/add">Verfügbarkeit hinzufügen</a>'

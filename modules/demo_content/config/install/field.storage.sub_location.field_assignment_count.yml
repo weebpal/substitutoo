@@ -1,0 +1,20 @@
+uuid: d45bab07-96c5-4efe-a96b-c13b1f3f33b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.field_assignment_count
+field_name: field_assignment_count
+entity_type: sub_location
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

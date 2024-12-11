@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+id: sub_availability_scheduler_delete_action
+label: 'Delete substitutoo availability schedulers'
+type: sub_availability_scheduler
+plugin: entity:delete_action:sub_availability_scheduler
+configuration: {  }

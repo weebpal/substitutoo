@@ -1,0 +1,31 @@
+uuid: 634a9f7e-7324-4263-9321-24de29b2903d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.assignment_status.field_key
+    - taxonomy.vocabulary.assignment_status
+  module:
+    - text
+id: taxonomy_term.assignment_status.default
+targetEntityType: taxonomy_term
+bundle: assignment_status
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_key:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

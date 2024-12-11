@@ -1,0 +1,8 @@
+uuid: 4d3928ec-6d84-46e5-97d0-6c15caea6b65
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+locked: false
+pattern: 'Y-m-d H:i'

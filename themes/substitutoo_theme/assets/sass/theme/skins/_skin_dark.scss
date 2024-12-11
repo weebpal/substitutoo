@@ -1,0 +1,747 @@
+body.skin-dark {
+  @include skin(#2B2A2A, #333, #FBF5ED, rgba(#fff, 0.15), #9B8741);
+  $btn-primary: #9B8741;
+  $background-body: #2B2A2A;
+  $background-body-dark: #333;
+  $color-default: #FBF5ED;
+  $border-color: rgba(#fff, 0.15);
+  
+  color: $color-default;
+
+  .view-user-guide{
+    .views-row{
+      background: #FBF5ED;
+    }
+    .views-field-title{
+      color: #2B2A2A;
+    }
+  }
+
+  .messages{
+    background-color: $background-body;
+    box-shadow: 0px 0px 20px 4px rgba(169, 155, 136, .2);
+  }
+
+  .block-system-branding-block{
+    .site-name a, .site-slogan{
+      color: $color-default;
+    }
+  }
+
+  input[type=submit],
+  .button {
+    border-color: #fff;
+    background-color: #fff;
+    color: $background-body;
+    transition: all 0.3s linear;
+    &:hover,
+    &:focus {
+      border-color: $btn-primary;
+      background-color: $btn-primary;
+      color: $color-default;
+      transition: all 0.3s linear;
+    }
+  }
+
+  .highlight {
+    color: $color-default;
+  }
+
+  .main-facilities .title-main-facilities {
+    color: $color-default;
+  }
+
+  .facilities ,
+  .facility {
+    background-image: url(../../../images/check-dark.png);
+
+    &.alarm-clock {
+      background-image: url(../../../images/alarm-dark.png);
+    }
+
+    &.air-conditioning {
+      background-image: url(../../../images/ac-dark.png);
+    }
+
+    &.hairdryer {
+      background-image: url(../../../images/hairdryer-dark.png);
+    }
+
+    &.high-speed-wifi {
+      background-image: url(../../../images/wifi-dark.svg);
+    }
+
+    &.smart-tv {
+      background-image: url(../../../images/television-dark.svg);
+    }
+  }
+
+  .daterangepicker.show-calendar {
+    box-shadow: 0px 0px 40px 0px #0000001A;
+
+    &:after, &::before {
+      display: none;
+    }
+    
+    .drp-buttons .btn {
+      border-color: #fff;
+      background-color: #fff;
+      color: $background-body;
+      transition: all 0.3s linear;
+      &:hover,
+      &:focus {
+        border-color: $btn-primary;
+        background-color: $btn-primary;
+        color: $color-default;
+        transition: all 0.3s linear;
+      }
+    }
+
+    table {
+      th {
+        &:hover, &:focus {
+          background-color: $background-body-dark;
+        }
+
+        &.prev {
+          background-image: url(../../../images/calendar-left-dark.svg);
+        }
+
+        &.next {
+          background-image: url(../../../images/calendar-right-dark.svg);
+        }
+      }
+
+      td {
+        &:hover, &:focus {
+          background-color: #fff;
+          color: $background-body;
+        }
+    
+        &.in-range {
+          background-color: $border-color;
+          border-radius: 0;
+        }
+    
+        &.end-date, 
+        &.start-date {
+          background-color: #fff;
+          color: $background-body;
+        }
+
+        &.end-date {
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+    }
+  }
+
+  .component-builder.component-wrapper--type-composite {
+    .block-webform > h2 {
+      color: $color-default;
+    }
+
+    form.webform-submission-form textarea {
+      background-color: $background-body;
+      border-color: $border-color;
+    }
+  }
+
+  form {
+    input[type=text], 
+    input[type=password], 
+    input[type=email] {
+      border-color: $border-color;
+      background-color: $background-body;
+      color: $color-default;
+    }
+
+
+    // input.hasDatepicker {
+    //   background-image: url(../../../images/calendar-dark.png);
+    // }
+
+    &.user-login-form label, 
+    &.user-form label, 
+    &.user-pass label, 
+    &.user-login-form .label, 
+    &.user-form .label, 
+    &.user-pass .label {
+      color: $color-default !important;
+    }
+
+    &.user-form {
+      .form-date ,
+      select {
+        border-color: $border-color;
+        background-color: $background-body;
+        color: $color-default;
+      }
+
+      select {
+        background-image: url(../../../images/select-down-dark2.svg);
+      }
+    }
+
+    &.booking-rooms table {
+      tr.cols-3 td:nth-child(2) table td:nth-child(2) {
+        &::before, 
+        &::after {
+          background-image: url(../../../images/icon-guest-dark.png);
+        }
+      }
+
+      .all-facilities {
+        .room-size {
+          background-image: url(../../../images/area-dark.svg);
+        }
+
+        .bed-type {
+          background-image: url(../../../images/double-bed-dark.svg);
+        }
+      }
+    }
+
+    &.commerce-checkout-flow .checkout-pane {
+      fieldset {
+        border-color: $border-color;
+      }
+
+      select {
+        border-color: $border-color;
+        background-color: $background-body;
+        color: $color-default;
+        background-image: url(../../../images/select-down-dark2.svg);
+      }
+    }
+  }
+
+  .checkout-order-summary table tbody tr td.order-item-information .order-item-summary-infor {
+    color: $color-default;
+
+    div {
+      color: rgba($color-default, 0.7);
+    }
+  }
+
+  table:not(.ui-datepicker-calendar) tbody tr td {
+    color: $color-default;
+  }
+
+  select {
+    background-image: url(../../../images/select-down-dark.svg);
+  }
+
+  .cart-block--summary__icon {
+    background-image: url(../../../images/icon-cart-dark.svg);
+  }
+
+  .cart-block--summary__count {
+    background-color: $color-default;
+    color: $background-body;
+  }
+
+  .view.view-news-home .view-header .view-all:after {
+    background-image: url(../../../images/icon-view-all-dark.svg);
+  }
+
+  .view {
+    &.view-news-home .view-header .view-all {
+      color: $color-default;
+    }
+    
+    &-banner .views-field-link a {
+      background-color: $btn-primary;
+      border-color: $btn-primary;
+      transition: all 0.3s linear;
+      color: $color-default;
+      &:hover, &:focus {
+        background-color: #fff;
+        color: $btn-primary;
+        transition: all 0.3s linear;
+      }
+    }
+
+    &-venues .views-field-view-node a {
+      background-color: #fff;
+      color: $background-body;
+      border-color: #fff;
+      transition: all 0.3s linear;
+      &:hover, &:focus {
+        background-color: $btn-primary;
+        border-color: $btn-primary;
+        transition: all 0.3s linear;
+        color: $color-default;
+      }
+    }
+
+    &-faq {
+      .ui-accordion-header:after {
+        background-image: url(../../../images/icon-down-faq-dark.svg);
+      }
+
+      .ui-accordion-content {
+        border-color: $background-body-dark;
+      }
+    }
+
+    &-event .views-field-field-date-event{
+      @include set-icon(calendar-dark);
+    }
+  }
+
+  article.profile{
+     background-color: transparent;
+  }
+
+  .view.room-slider .slick-arrow {
+    &.slick-prev {
+      background-image: url(../../../images/slick-prev-dark.svg);
+    }
+
+    &.slick-next {
+      background-image: url(../../../images/slick-next-dark.svg);
+    }
+  }
+
+  .block-system-branding-block {
+    .site-logo {
+      display: flex;
+      //width: 86px;
+      //height: 48px;
+      position: relative;
+      //@include media-breakpoint-down(xl) {
+      //  margin-left: 0;
+      //}
+      //&::before {
+      //  position: absolute;
+      //  content: '';
+      //  inset: 0;
+      //  background-image: url(../../../images/logo-skin-dark.svg);
+      //  background-size: contain;
+      //  background-repeat: no-repeat;
+      //  background-position: left center;
+      //}
+    }
+    //img {
+    //  display: none;
+    //}
+  }
+
+  .region-header {
+    .menu--account > .menu > .menu-item.menu-item--expanded {
+      &::after {
+        background-image: url(../../../images/toggle-menu-dark.svg);
+      }
+
+      > .menu {
+        box-shadow: 0px 0px 20px 4px #A99B8833;
+      }
+    }
+
+    .menu--main > .navbar-nav > .nav-item.menu-item--expanded > .nav-link .icon {
+      background-image: url(../../../images/toggle-menu-dark.svg);
+    }
+  }
+
+  .section-mobile-menu .navbar-nav .nav-item.menu-item--expanded > .nav-link .icon {
+    background-image: url(../../../images/toggle-menu-dark.svg);
+  }
+
+  &.path-product ,
+  &.path-room  {
+    .all-facilities {
+      .see-all-facilities ,
+      .see-less-facilities {
+        border-left-color: $color-default;
+      }
+    }
+  }
+
+  &.path-cart {
+    .block-page-title-block {
+      h1, h2, h3, h4, h5, h6 {
+        color: $color-default;
+      }
+    }
+
+    .view-grouping-header {
+      color: $color-default;
+    }
+
+    caption {
+      color: $color-default;
+    }
+
+    table {
+      thead {
+        background-color: $background-body-dark;
+
+        tr th {
+          color: $color-default;
+        }
+      }
+
+      tbody {
+        tr {
+          background-color: $background-body-dark;
+        }
+        .delete-order-item, 
+        .remove-button {
+          background-image: url(../../../images/icon-delete-dark.svg);
+          background-color: $background-body-dark;
+        }
+      }
+
+      input {
+        color: $color-default;
+      }
+    }
+
+    .cart--cart-block table tbody tr {
+      background-color: $background-body;
+    }
+
+    .section-main .group-text {
+      color: $color-default;
+
+      a {
+        color: $color-default;
+      }
+    }
+  }
+
+  &.path-cart , 
+  &.path-reception {
+    .section-main .group-text {
+      .views-field-title {
+        color: rgba($color-default, 0.4);
+      }
+
+      .views-field-unit-price {
+        color: $color-default;
+      }
+    }
+  }
+
+  &.path-user.path-login ,
+  &.path-user.path-password ,
+  &.path-user.path-register {
+    nav.tabs .tabs.primary li {
+      &.is-active a {
+        color: $btn-primary;
+      }
+
+      a {
+        color: $btn-primary;
+      }
+    }
+  }
+
+  &.path-product ,
+  &.path-room {
+    .product-fields-wrapper .field--name-price {
+      .field__item, 
+      .field__label {
+        color: $color-default;
+      }
+    }
+
+    .all-facilities {
+      background-color: $background-body-dark;
+    }
+
+    .group-info {
+      background-color: $background-body-dark; 
+    }
+
+    .group-container .group-info .field {
+      color: $color-default;
+
+      &.field--name-field-adult-limit {
+        background-image: url(../../../images/aults-dark.svg);
+      }
+
+      &.field--name-field-room-size {
+        background-image: url(../../../images/area-dark.svg);
+      }
+
+      &.field--name-field-bed-type {
+        background-image: url(../../../images/double-bed-dark.svg);
+      }
+
+      &.field--name-field-smoking {
+        background-image: url(../../../images/ban-smoking-dark.svg);
+      }
+    }
+  }
+
+  &.path-manage, &.path-my-bookings, &.path-rooms-list{//, &.path-user.user-logged-in {
+
+    .tabs.primary li {
+      &:hover, 
+      &.is-active, 
+      &.is-active:hover {
+        background-color: #ddd;
+      }
+    }
+
+    form label ,
+    .block-page-title-block {
+      color: #17405D;
+    }
+
+    background-color: #FBF5ED;
+    color: #17405D;
+
+    .tabs.primary li.is-active, .tabs.primary li.is-active:hover {
+      background-color: #ddd;
+    }
+
+    .cart-block--summary__icon {
+      background-image: url(../../../images/icon-cart.svg);
+    }
+
+    .cart-block--summary__count {
+      background-color: #17405D;
+      color: #FBF5ED;
+    }
+
+    .button {
+      border-color: #17405D;
+      background-color: #17405D;
+      color: #FBF5ED;
+      transition: all 0.3s linear;
+      &:hover,
+      &:focus {
+        border-color: #17405D;
+        background-color: #fff;
+        color: #17405D;
+        transition: all 0.3s linear;
+      }
+    }
+
+    table:not(.ui-datepicker-calendar) tbody tr td {
+      color: #17405D;
+    }
+
+    form input[type=text], 
+    form input[name=pass], 
+    form input[type=email] {
+      background-color: #f1ebe4;
+      border: 1px solid rgba(#17405D, 0.15);
+      color: #17405D;
+    }
+
+    .block-system-branding-block a {
+      &::before {
+        display: none;
+      }
+
+      img {
+        display: block;
+      }
+    }
+
+    .block-commerce-cart {
+      .cart-block--contents {
+        background-color: #FBF5ED;
+
+        .cart-block--contents__links a {
+          border-color: #17405D;
+          background-color: #17405D;
+          color: #FBF5ED;
+          transition: all 0.3s linear;
+          &:hover,
+          &:focus {
+            border-color: #17405D;
+            background-color: #fff;
+            color: #17405D;
+            transition: all 0.3s linear;
+          }
+        }
+      }
+    }
+
+    .region {
+      &-header {
+        .menu--main > .navbar-nav > .nav-item {
+          &::before {
+            background-color: #f1ebe4;
+          }
+
+          &.menu-item--expanded {
+            &:hover > .nav-link {
+              color: #17405D;
+            }
+
+            > .navbar-nav {
+              background-color: #FBF5ED;
+              color: #17405D;
+              &.child .nav-link {
+                &:hover, &:focus {
+                  background-color: #f1ebe4;
+                }
+              }
+            }
+
+            > .nav-link .icon {
+              background-image: url(../../../images/toggle-menu.svg);
+            }
+          }
+          
+          a {
+            color: #17405D;
+          }
+  
+          > a, 
+          > .nav-link {
+            color: #17405D;
+            &:hover,
+            &:focus {
+              color: #17405D;
+            }
+          }
+        }
+    
+        ul.menu > .menu-item > a {
+          color: #17405D;
+        }
+    
+        .menu--account > .menu {
+          a, 
+          span {
+            color: #17405D;
+          }
+  
+          > .menu-item:before {
+            background-color: #f1ebe4;
+          }
+  
+          > .menu-item.menu-item--expanded {
+            &::after {
+              background-image: url(../../../images/toggle-menu.svg);
+            }
+
+            > .menu {
+              background-color: #FBF5ED;
+    
+              li a {
+                &:hover, &:focus {
+                  background-color: #f1ebe4;
+                }
+              }
+            }
+          }
+          
+        }
+  
+      }
+  
+      &-footer-bottom .rounded-social-buttons svg path {
+        fill: #17405D;
+      }
+  
+      &-footer-top {
+        h2 {
+          color: #17405D;
+        }
+      }
+    }
+  
+    .section {
+      &-footer {
+        border-top: 1px solid rgba(#17405D, 0.15);
+        background-color: #FBF5ED;
+        color: #17405D;
+      }
+
+      &-mobile-menu {
+        .block-lang-dropdown {
+          background-color: #FBF5ED;
+        }
+
+        ul.menu {
+          background-color: #FBF5ED;
+          margin-bottom: 0;
+          .menu-item {
+            a {
+              color: #17405D;
+            }
+          }
+        }
+  
+        .navbar-nav {
+          background-color: #FBF5ED;
+          .nav-item a {
+            color: #17405D;
+          }
+
+          .nav-item.menu-item--expanded > .nav-link .icon {
+            background-image: url(../../../images/toggle-menu.svg);
+          }
+        }
+  
+        .toggle-mobile-menu span {
+          background-color: #17405D;
+        }
+  
+        .region-mobile-menu {
+  
+          .menu--account .menu .menu-item a[href="/my-bookings"], 
+          .menu--account .menu .menu-item a[href="/user"] { 
+            color: #17405D;
+          }
+  
+          .menu--account > .menu > .menu-item > .menu span {
+            color: #17405D;
+          }
+  
+          .menu--account > .menu > .menu-item ,
+          .menu--main > .navbar-nav > .nav-item {
+            >a, > span {
+              color: #17405D;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.path-manage {
+    .block-rooms-assignment {
+      background-color: #f1ebe4;
+    }
+  }
+
+  &.path-my-bookings {
+    .view-faq {
+      .ui-accordion-header {
+        background-color: #FBF5ED;
+        &::after {
+          background-image: url(../../../images/icon-down-faq.svg);
+        }
+
+        &.ui-state-active {
+          border-color: rgba(#17405d, 0.15);
+        }
+
+        a {
+          color: #17405D;
+        }
+      }
+
+      .ui-accordion-content {
+        background-color: #FBF5ED;
+        border-color: rgba(#17405d, 0.15);
+        color: #17405D;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+.count-down-wrapper .icon-count-down{
+  background-image: url("../../../images/bell-dark.svg");
+}

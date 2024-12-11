@@ -1,0 +1,7 @@
+entity.sub_assignment_history.settings:
+  path: 'admin/substitutoo-structure/sub-assignment-history'
+  defaults:
+    _form: '\Drupal\sub_assignment_history\Form\SubstitutooAssignmentHistorySettingsForm'
+    _title: 'Substitutoo Assignment History'
+  requirements:
+    _permission: 'administer sub_assignment_history'

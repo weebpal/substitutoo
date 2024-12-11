@@ -1,0 +1,19 @@
+uuid: b6651fb5-c27f-47df-8c1e-82f4c8e289ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.field_nested_locations
+field_name: field_nested_locations
+entity_type: sub_location
+type: entity_reference
+settings:
+  target_type: sub_location
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

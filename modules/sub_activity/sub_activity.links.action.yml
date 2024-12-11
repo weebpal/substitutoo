@@ -1,0 +1,11 @@
+entity.sub_activity.add_page:
+  route_name: entity.sub_activity.add_page
+  title: 'Add activity item'
+  appears_on:
+    - entity.sub_activity.collection
+
+entity.sub_activity_type.add_form:
+  route_name: entity.sub_activity_type.add_form
+  title: 'Add activity type'
+  appears_on:
+    - entity.sub_activity_type.collection

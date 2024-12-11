@@ -1,0 +1,9 @@
+uuid: 3a07b0c6-122b-43ed-9ca9-32ddd3757ccb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Calendar Type'
+vid: calendar_type
+description: 'Calendar type (Weekly, Monthly, Daily, Custom)'
+weight: 0
+new_revision: false

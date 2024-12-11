@@ -1,0 +1,23 @@
+uuid: 24ed6c3d-323e-4e8a-a9a2-8e1e6443ec6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - we_core
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: we_core_syndicate
+theme: we_core
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

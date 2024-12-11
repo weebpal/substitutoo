@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability
+id: sub_availability_save_action
+label: 'Save substitutoo availabilities'
+type: sub_availability
+plugin: entity:save_action:sub_availability
+configuration: {  }

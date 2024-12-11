@@ -1,0 +1,20 @@
+uuid: 8f5ea3f5-e865-4a7f-9e3c-6c62b892d290
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - sub_shift_scheduler
+id: sub_shift_scheduler.field_between_dates
+field_name: field_between_dates
+entity_type: sub_shift_scheduler
+type: daterange
+settings:
+  datetime_type: date
+module: datetime_range
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

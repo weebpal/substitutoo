@@ -1,0 +1,7 @@
+entity.sub_assignment.settings:
+  path: 'admin/substitutoo-structure/sub-assignment'
+  defaults:
+    _form: '\Drupal\sub_assignment\Form\SubstitutooAssignmentSettingsForm'
+    _title: 'Substitutoo Assignment'
+  requirements:
+    _permission: 'administer sub_assignment'

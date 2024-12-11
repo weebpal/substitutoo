@@ -1,0 +1,4 @@
+label: 'Ist Stammstandort'
+settings:
+  on_label: Ja
+  off_label: NEIN

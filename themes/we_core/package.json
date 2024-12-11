@@ -1,0 +1,22 @@
+{
+  "name": "we_core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@symfony/webpack-encore": "^4.2.0",
+    "file-loader": "^6.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.70.0",
+    "webpack-notifier": "^1.14.1"
+  }
+}

@@ -1,0 +1,125 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_availability_scheduler
+  uuid: 473b4256-752a-4255-9f16-568184e792fd
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    c409e6d5-fe94-4ad9-93d6-6d56e088cd1a: taxonomy_term
+    fc06e362-8c08-4c01-b74e-0369f91414a4: taxonomy_term
+    2020f1eb-6903-4104-9bdf-94c714998fcc: taxonomy_term
+    beb5e229-904e-4743-86f8-dbbb3f96e02c: taxonomy_term
+    ecdbf6b7-d132-4415-9e2a-ecca2c4430a4: taxonomy_term
+    d864701b-ff5e-45f9-a01e-5f7453d38427: taxonomy_term
+    2d9c04f2-5691-4417-8ce1-355248c61446: taxonomy_term
+    e4d790f7-00dc-4005-b6b7-a5935a0b4af5: taxonomy_term
+    2275ff57-ae3b-4a5d-b1a4-420b7131893e: taxonomy_term
+    70756850-59ad-412d-8c03-b65f067ff37f: taxonomy_term
+    cfd47636-b5f4-4fee-a9cf-0599e7555be9: taxonomy_term
+    d107eec7-2db3-47d0-9780-ec6dea2ff810: taxonomy_term
+    9bef930a-75ba-4eee-8e1a-9ffb753796ab: taxonomy_term
+    94965563-5376-4290-be3a-aa435ad8ef13: taxonomy_term
+    b0e34e13-b9c0-461c-bace-b4256bdc4748: taxonomy_term
+    d7571c2f-720a-4cd4-82c7-690dc2123c0d: taxonomy_term
+    80a5fa5f-89c5-40b9-bbff-27cb7b56e4b6: taxonomy_term
+    e7f53484-d5ba-4fa4-83d5-a6f1f240f227: taxonomy_term
+    0dccc50b-4436-4418-b12a-508896b29073: taxonomy_term
+    08475455-96f0-4afb-8121-6a5d675cc2d4: taxonomy_term
+    f7673e56-12a2-4b09-970e-445d66461388: taxonomy_term
+    1c0cd69e-cdd1-4608-814d-7ac5a27df44e: taxonomy_term
+    1869ddf5-2b45-47aa-9581-c398588bae45: taxonomy_term
+    0c042431-16ab-40b8-8a86-60de5ca713c2: taxonomy_term
+    6d7bb134-f4ac-4262-aa5a-97f07a5cea39: taxonomy_term
+    43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02: taxonomy_term
+    f5c8c01b-31f3-42aa-aedf-66bcca364587: taxonomy_term
+    484f2a54-bcf7-4fd7-8458-8e51a7d4d16a: taxonomy_term
+    4880c9dd-7b14-4f4a-9857-41d0414ca625: user
+default:
+  label:
+    -
+      value: 'Nela schedule'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Nela schedule Description</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730861893
+  field_between_dates:
+    -
+      value: '2024-12-01'
+      end_value: '2024-12-31'
+  field_calendar_type:
+    -
+      entity: c409e6d5-fe94-4ad9-93d6-6d56e088cd1a
+  field_days_of_the_month:
+    -
+      entity: fc06e362-8c08-4c01-b74e-0369f91414a4
+    -
+      entity: 2020f1eb-6903-4104-9bdf-94c714998fcc
+    -
+      entity: beb5e229-904e-4743-86f8-dbbb3f96e02c
+    -
+      entity: ecdbf6b7-d132-4415-9e2a-ecca2c4430a4
+    -
+      entity: d864701b-ff5e-45f9-a01e-5f7453d38427
+    -
+      entity: 2d9c04f2-5691-4417-8ce1-355248c61446
+    -
+      entity: e4d790f7-00dc-4005-b6b7-a5935a0b4af5
+    -
+      entity: 2275ff57-ae3b-4a5d-b1a4-420b7131893e
+    -
+      entity: 70756850-59ad-412d-8c03-b65f067ff37f
+    -
+      entity: cfd47636-b5f4-4fee-a9cf-0599e7555be9
+    -
+      entity: d107eec7-2db3-47d0-9780-ec6dea2ff810
+    -
+      entity: 9bef930a-75ba-4eee-8e1a-9ffb753796ab
+    -
+      entity: 94965563-5376-4290-be3a-aa435ad8ef13
+    -
+      entity: b0e34e13-b9c0-461c-bace-b4256bdc4748
+    -
+      entity: d7571c2f-720a-4cd4-82c7-690dc2123c0d
+    -
+      entity: 80a5fa5f-89c5-40b9-bbff-27cb7b56e4b6
+    -
+      entity: e7f53484-d5ba-4fa4-83d5-a6f1f240f227
+    -
+      entity: 0dccc50b-4436-4418-b12a-508896b29073
+    -
+      entity: 08475455-96f0-4afb-8121-6a5d675cc2d4
+    -
+      entity: f7673e56-12a2-4b09-970e-445d66461388
+  field_days_of_the_week:
+    -
+      entity: 1c0cd69e-cdd1-4608-814d-7ac5a27df44e
+    -
+      entity: 1869ddf5-2b45-47aa-9581-c398588bae45
+    -
+      entity: 0c042431-16ab-40b8-8a86-60de5ca713c2
+    -
+      entity: 6d7bb134-f4ac-4262-aa5a-97f07a5cea39
+    -
+      entity: 43fe2d36-eab8-4cd4-94df-8b3a4a4d7c02
+    -
+      entity: f5c8c01b-31f3-42aa-aedf-66bcca364587
+    -
+      entity: 484f2a54-bcf7-4fd7-8458-8e51a7d4d16a
+  field_delete_avail_on_update:
+    -
+      value: false
+  field_employee:
+    -
+      entity: 4880c9dd-7b14-4f4a-9857-41d0414ca625
+  field_time_frames:
+    -
+      from: 39600
+      to: 51300

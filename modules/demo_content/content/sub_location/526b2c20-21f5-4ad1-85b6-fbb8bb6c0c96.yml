@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 526b2c20-21f5-4ad1-85b6-fbb8bb6c0c96
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    7ccde883-7a10-4846-a495-fbd7e2212e8c: sub_location
+default:
+  label:
+    -
+      value: Niedelbad
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730859431
+  field_deep:
+    -
+      value: 2
+  field_location_trail:
+    -
+      entity: 7ccde883-7a10-4846-a495-fbd7e2212e8c
+  field_order_value:
+    -
+      value: 29001000

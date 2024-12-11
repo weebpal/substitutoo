@@ -1,0 +1,22 @@
+uuid: 067e023b-a7d3-4ca4-ace2-a4a1d2b393e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_scheduler_assignment.field_reset_assignment_on_update
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment.sub_scheduler_assignment.field_reset_assignment_on_update
+field_name: field_reset_assignment_on_update
+entity_type: sub_scheduler_assignment
+bundle: sub_scheduler_assignment
+label: 'Reset Assignment_On Update'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

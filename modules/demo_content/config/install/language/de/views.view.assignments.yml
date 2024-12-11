@@ -1,0 +1,122 @@
+label: Schichtzuweisungen
+display:
+  default:
+    display_options:
+      title: Schichtzuweisungen
+      fields:
+        label:
+          label: 'Name der Schichtzuweisung'
+        f_location:
+          label: Standort
+        f_shift:
+          label: Schicht-ID
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_assignment_order:
+          label: Auftragsreihenfolge
+        f_employee:
+          label: 'Zugewiesener Mitarbeiter'
+        operations:
+          label: Betrieb
+      exposed_form:
+        options:
+          submit_button: Anwenden
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      filters:
+        label:
+          expose:
+            label: 'Name der Schichtzuweisung'
+        label_1:
+          expose:
+            label: Standortname
+        name:
+          expose:
+            label: Mitarbeitername
+      header:
+        area_text_custom:
+          content: '<a href="/de/admin/substitutoo/sub-assignment/add">Aufgabe hinzufügen</a>'
+  block_2:
+    display_options:
+      fields:
+        label:
+          label: 'Name der Schichtzuweisung'
+        f_location:
+          label: Standort
+        f_shift:
+          label: Schicht-ID
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_assignment_order:
+          label: Aufgabenreihenfolge
+        f_employee:
+          label: 'Zugewiesener Mitarbeiter'
+        operations:
+          label: Betrieb
+  block_3:
+    display_options:
+      fields:
+        label:
+          label: 'Name der Schichtzuweisung'
+        f_location:
+          label: Standort
+        f_shift:
+          label: Schicht-ID
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_assignment_order:
+          label: Aufgabenreihenfolge
+        f_employee:
+          label: 'Zugewiesener Mitarbeiter'
+  page_1:
+    display_options:
+      fields:
+        label:
+          label: 'Name der Schichtzuweisung'
+        f_location:
+          label: Standort
+        f_shift:
+          label: Schicht-ID
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_assignment_order:
+          label: Aufgabenreihenfolge
+        f_employee:
+          label: 'Zugewiesener Mitarbeiter'
+        operations:
+          label: Betrieb
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-assignment/add">Aufgabe hinzufügen</a>'
+      menu:
+        title: Schichtzuweisungen
+      title: Schichtzuweisungen
+  page_2:
+    display_options:
+      title: 'Meine Schichtzuweisungen'
+      fields:
+        label:
+          label: 'Name der Schichtzuweisung'
+        f_location:
+          label: Standort
+        f_shift:
+          label: Schicht-ID
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_assignment_order:
+          label: Aufgabenreihenfolge
+        f_employee:
+          label: 'Zugewiesener Mitarbeiter'
+      menu:
+        title: 'Meine Schichtzuweisungen'

@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_scheduler_assignment
+id: sub_scheduler_assignment_save_action
+label: 'Save substitutoo scheduler assignments'
+type: sub_scheduler_assignment
+plugin: entity:save_action:sub_scheduler_assignment
+configuration: {  }

@@ -1,0 +1,11 @@
+uuid: 606aadfa-56d6-454c-89b8-30bb5baa4715
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_availability_scheduler
+id: sub_availability_scheduler.manager_form
+label: 'Manager form'
+description: ''
+targetEntityType: sub_availability_scheduler
+cache: true

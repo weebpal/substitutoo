@@ -1,0 +1,78 @@
+form {
+  &.user-login-form,
+  &.user-register-form,
+  &.user-pass {
+    max-width: 800px;
+
+    label {
+      display: block;
+    }
+
+    .field--type-image {
+      .form-submit {
+        display: none;
+      }
+    }
+
+    //input[type="submit"] {
+    //  @include btn-default;
+    //}
+
+    input[type="file"] {
+      padding: 8px 24px;
+      margin-bottom: 4px;
+      height: auto;
+    }
+
+    .form-item-contact {
+      position: relative;
+      margin-top: -10px;
+      padding-left: 25px;
+    }
+
+    input[type="checkbox"] {
+      position: absolute;
+      top: -15px;
+      left: 0;
+    }
+
+    &[class*="user-"] {
+      .form-item {
+        margin-bottom: 24px;
+
+        & > label {
+          @include font-medium(16px, 24px, #121212);
+        }
+
+        .description {
+          @include font-regular(14px, 21px, #333);
+        }
+      }
+
+      .field--widget-image-image {
+        .image-widget-data {
+          display: flex;
+          gap: 16px;
+          @media (max-width: 767px) {
+            display: block;
+          }
+        }
+      }
+
+      input {
+        background-color: #fdfdfd;
+
+        &[type=file] {
+          margin-bottom: 0;
+
+        }
+      }
+
+      .form-wrapper {
+        input[type="submit"] {
+          @include button(background);
+        }
+      }
+    }
+  }
+}

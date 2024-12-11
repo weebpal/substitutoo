@@ -1,0 +1,334 @@
+.block{
+  &-commerce-cart{
+    table:not(.ui-datepicker-calendar){
+      width: auto;
+    }
+
+    .cart-block--link__expand{
+      text-decoration: unset;
+      display: flex;
+      align-items: center;
+    }
+
+    .cart-block--contents{
+      width: auto;
+      min-width: 300px;
+      padding: 16px;
+      background: #FBF5ED;
+      border-radius: 4px;
+      box-shadow: 0px 0px 20px 4px rgba(169, 155, 136, 0.2);
+      right: 0;
+
+      &.is-outside-horizontal{
+        @media (max-width: 767px) {
+          right: -80px;
+        }
+      }
+
+      .views-field-total-price__number{
+        @include font-bold(16px, 25.6px, $color-default);
+      }
+
+      .cart-block--contents__inner{
+        padding: 0;
+      }
+
+      .cart-block--contents__links{
+        padding: 8px 0 0;
+        a{
+          @include btn-default;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-system-branding-block{
+    text-align: left;
+    &.center{
+      text-align: center;
+      .site-logo{
+        margin: 0 auto;
+        width: 120px;
+        height: auto;
+      }
+    }
+    .site-name{
+      a{
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: unset;
+        color: $color-default;
+      }
+    }
+    .site-slogan{
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-views {
+    >h2 {
+      font-size: 48px;
+      line-height: 58px;
+      font-family: $font-yeseva-one;
+      margin-bottom: 48px;
+      @include media-breakpoint-down(lg) {
+        font-size: 32px;
+        line-height: 38px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &-page-title-block{
+    margin-bottom: 60px;
+    text-align: center;
+    @include font-and-color(48px, 57.6px, $color-default);
+    font-family: 'Yeseva One';
+  }
+
+  &-views{
+    position: relative;
+  }
+
+  &-views-blocklist-notifications-block-1{
+    margin-top: 80px;
+  }
+}
+
+.count-down-wrapper{
+  position: relative;
+  display: flex;
+  .icon-count-down{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    @include set-icon(bell-regular);
+  }
+
+  .content-count-down{
+    position: absolute;
+    background-color: $background-body;
+    width: 220px;
+    right: 0;
+    top: 27px;
+    box-shadow: 0px 0px 20px 4px rgba(169, 155, 136, 0.2);
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    z-index: 99;
+    .text-message{
+      width: 100%;
+    }
+  }
+
+  .block-confirm{
+    @include btn-default;
+  }
+}
+
+#block-greatoffers, #block-mine-hotel-starter-greatoffers, #block-ctaoffers, .block-prioritize-hotel {
+  @include max-width(1168px);
+  
+  .block-prioritize {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid rgba(#17405D, 0.15);
+    border-bottom: 1px solid rgba(#17405D, 0.15);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    .row-prioritize{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col-medium-8{
+      max-width: 655px;
+      padding-right: 24px;
+
+      .group-content-left{
+        max-width: 480px;
+
+        @include media-breakpoint-down(lg) {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        h2{
+          margin-bottom: 0;
+          @include media-breakpoint-down(lg) {
+            font-size: 36px;
+            line-height: 45px;
+            margin-bottom: 24px;
+          }
+          @include media-breakpoint-down(md) {
+            font-size: 30px;
+            line-height: 36px;
+          }
+        }
+      }
+    }
+
+    .col-medium-4{
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 24px;
+      @include media-breakpoint-down(lg) {
+        flex-wrap: wrap;
+        gap: 0;
+      }
+
+      p{
+        max-width: 301px;
+        margin-bottom: 0;
+        @include media-breakpoint-down(lg) {
+          max-width: 100%;
+          flex: 0 0 100%;
+          margin-bottom: 16px;
+          &:last-child {
+            margin-bottom: 0
+          }
+        }
+      }
+
+      a{
+        @include btn-default();
+      }
+    }
+  }
+}
+
+.cart-block--summary__icon{
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  @include set-icon(icon-cart);
+  img{
+    display: none;
+  }
+}
+
+.cart-block--summary__count{
+  margin-top: -18px;
+  font-size: 11px;
+  line-height: 1;
+  min-width: 14px;
+  min-height: 14px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: $color-default;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -11px;
+  font-weight: normal;
+}
+
+.wrapper-content-entity {
+  background-color: #f1ebe4;
+  border-radius: 4px;
+  padding: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  @media (max-width: 767px) {
+    padding: 12px;
+  }
+
+  article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    flex-direction: column;
+  }
+
+  .field__label, label, .label{
+    width: 200px;
+    font-weight: bold;
+    position: relative;
+    &:after{
+      content: ':';
+    }
+
+    @media (max-width: 767px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .field__item{
+    flex: 1;
+  }
+
+  .field{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    flex: 1;
+    .field__items{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex: 1;
+      gap: 8px;
+      @media (max-width: 767px) {
+        padding-left: 12px;
+      }
+      .field__item{
+        position: relative;
+        &:after{
+          content: ',';
+          margin-right: 5px;
+        }
+        &:last-child{
+          &:after{
+            display: none;
+          }
+        }
+        .field__label, label, .label{
+          width: 180px;
+          font-weight: 500;
+          @media (max-width: 767px) {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &.entity-location{
+    .field{
+      .field__items{
+        .field__item{
+          &:after{
+            display: none;
+          }
+        }
+      }
+    }
+
+    article{
+      gap: 16px;
+    }
+  }
+}

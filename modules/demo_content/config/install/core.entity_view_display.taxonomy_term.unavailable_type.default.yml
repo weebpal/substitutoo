@@ -1,0 +1,31 @@
+uuid: 7c0114ca-5ef3-42ee-aa84-6f3cf8d3be3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.unavailable_type.field_key
+    - taxonomy.vocabulary.unavailable_type
+  module:
+    - text
+id: taxonomy_term.unavailable_type.default
+targetEntityType: taxonomy_term
+bundle: unavailable_type
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_key:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

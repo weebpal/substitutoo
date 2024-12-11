@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Defines the SubActivity entity and associated features.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function sub_activity_theme() {
+  return [
+    'sub_activity' => [
+      'render element' => 'elements',
+    ],
+    'sub_activity_form' => [
+      'render element' => 'form',
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for sub_activity templates.
+ *
+ * Default template: we-activity-template.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing rendered fields.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_sub_activity_template(array &$variables) {
+  /** @var Drupal\sub_activity\Entity\SubActivityInterface $sub_activity */
+  $sub_activity = $variables['elements']['#sub_activity'];
+
+  $variables['sub_activity_entity'] = $sub_activity;
+  $variables['sub_activity_url'] = $sub_activity->isNew() ? '' : $sub_activity->toUrl();
+  $variables['sub_activity'] = [];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['sub_activity'][$key] = $variables['elements'][$key];
+  }
+}
+
+

@@ -1,0 +1,5 @@
+api_url: 'https://api.openai.com/v1'
+api_key: ''
+api_org: ''
+fine_tuning_id: ''
+model_id: ''

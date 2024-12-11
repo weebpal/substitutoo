@@ -1,0 +1,22 @@
+uuid: 8808093c-227a-4674-a6db-12e7869eefa4
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - substitutoo_theme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: substitutoo_theme_help
+theme: substitutoo_theme
+region: content_above
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

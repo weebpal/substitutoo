@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift
+id: sub_shift_delete_action
+label: 'Delete substitutoo shifts'
+type: sub_shift
+plugin: entity:delete_action:sub_shift
+configuration: {  }

@@ -1,0 +1,62 @@
+uuid: 24d4ef23-b21c-452e-8530-1be891cda005
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_assignment_order
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_employee
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_reset_assignment_on_update
+    - field.field.sub_scheduler_assignment.sub_scheduler_assignment.field_shift_scheduler
+  module:
+    - sub_scheduler_assignment
+    - text
+id: sub_scheduler_assignment.sub_scheduler_assignment.default
+targetEntityType: sub_scheduler_assignment
+bundle: sub_scheduler_assignment
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_assignment_order:
+    type: number_integer
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_employee:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_shift_scheduler:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_reset_assignment_on_update: true
+  status: true
+  uid: true

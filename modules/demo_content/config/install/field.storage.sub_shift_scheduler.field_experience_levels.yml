@@ -1,0 +1,20 @@
+uuid: fd7986e9-2739-4993-8753-e1dff36223df
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift_scheduler
+    - taxonomy
+id: sub_shift_scheduler.field_experience_levels
+field_name: field_experience_levels
+entity_type: sub_shift_scheduler
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

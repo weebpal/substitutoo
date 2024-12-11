@@ -1,0 +1,11 @@
+uuid: 2e38fa3c-0f85-4f1d-acff-0e00326f9554
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.manager_form
+label: 'Manager form'
+description: ''
+targetEntityType: user
+cache: true

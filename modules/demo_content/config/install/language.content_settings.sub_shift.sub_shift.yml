@@ -1,0 +1,11 @@
+uuid: 3b4053c2-cb9f-4086-bc02-e3a39ad458a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift
+id: sub_shift.sub_shift
+target_entity_type_id: sub_shift
+target_bundle: sub_shift
+default_langcode: site_default
+language_alterable: false

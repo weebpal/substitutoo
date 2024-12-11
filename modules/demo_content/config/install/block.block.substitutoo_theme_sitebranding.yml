@@ -1,0 +1,23 @@
+uuid: 1206f4f2-0b09-4897-9a62-41cd15f34cea
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - substitutoo_theme
+id: substitutoo_theme_sitebranding
+theme: substitutoo_theme
+region: footer_top
+weight: -10
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

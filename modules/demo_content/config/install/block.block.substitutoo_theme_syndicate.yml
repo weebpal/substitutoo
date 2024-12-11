@@ -1,0 +1,23 @@
+uuid: 68287de3-2260-4168-a6ba-fdb59b135aab
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - substitutoo_theme
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: substitutoo_theme_syndicate
+theme: substitutoo_theme
+region: disabled
+weight: -9
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

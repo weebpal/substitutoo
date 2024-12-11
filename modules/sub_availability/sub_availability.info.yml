@@ -1,0 +1,5 @@
+name: 'Substitutoo Availability'
+type: module
+description: 'Substitutoo module description'
+package: 'Substitutoo'
+core_version_requirement: ^10

@@ -1,0 +1,13 @@
+entity.sub_assignment.settings:
+  title: 'Shift Assignment'
+  description: 'Configure a Shift Assignment entity type.'
+  route_name:  entity.sub_assignment.settings
+  parent: substitutoo_core.structure
+  weight: 60
+
+entity.sub_assignment.collection:
+  title: 'Shift Assignments'
+  description: 'List of Shift Assignments.'
+  route_name: entity.sub_assignment.collection
+  parent: substitutoo_core.content
+  weight: 60

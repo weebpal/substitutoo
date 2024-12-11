@@ -1,0 +1,9 @@
+{% if type == 'assign' %}
+  <p>You have been assigned to {{ location }} ({{ location_trail_label }})</p>
+  <p>Date: {{ date }}</p>
+  <p>Time: {{ formatted_start_time }} to {{ formatted_end_time }}</p>
+{% elseif type == 'change' %}
+  <p>You have been unassigned from {{ location }} ({{ location_trail_label }})</p>
+  <p>Date: {{ date }}</p>
+  <p>Time: {{ formatted_start_time }} to {{ formatted_end_time }}</p>
+{% endif %}

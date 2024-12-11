@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_availability
+  uuid: 1cc30a42-258e-4c08-a358-3439f2b37823
+  depends:
+    3d5fc35e-c1cc-409c-8446-543d8b41203c: user
+    3a940303-ae6b-4508-b6ff-fa6b158fa5e3: sub_availability_scheduler
+default:
+  label:
+    -
+      value: 'Availability item for Johnatan on Tuesday, 2024-12-17, from 06:45 to 18:00'
+  status:
+    -
+      value: true
+  f_employee:
+    -
+      entity: 3d5fc35e-c1cc-409c-8446-543d8b41203c
+  f_date:
+    -
+      value: '2024-12-17'
+  f_time_start:
+    -
+      value: '06:45'
+  f_time_end:
+    -
+      value: '18:00'
+  f_datetime_start:
+    -
+      value: '2024-12-17T06:45:00'
+  f_datetime_end:
+    -
+      value: '2024-12-17T18:00:00'
+  f_timestamp_start:
+    -
+      value: 1734417900
+  f_timestamp_end:
+    -
+      value: 1734458400
+  f_duration:
+    -
+      value: 40500
+  f_availability_scheduler:
+    -
+      entity: 3a940303-ae6b-4508-b6ff-fa6b158fa5e3
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733735263

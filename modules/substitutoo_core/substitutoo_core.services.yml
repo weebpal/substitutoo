@@ -1,0 +1,4 @@
+services:
+  substitutoo_core.substitutoo_service:
+    class: Drupal\substitutoo_core\SubstitutooService
+    arguments: ['@entity_type.manager']

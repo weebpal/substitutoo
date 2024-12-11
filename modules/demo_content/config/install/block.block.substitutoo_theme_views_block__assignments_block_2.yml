@@ -1,0 +1,30 @@
+uuid: b87cb7e7-d40c-4271-b872-559add552c25
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.assignments
+  module:
+    - system
+    - views
+  theme:
+    - substitutoo_theme
+id: substitutoo_theme_views_block__assignments_block_2
+theme: substitutoo_theme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:assignments-block_2'
+settings:
+  id: 'views_block:assignments-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/user/*'

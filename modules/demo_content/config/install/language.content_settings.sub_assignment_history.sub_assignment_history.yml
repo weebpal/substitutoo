@@ -1,0 +1,11 @@
+uuid: cdd1e67b-9d97-4d80-b9d7-2d824df93e0b
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_assignment_history
+id: sub_assignment_history.sub_assignment_history
+target_entity_type_id: sub_assignment_history
+target_bundle: sub_assignment_history
+default_langcode: site_default
+language_alterable: false

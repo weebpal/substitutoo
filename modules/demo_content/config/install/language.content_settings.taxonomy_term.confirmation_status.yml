@@ -1,0 +1,18 @@
+uuid: e1d3f3b8-e671-47bf-9e07-4024e0514d05
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.confirmation_status
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.confirmation_status
+target_entity_type_id: taxonomy_term
+target_bundle: confirmation_status
+default_langcode: site_default
+language_alterable: true

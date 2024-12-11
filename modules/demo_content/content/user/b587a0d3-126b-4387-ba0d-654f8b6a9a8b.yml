@@ -1,0 +1,71 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: b587a0d3-126b-4387-ba0d-654f8b6a9a8b
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: Thomas
+  pass:
+    -
+      value: $2y$10$gXy3hOFunMOEjMDBkQwXKe2cNdkTXKjgiIp1M.iLIZETCs9elvRrG
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: thomas@gmail.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730094643
+  access:
+    -
+      value: 0
+  login:
+    -
+      value: 0
+  init:
+    -
+      value: employee1@gmail.com
+  roles:
+    -
+      target_id: employee
+  field_address:
+    -
+      langcode: ''
+      country_code: CH
+      administrative_area: ''
+      locality: Montécu
+      dependent_locality: ''
+      postal_code: '1724'
+      sorting_code: ''
+      address_line1: 'Hauptstrasse 111'
+      address_line2: ''
+      address_line3: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_email:
+    -
+      value: thomas@gmail.com
+  field_first_name:
+    -
+      value: Thomas
+  field_last_name:
+    -
+      value: Brian
+  field_phone:
+    -
+      value: '032 984 69 10'

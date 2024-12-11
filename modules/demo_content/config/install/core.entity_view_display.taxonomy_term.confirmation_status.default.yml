@@ -1,0 +1,31 @@
+uuid: c4add7b6-d6ba-447e-bcac-7d1929311e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.confirmation_status.field_key
+    - taxonomy.vocabulary.confirmation_status
+  module:
+    - text
+id: taxonomy_term.confirmation_status.default
+targetEntityType: taxonomy_term
+bundle: confirmation_status
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_key:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

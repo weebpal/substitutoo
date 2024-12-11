@@ -1,0 +1,11 @@
+administer sub_ai:
+  title: 'Administer ai customer supports'
+  restrict access: true
+view sub_ai:
+  title: 'View ai customer support'
+edit sub_ai:
+  title: 'Edit ai customer support'
+delete sub_ai:
+  title: 'Delete ai customer support'
+create sub_ai:
+  title: 'Create ai customer support'

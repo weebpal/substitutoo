@@ -1,0 +1,26 @@
+uuid: c0dd7b31-40f0-48a3-bc3f-ccc3ed857871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_location
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_location
+field_name: field_location
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: location_with_trail
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

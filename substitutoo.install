@@ -1,0 +1,64 @@
+<?php
+
+use Drupal\shortcut\Entity\Shortcut;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function substitutoo_install() {
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+
+  $shortcut = Shortcut::create([
+    'shortcut_set' => 'default',
+    'title' => t('Add content'),
+    'weight' => -20,
+    'link' => ['uri' => 'internal:/node/add'],
+  ]);
+  $shortcut->save();
+
+  $shortcut = Shortcut::create([
+    'shortcut_set' => 'default',
+    'title' => t('All content'),
+    'weight' => -19,
+    'link' => ['uri' => 'internal:/admin/content'],
+  ]);
+  $shortcut->save();
+  \Drupal::configFactory()->getEditable('system.theme')
+    ->set('admin', 'claro')
+    ->save();
+  \Drupal::configFactory()->getEditable('system.theme')
+    ->set('default', 'substitutoo_theme')
+    ->save();
+  \Drupal::configFactory()->getEditable('node.settings')
+    ->set('use_admin_theme', 1)
+    ->save();
+  \Drupal::configFactory()->getEditable('system.site')
+    ->set('page.front', '/substitutoo/dashboard')
+    ->set('page.403', '/user/login')
+    ->save();
+
+  $modules_to_enable = [
+    'sub_ai',
+    'sub_ai_request',
+    'sub_location',
+    'sub_shift_scheduler',
+    'sub_shift',
+    'sub_scheduler_assignment',
+    'sub_assignment_history',
+    'sub_availability_scheduler',
+    'sub_availability',
+    'sub_assignment',
+    'sub_activity',
+    'substitutoo_core',
+    'sub_unavailability',
+    'sub_notification',
+    'demo_content',
+  ];
+  foreach ($modules_to_enable as $module) {
+    \Drupal::service('module_installer')->install([$module], TRUE);
+  }
+}

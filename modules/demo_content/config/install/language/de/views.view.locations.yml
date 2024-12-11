@@ -1,0 +1,54 @@
+label: Standorte
+display:
+  default:
+    display_options:
+      title: Standorte
+      fields:
+        label:
+          label: Standortname
+        field_location_trail:
+          label: Standortweg
+        field_nested_locations:
+          label: 'Verschachtelte Standorte'
+        field_assignment_count:
+          label: 'Standardmäßige Zuweisungsanzahl'
+        field_address:
+          label: Adresse
+        field_is_root_location:
+          label: 'Ist Stammstandort'
+        operations:
+          label: Operationen
+        status:
+          settings:
+            format_custom_false: Deaktiviert
+            format_custom_true: Ermöglicht
+      exposed_form:
+        options:
+          submit_button: Anwenden
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      filters:
+        label:
+          expose:
+            label: Standortname
+        status:
+          group_info:
+            group_items:
+              1:
+                title: Aktiviert
+              2:
+                title: Deaktiviert
+        field_is_root_location_value:
+          expose:
+            label: 'Ist Stammstandort'
+          group_info:
+            label: 'Ist Stammstandort'
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-location/add">Standort hinzufügen</a>'
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'

@@ -1,0 +1,11 @@
+uuid: 7aa6dde7-0e2f-458a-abbe-f7abc7bb9d50
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler
+target_entity_type_id: sub_shift_scheduler
+target_bundle: sub_shift_scheduler
+default_langcode: site_default
+language_alterable: false

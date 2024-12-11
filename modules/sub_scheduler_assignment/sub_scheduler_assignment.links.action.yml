@@ -1,0 +1,5 @@
+sub_scheduler_assignment.add_form:
+  title: 'Add substitutoo scheduler assignment'
+  route_name: entity.sub_scheduler_assignment.add_form
+  appears_on:
+    - entity.sub_scheduler_assignment.collection

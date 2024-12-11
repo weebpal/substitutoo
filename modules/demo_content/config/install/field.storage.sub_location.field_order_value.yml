@@ -1,0 +1,20 @@
+uuid: bcbda9a2-26e8-4c61-9b9c-1f69d08c47d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_location
+id: sub_location.field_order_value
+field_name: field_order_value
+entity_type: sub_location
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

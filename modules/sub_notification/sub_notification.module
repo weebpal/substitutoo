@@ -1,0 +1,195 @@
+<?php
+
+/**
+ * @file
+ * Defines the SubNotification entity and associated features.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Url;
+use Drupal\Core\Datetime\DrupalDateTime;
+
+/**
+ * Implements hook_theme().
+ */
+function sub_notification_theme() {
+  return [
+    'sub_notification' => [
+      'render element' => 'elements',
+    ],
+    'sub_notification_form' => [
+      'render element' => 'form',
+    ],
+    'assignment_mail' => [
+      'variables' => [
+        'location' => '',
+        'location_trail_label' => '',
+        'formatted_start_time' => '',
+        'formatted_end_time' => '',
+        'date' => '',
+        'type' => '',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Prepares variables for sub_notification templates.
+ *
+ * Default template: sub-notification.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing rendered fields.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_sub_notification(array &$variables) {
+  /** @var Drupal\sub_notification\Entity\SubNotificationInterface $sub_notification */
+  $sub_notification = $variables['elements']['#sub_notification'];
+
+  $variables['sub_notification_entity'] = $sub_notification;
+  $variables['sub_notification_url'] = $sub_notification->isNew() ? '' : $sub_notification->toUrl();
+  $variables['sub_notification'] = [];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['sub_notification'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function sub_notification_entity_update(Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->getEntityTypeId() === 'sub_assignment') {
+    // Send mail assign
+    //$mail = _send_mail($entity, 'assign');
+
+    $original_employee = $entity->original->get('f_employee')->target_id ?? NULL;
+    $current_employee = $entity->get('f_employee')->target_id;
+
+    $date = $entity->get('f_date')->getString();
+    $start_time = $entity->get('f_datetime_start')->getString();
+    $end_time = $entity->get('f_datetime_end')->getString();
+    $location = $entity->get('f_location')->entity->label();
+    $location_trails = $entity->get('f_location')->entity->get('field_location_trail')->referencedEntities();
+    $location_trail_label = '';
+    
+    if (!empty($location_trails)) {
+      foreach ($location_trails as $location_trail) {
+        $location_trail_label .= $location_trail->label() . ' ';
+      }
+    }
+
+    $start_time_format = new DrupalDateTime($start_time);
+    $end_time_format = new DrupalDateTime($end_time);
+    $formatted_start_time = $start_time_format->format('h:i A');
+    $formatted_end_time = $end_time_format->format('h:i A');
+
+    if ($original_employee && $original_employee != $current_employee) {
+      // Send mail change assign
+      //$mail = _send_mail($entity, 'change');
+
+      $unassign_message = "You have been unassigned from $location ($location_trail_label) on $date from $formatted_start_time to $formatted_end_time.";
+      $unassign_notification = \Drupal::entityTypeManager()
+        ->getStorage('sub_notification')
+        ->create([
+          'type' => 'default',
+          'received_uid' => $original_employee,
+          'status' => 1,
+          'name' => $unassign_message,
+          'f_assignment' => $entity->id(),
+        ]);
+
+      $unassign_notification->save();
+    }
+
+    $assign_message = "You have been assigned to $location ($location_trail_label) on $date from $formatted_start_time to $formatted_end_time.";
+    $assign_notification = \Drupal::entityTypeManager()
+      ->getStorage('sub_notification')
+      ->create([
+        'type' => 'default',
+        'received_uid' => $current_employee,
+        'status' => 1,
+        'name' => $assign_message,
+        'f_assignment' => $entity->id(),
+      ]);
+
+    $assign_notification->save();
+  }
+}
+
+function _send_mail(EntityInterface $entity, $type) {
+  $renderer = \Drupal::service('renderer');
+  if ($entity->getEntityTypeId() === 'sub_assignment') {
+    $reciver = $entity->get('f_employee')->entity;
+    $reciver_mail = $reciver->getEmail();
+
+    $module = 'sub_notification';
+    $key = 'assignment_mail';
+    $to =  $reciver_mail;
+    $subject_mail = 'Notification of Assignment';
+    if ($type == 'change') {
+      $subject_mail = 'Notification of Unassignment';
+    }
+
+    // Load information
+    $date = $entity->get('f_date')->getString();
+    $start_time = $entity->get('f_datetime_start')->getString();
+    $end_time = $entity->get('f_datetime_end')->getString();
+    $location = $entity->get('f_location')->entity->label();
+    $location_trails = $entity->get('f_location')->entity->get('field_location_trail')->referencedEntities();
+    $location_trail_label = '';
+    
+    if (!empty($location_trails)) {
+      foreach ($location_trails as $location_trail) {
+        $location_trail_label .= $location_trail->label() . ' ';
+      }
+    }
+
+    $start_time_format = new DrupalDateTime($start_time);
+    $end_time_format = new DrupalDateTime($end_time);
+    $formatted_start_time = $start_time_format->format('h:i A');
+    $formatted_end_time = $end_time_format->format('h:i A');
+
+    $data = [
+      '#theme' => 'assignment_mail',
+      '#location' => $location,
+      '#location_trail_label' => $location_trail_label,
+      '#formatted_start_time' => $formatted_start_time,
+      '#formatted_end_time' => $formatted_end_time,
+      '#date' => $date,
+      '#type' => $type,
+    ];
+
+    $params = [
+      'from' => \Drupal::config('system.site')->get('mail'),
+      'subject' => $subject_mail,
+      'body' => $renderer->render($data),
+    ]; 
+    $language = \Drupal::languageManager()->getDefaultLanguage()->getId();
+    $reply = \Drupal::config('system.site')->get('mail');
+    $mailManager = \Drupal::service('plugin.manager.mail');
+    $result = $mailManager->mail($module, $key, $to, $language, $params, $reply, TRUE);
+ 
+    return $result;
+  }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function sub_notification_mail($key, &$message, $params) { 
+  $message['headers']['Content-Type'] = 'text/html; charset=UTF-8';  
+
+  switch ($key) {
+    case 'assignment_mail':
+      $message['from'] = $params['from'];
+      $message['subject'] = $params['subject'];
+      $message['body'][] = $params['body'];
+      break;
+  }
+}
+
+
+

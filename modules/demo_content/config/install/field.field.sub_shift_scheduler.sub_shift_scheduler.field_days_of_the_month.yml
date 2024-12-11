@@ -1,0 +1,30 @@
+uuid: a0384171-b477-4974-a0b6-5c4170c9e233
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_days_of_the_month
+    - taxonomy.vocabulary.days_of_month
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_days_of_the_month
+field_name: field_days_of_the_month
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Days of the Month'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      days_of_month: days_of_month
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

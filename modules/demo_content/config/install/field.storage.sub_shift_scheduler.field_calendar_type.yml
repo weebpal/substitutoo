@@ -1,0 +1,20 @@
+uuid: 02ce5c1e-f308-4a76-99e6-49a6ae38f06d
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_shift_scheduler
+    - taxonomy
+id: sub_shift_scheduler.field_calendar_type
+field_name: field_calendar_type
+entity_type: sub_shift_scheduler
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

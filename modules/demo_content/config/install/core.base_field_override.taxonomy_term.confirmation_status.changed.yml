@@ -1,0 +1,18 @@
+uuid: 2372edab-d2b2-4d4e-b9df-3a02a6b69051
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.confirmation_status
+id: taxonomy_term.confirmation_status.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: confirmation_status
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

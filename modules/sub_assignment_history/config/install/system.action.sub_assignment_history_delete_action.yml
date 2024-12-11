@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - sub_assignment_history
+id: sub_assignment_history_delete_action
+label: 'Delete substitutoo assignment histories'
+type: sub_assignment_history
+plugin: entity:delete_action:sub_assignment_history
+configuration: {  }

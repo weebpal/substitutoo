@@ -1,0 +1,18 @@
+uuid: a49d9e1d-934d-4916-a9ba-7f59c3d67994
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.calendar_type
+id: taxonomy_term.calendar_type.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: calendar_type
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,0 +1,5 @@
+sub_shift.add_form:
+  title: 'Add substitutoo shift'
+  route_name: entity.sub_shift.add_form
+  appears_on:
+    - entity.sub_shift.collection

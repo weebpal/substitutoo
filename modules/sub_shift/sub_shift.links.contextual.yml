@@ -1,0 +1,10 @@
+entity.sub_shift.edit_form:
+  route_name: entity.sub_shift.edit_form
+  group: sub_shift
+  title: 'Edit'
+
+entity.sub_shift.delete_form:
+  route_name: entity.sub_shift.delete_form
+  group: sub_shift
+  title: 'Delete'
+  weight: 10

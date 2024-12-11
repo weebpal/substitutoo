@@ -1,0 +1,22 @@
+entity.sub_availability.settings:
+  title: 'Settings'
+  route_name: entity.sub_availability.settings
+  base_route: entity.sub_availability.settings
+entity.sub_availability.view:
+  title: 'View'
+  route_name: entity.sub_availability.canonical
+  base_route: entity.sub_availability.canonical
+entity.sub_availability.edit_form:
+  title: 'Edit'
+  route_name: entity.sub_availability.edit_form
+  base_route: entity.sub_availability.canonical
+entity.sub_availability.delete_form:
+  title: 'Delete'
+  route_name: entity.sub_availability.delete_form
+  base_route: entity.sub_availability.canonical
+  weight: 10
+entity.sub_availability.collection:
+  title: 'Substitutoo Availabilities'
+  route_name: entity.sub_availability.collection
+  base_route: system.admin_content
+  weight: 10

@@ -1,0 +1,5 @@
+sub_unavailability.add_form:
+  title: 'Add substitutoo unavailability'
+  route_name: entity.sub_unavailability.add_form
+  appears_on:
+    - entity.sub_unavailability.collection

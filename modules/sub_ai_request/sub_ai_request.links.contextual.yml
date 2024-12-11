@@ -1,0 +1,10 @@
+entity.sub_ai_request.edit_form:
+  route_name: entity.sub_ai_request.edit_form
+  group: sub_ai_request
+  title: 'Edit'
+
+entity.sub_ai_request.delete_form:
+  route_name: entity.sub_ai_request.delete_form
+  group: sub_ai_request
+  title: 'Delete'
+  weight: 10

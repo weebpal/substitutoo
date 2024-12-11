@@ -1,0 +1,82 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: ee475f01-c506-483c-8c64-ac2358b4e1a9
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    ee4e7737-7303-43da-aa1e-1b7d0961889c: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Service Contracts'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/service-contracts'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -50
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:ee4e7737-7303-43da-aa1e-1b7d0961889c'
+  revision_translation_affected:
+    -
+      value: true
+  menu_item_override_children:
+    -
+      value: false
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 0
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1731485738
+translations:
+  de:
+    title:
+      -
+        value: Serviceverträge
+    revision_translation_affected:
+      -
+        value: true
+    content_translation_source:
+      -
+        value: en
+    content_translation_outdated:
+      -
+        value: false
+    content_translation_uid:
+      -
+        target_id: 1
+    content_translation_status:
+      -
+        value: true
+    content_translation_created:
+      -
+        value: 1730970937

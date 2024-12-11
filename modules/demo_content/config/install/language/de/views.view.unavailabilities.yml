@@ -1,0 +1,76 @@
+label: Nichtverfügbarkeiten
+display:
+  default:
+    display_options:
+      title: Nichtverfügbarkeiten
+      fields:
+        label:
+          label: 'Name der Nichtverfügbarkeit'
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_employee:
+          label: Mitarbeiter
+        f_confirmation_status:
+          label: Bestätigungsstatus
+        f_unavailable_type:
+          label: 'Typ der Nichtverfügbarkeit'
+        f_reason__value:
+          label: Grund
+        operations:
+          label: Operationen
+      pager:
+        options:
+          tags:
+            first: '« Erste'
+            last: 'Letzte »'
+      exposed_form:
+        options:
+          submit_button: Anwenden
+      empty:
+        area_text_custom:
+          content: 'Keine Ergebnisse'
+      filters:
+        label:
+          expose:
+            label: 'Name der Nichtverfügbarkeit'
+        name:
+          expose:
+            label: 'Name des Mitarbeiters'
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-unavailability/add">Nichtverfügbarkeit hinzufügen</a>'
+  page_2:
+    display_title: 'Meine Nichtverfügbarkeiten'
+    display_options:
+      fields:
+        label:
+          label: 'Name der Nichtverfügbarkeit'
+        f_datetime_start:
+          label: Startdatum
+        f_datetime_end:
+          label: Enddatum
+        f_employee:
+          label: Mitarbeiter
+        f_confirmation_status:
+          label: Bestätigungsstatus
+        f_unavailable_type:
+          label: 'Typ der Nichtverfügbarkeit'
+        f_reason__value:
+          label: Grund
+        operations:
+          label: Operationen
+      filters:
+        label:
+          expose:
+            label: 'Name der Nichtverfügbarkeit'
+        f_unavailable_type:
+          expose:
+            label: 'Typ der Nichtverfügbarkeit'
+      header:
+        area_text_custom:
+          content: '<a href="/de/sub-unavailability/add">Nichtverfügbarkeit hinzufügen</a>'
+      menu:
+        title: 'Meine Nichtverfügbarkeiten'
+      title: 'Meine Nichtverfügbarkeiten'

@@ -1,0 +1,20 @@
+uuid: b0341028-de44-465a-bf57-8f3b30c38ce0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.calendar_type
+  module:
+    - path
+id: taxonomy_term.calendar_type.path
+field_name: path
+entity_type: taxonomy_term
+bundle: calendar_type
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

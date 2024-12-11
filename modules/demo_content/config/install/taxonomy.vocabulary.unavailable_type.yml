@@ -1,0 +1,9 @@
+uuid: e3ebb10c-965f-4a54-a6f4-d79c156daeda
+langcode: en
+status: true
+dependencies: {  }
+name: 'Unavailable Type'
+vid: unavailable_type
+description: '(Leave, Training, Assigned, Others)'
+weight: 0
+new_revision: false

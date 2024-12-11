@@ -1,0 +1,30 @@
+uuid: b27fe9b3-d647-4819-a595-c871a84df0da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.sub_shift_scheduler.field_experience_levels
+    - taxonomy.vocabulary.experience_level
+  module:
+    - sub_shift_scheduler
+id: sub_shift_scheduler.sub_shift_scheduler.field_experience_levels
+field_name: field_experience_levels
+entity_type: sub_shift_scheduler
+bundle: sub_shift_scheduler
+label: 'Experience Levels'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      experience_level: experience_level
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

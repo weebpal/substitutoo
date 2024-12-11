@@ -1,0 +1,23 @@
+sub_ai.admin_config:
+  path: '/admin/config/ai-customer-support'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'AI Customer Support'
+  requirements:
+    _permission: 'administer site configuration'
+    
+sub_ai.api_settings:
+  path: '/admin/config/ai-customer-support/settings'
+  defaults:
+    _title: 'AI Customer Support Settings'
+    _form: 'Drupal\sub_ai\Form\AICustomerSupportConfigForm'
+  requirements:
+    _permission: 'administer sub_ai'
+
+sub_ai.demo_form:
+  path: '/sub-ai/prompt'
+  defaults:
+    _form: '\Drupal\sub_ai\Form\GptDemoForm'
+    _title: 'Prompt'
+  requirements:
+    _permission: 'administer sub_ai'

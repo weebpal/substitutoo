@@ -1,0 +1,25 @@
+uuid: dd26abd3-bcc2-45b8-ab59-d38cc325bd4f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d1d6c7dd-8bd8-45b7-8055-2cdebe7b5237'
+  module:
+    - block_content
+  theme:
+    - substitutoo_theme
+id: substitutoo_theme_getintouch
+theme: substitutoo_theme
+region: footer_top
+weight: -7
+provider: null
+plugin: 'block_content:d1d6c7dd-8bd8-45b7-8055-2cdebe7b5237'
+settings:
+  id: 'block_content:d1d6c7dd-8bd8-45b7-8055-2cdebe7b5237'
+  label: 'Get in touch'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

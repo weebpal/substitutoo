@@ -1,0 +1,100 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: 46e32a42-2dc6-4f7a-b083-878698855030
+  default_langcode: en
+  depends:
+    acf04168-4e0d-4248-baf5-8dba00ca0d0e: taxonomy_term
+    7df85dc9-5f0e-40ad-bda2-41f2c780abbb: taxonomy_term
+    83e87ec9-6e29-432b-ade1-ced07606127f: taxonomy_term
+    4a03d30f-e6e1-4c33-92dd-854b52245829: taxonomy_term
+    6050e6fb-f10f-4850-9029-e0b7a709737e: taxonomy_term
+    49a8d513-704e-4b05-bdf5-aeb4c9dbfd30: taxonomy_term
+    379cdbde-f3dd-4c98-9682-ee23e4560e3e: taxonomy_term
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: Jakob
+  pass:
+    -
+      value: $2y$10$9qkWnPhjYWEnS/dCTd.mXOkB9l/fTL/igDwve.naUDh4snQ4d1QNy
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: Jakob@gmail.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730425228
+  access:
+    -
+      value: 1730431144
+  login:
+    -
+      value: 1730431144
+  init:
+    -
+      value: Jakob@gmail.com
+  roles:
+    -
+      target_id: employee
+  field_address:
+    -
+      langcode: en
+      country_code: CH
+      administrative_area: ''
+      locality: Buusche
+      dependent_locality: ''
+      postal_code: '3765'
+      sorting_code: ''
+      address_line1: 'Lichtmattstrasse 90'
+      address_line2: ''
+      address_line3: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_certifications:
+    -
+      entity: acf04168-4e0d-4248-baf5-8dba00ca0d0e
+    -
+      entity: 7df85dc9-5f0e-40ad-bda2-41f2c780abbb
+    -
+      entity: 83e87ec9-6e29-432b-ade1-ced07606127f
+  field_date_of_birth:
+    -
+      value: '1994-12-03'
+  field_email:
+    -
+      value: Jakob@gmail.com
+  field_experience_level:
+    -
+      entity: 4a03d30f-e6e1-4c33-92dd-854b52245829
+  field_first_name:
+    -
+      value: Jakob
+  field_gender:
+    -
+      entity: 6050e6fb-f10f-4850-9029-e0b7a709737e
+  field_last_name:
+    -
+      value: Henry
+  field_phone:
+    -
+      value: '031 549 85 91'
+  field_qualifications:
+    -
+      entity: 49a8d513-704e-4b05-bdf5-aeb4c9dbfd30
+    -
+      entity: 379cdbde-f3dd-4c98-9682-ee23e4560e3e

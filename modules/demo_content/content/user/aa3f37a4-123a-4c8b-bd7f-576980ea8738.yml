@@ -1,0 +1,68 @@
+_meta:
+  version: '1.0'
+  entity_type: user
+  uuid: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  default_langcode: en
+default:
+  preferred_langcode:
+    -
+      value: en
+  preferred_admin_langcode:
+    -
+      value: en
+  name:
+    -
+      value: manager1
+  pass:
+    -
+      value: $2y$10$e.mYSsTjAZ6z.oBRtpkJP.i/NLpTbM7.AZziPLHD3oyZCEUOTmGX.
+      existing: ''
+      pre_hashed: false
+  mail:
+    -
+      value: manager1@gmail.com
+  timezone:
+    -
+      value: UTC
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1730094581
+  access:
+    -
+      value: 1731567376
+  login:
+    -
+      value: 1731565727
+  init:
+    -
+      value: manager1@gmail.com
+  roles:
+    -
+      target_id: manager
+  field_address:
+    -
+      langcode: ''
+      country_code: CH
+      administrative_area: ''
+      locality: 'La Douay'
+      dependent_locality: ''
+      postal_code: '1937'
+      sorting_code: ''
+      address_line1: 'Kirchstrasse 97'
+      address_line2: ''
+      address_line3: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_email:
+    -
+      value: Jasper@gmail.com
+  field_first_name:
+    -
+      value: Jasper
+  field_phone:
+    -
+      value: '027 508 11 63'

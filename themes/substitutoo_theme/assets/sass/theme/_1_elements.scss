@@ -1,0 +1,277 @@
+@font-face {
+  font-family: 'Inter';
+  src: url("../../fonts/Inter/Inter-Regular.woff2") format('woff2'),
+  url("../../fonts/Inter/Inter-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Bold';
+  src: url("../../fonts/Inter/Inter-Bold.woff2") format('woff2'),
+  url("../../fonts/Inter/Inter-Bold.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  src: url("../../fonts/YesevaOne/YesevaOne-Regular.woff2") format('woff2'),
+  url("../../fonts/YesevaOne/YesevaOne-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url("../../fonts/DM-Serif-Display/DMSerifDisplay-Regular.woff2") format('woff2'),
+  url("../../fonts/DM-Serif-Display/DMSerifDisplay-Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  font-size: 16px;
+  line-height: 25.6px;
+  color: $color-default;
+  font-family: $font-family;
+  background-color: $background-body;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-yeseva-one;
+  &:empty {
+    display: none;
+  }
+}
+
+h2{
+  font-size: 48px;
+  line-height: 57.6px;
+  margin-bottom: 40px;
+}
+
+h3{
+  font-size: 32px;
+  line-height: 38.4px;
+  margin-bottom: 16px;
+}
+h6{
+  font-size: 20px;
+  line-height: 24px;
+}
+
+form input, select {
+  &:not([type="submit"], [type="radio"]){
+    background-color: $background-body-dark;
+    border: 1px solid rgba(#17405D, 0.15);
+    border-radius: 4px;
+    padding: 6px 16px;
+    min-height: 44px;
+  }
+}
+
+select:not([type=submit]) {
+  padding-right: 40px;
+}
+
+.responsive-class-mobile{
+  @include media-breakpoint-down(lg) {
+    overflow: auto;
+  }
+}
+
+input[type="submit"]{
+  @include btn-default;
+}
+
+.container{
+  @include container;
+}
+
+.button{
+  @include btn-default();
+}
+
+select {
+  -webkit-appearance: none;
+  padding-right: 40px;
+  @include set-icon(select-down);
+  background-size: 20px 20px;
+  background-position: calc(100% - 12px) center;
+}
+
+.container-fluid{
+  max-width: 100%;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.tabs.primary{
+  padding-left: 0;
+  margin-left: 0;
+}
+
+table {
+  &:not(.ui-datepicker-calendar) {
+    width: 100%;
+    border: 0;
+    thead {
+      tr {
+        border-bottom: 2px solid $color-default;
+        width: 100%;
+        th {
+          border: 0;
+          padding: 16px;
+          @include font-bold(18px, 24px, $color-default);
+        }
+        td {
+          padding: 20px 0;
+          margin-bottom: 0;
+          &:first-child {
+            @include font-regular(16px, 24px, $color-active);
+          }
+          p {
+            margin: 0 !important;
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid #b4c3c3;
+        td {
+          border: 0;
+          @include font-regular(16px, 24px, $color-default);
+          p {
+            margin: 0 !important;
+            //&:last-child {
+            //  display: none;
+            //}
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+          &.views-field-operations{
+            padding-right: 15px;
+
+          }
+        }
+        &:last-child {
+          border-bottom: 2px solid $color-default;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      width: 1000px;
+    }
+  }
+
+  &.calendar-view-table {
+    caption {
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    .calendar-view-day__number {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    thead tr th {
+      color: #fff;
+    }
+
+    tbody tr td {
+      font-size: 16px;
+      line-height: 24px;
+      &:first-child {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      &:last-child {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+a{
+  text-decoration: unset;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+table, form{
+  a{
+    text-decoration: unset;
+  }
+}
+
+.pager__items {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  justify-content: center;
+  gap: 8px;
+  padding-left: 0;
+  text-align: left;
+  margin-bottom: 0;
+
+  .pager__item {
+    font-weight: 400;
+    padding: 0;
+
+    &:hover {
+      a {
+        color: $color-default;
+      }
+    }
+
+    a {
+      margin-right: 4px;
+      font-size: 16px;
+      color: $color-default;
+      text-align: center;
+      padding: 10px 16px;
+      border-radius: 4px;
+      border: none;
+
+      &:hover {
+        background: unset;
+      }
+    }
+
+    &.is-active {
+      > a {
+        color: #fff;
+        background: $color-active;
+        border: none;
+      }
+    }
+  }
+}
+
+.highlight{
+  padding-left: 16px;
+  border-left: 4px solid #9B8741;
+  @include font-and-color(18px, 21.6px, $color-default);
+  font-family: 'Yeseva One';
+}
