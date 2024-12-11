@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_notification
+  uuid: 6692b463-193b-4886-ab21-ab374d914fc0
+  bundle: default
+  default_langcode: en
+  depends:
+    d7c6aa6c-45be-4f06-9ffd-c985052c1aa7: sub_assignment
+default:
+  uid:
+    -
+      target_id: 1
+  f_assignment:
+    -
+      entity: d7c6aa6c-45be-4f06-9ffd-c985052c1aa7
+  name:
+    -
+      value: 'You have been assigned to Raum Rot (Tagesbetreuung Moos Trakt C ) on 2024-12-31 from 02:15 PM to 05:00 PM.'
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1733733552

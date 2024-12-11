@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_assignment
+  uuid: 595298b2-47a6-4f4f-9ec0-4b1532f243cd
+  depends:
+    797383ed-b512-4685-9f02-e1fa9001a4ae: sub_location
+    3138a08c-7941-489e-b26c-a2b403257961: sub_shift
+    88266377-fe00-4b38-87b9-15909cbe7745: sub_shift_scheduler
+default:
+  label:
+    -
+      value: 'Assignment item for Raum Gelb on Friday, 2024-12-20, from 06:45 to 08:15'
+  status:
+    -
+      value: true
+  f_location:
+    -
+      entity: 797383ed-b512-4685-9f02-e1fa9001a4ae
+  f_shift:
+    -
+      entity: 3138a08c-7941-489e-b26c-a2b403257961
+  f_assignment_order:
+    -
+      value: 1
+  f_shift_scheduler:
+    -
+      entity: 88266377-fe00-4b38-87b9-15909cbe7745
+  f_date:
+    -
+      value: '2024-12-20'
+  f_time_start:
+    -
+      value: '06:45'
+  f_time_end:
+    -
+      value: '08:15'
+  f_datetime_start:
+    -
+      value: '2024-12-20T06:45:00'
+  f_datetime_end:
+    -
+      value: '2024-12-20T08:15:00'
+  f_timestamp_start:
+    -
+      value: 1734677100
+  f_timestamp_end:
+    -
+      value: 1734682500
+  f_duration:
+    -
+      value: 5400
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733733473

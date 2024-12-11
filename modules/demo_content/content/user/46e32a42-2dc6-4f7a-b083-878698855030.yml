@@ -50,6 +50,11 @@ default:
   roles:
     -
       target_id: employee
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
   field_address:
     -
       langcode: en

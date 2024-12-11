@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_assignment
+  uuid: 9e536a32-633f-4f1b-8827-81c3eff6d30b
+  depends:
+    e918c042-531d-4955-9f71-da25ff28703e: sub_location
+    a6ef12c4-c87f-4356-81d6-18f2de3b4bac: sub_shift
+    a0a50c31-a3cc-42bc-8736-fa56182d576d: sub_shift_scheduler
+default:
+  label:
+    -
+      value: 'Assignment item for Raum Blau on Saturday, 2024-12-21, from 08:00 to 12:00'
+  status:
+    -
+      value: true
+  f_location:
+    -
+      entity: e918c042-531d-4955-9f71-da25ff28703e
+  f_shift:
+    -
+      entity: a6ef12c4-c87f-4356-81d6-18f2de3b4bac
+  f_assignment_order:
+    -
+      value: 3
+  f_shift_scheduler:
+    -
+      entity: a0a50c31-a3cc-42bc-8736-fa56182d576d
+  f_date:
+    -
+      value: '2024-12-21'
+  f_time_start:
+    -
+      value: '08:00'
+  f_time_end:
+    -
+      value: '12:00'
+  f_datetime_start:
+    -
+      value: '2024-12-21T08:00:00'
+  f_datetime_end:
+    -
+      value: '2024-12-21T12:00:00'
+  f_timestamp_start:
+    -
+      value: 1734768000
+  f_timestamp_end:
+    -
+      value: 1734782400
+  f_duration:
+    -
+      value: 14400
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733396392

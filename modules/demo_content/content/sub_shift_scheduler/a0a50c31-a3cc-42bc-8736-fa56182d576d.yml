@@ -1,0 +1,93 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_shift_scheduler
+  uuid: a0a50c31-a3cc-42bc-8736-fa56182d576d
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    16d3633a-4c96-433e-b4b7-12a0990875ef: taxonomy_term
+    12dd3ef9-3953-433c-abef-beb9d58ed98b: taxonomy_term
+    9242f30b-edc1-4493-9914-1343a80b575f: taxonomy_term
+    acf04168-4e0d-4248-baf5-8dba00ca0d0e: taxonomy_term
+    7df85dc9-5f0e-40ad-bda2-41f2c780abbb: taxonomy_term
+    fc06e362-8c08-4c01-b74e-0369f91414a4: taxonomy_term
+    e4d790f7-00dc-4005-b6b7-a5935a0b4af5: taxonomy_term
+    94965563-5376-4290-be3a-aa435ad8ef13: taxonomy_term
+    f7673e56-12a2-4b09-970e-445d66461388: taxonomy_term
+    0ebc31f5-74dc-4371-848c-83e94e350a67: taxonomy_term
+    4a03d30f-e6e1-4c33-92dd-854b52245829: taxonomy_term
+    85b4b4b5-0990-4787-88fb-a5e30f01b4ac: taxonomy_term
+    6050e6fb-f10f-4850-9029-e0b7a709737e: taxonomy_term
+    e918c042-531d-4955-9f71-da25ff28703e: sub_location
+    49a8d513-704e-4b05-bdf5-aeb4c9dbfd30: taxonomy_term
+    379cdbde-f3dd-4c98-9682-ee23e4560e3e: taxonomy_term
+default:
+  label:
+    -
+      value: 'Scheduler Monthly Sample Morning'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Description</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730860821
+  field_age_ranges:
+    -
+      entity: 16d3633a-4c96-433e-b4b7-12a0990875ef
+    -
+      entity: 12dd3ef9-3953-433c-abef-beb9d58ed98b
+  field_between_dates:
+    -
+      value: '2024-11-01'
+      end_value: '2024-12-31'
+  field_calendar_type:
+    -
+      entity: 9242f30b-edc1-4493-9914-1343a80b575f
+  field_certifications:
+    -
+      entity: acf04168-4e0d-4248-baf5-8dba00ca0d0e
+    -
+      entity: 7df85dc9-5f0e-40ad-bda2-41f2c780abbb
+  field_days_of_the_month:
+    -
+      entity: fc06e362-8c08-4c01-b74e-0369f91414a4
+    -
+      entity: e4d790f7-00dc-4005-b6b7-a5935a0b4af5
+    -
+      entity: 94965563-5376-4290-be3a-aa435ad8ef13
+    -
+      entity: f7673e56-12a2-4b09-970e-445d66461388
+  field_delete_shifts_on_update:
+    -
+      value: false
+  field_experience_levels:
+    -
+      entity: 0ebc31f5-74dc-4371-848c-83e94e350a67
+    -
+      entity: 4a03d30f-e6e1-4c33-92dd-854b52245829
+  field_genders:
+    -
+      entity: 85b4b4b5-0990-4787-88fb-a5e30f01b4ac
+    -
+      entity: 6050e6fb-f10f-4850-9029-e0b7a709737e
+  field_location:
+    -
+      entity: e918c042-531d-4955-9f71-da25ff28703e
+  field_qualifications:
+    -
+      entity: 49a8d513-704e-4b05-bdf5-aeb4c9dbfd30
+    -
+      entity: 379cdbde-f3dd-4c98-9682-ee23e4560e3e
+  field_required_number_employees:
+    -
+      value: 3
+  field_time_frames:
+    -
+      from: 28800
+      to: 43200

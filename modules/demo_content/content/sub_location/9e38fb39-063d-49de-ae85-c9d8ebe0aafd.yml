@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 9e38fb39-063d-49de-ae85-c9d8ebe0aafd
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    db749c06-4f89-4c2c-b304-013dccb00148: sub_location
+    962b6d11-55f9-4a46-8840-2e64f106443d: sub_location
+default:
+  label:
+    -
+      value: 'Room 202'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730860327
+  field_assignment_count:
+    -
+      value: 10
+  field_deep:
+    -
+      value: 3
+  field_location_trail:
+    -
+      entity: db749c06-4f89-4c2c-b304-013dccb00148
+    -
+      entity: 962b6d11-55f9-4a46-8840-2e64f106443d
+  field_order_value:
+    -
+      value: 45001002

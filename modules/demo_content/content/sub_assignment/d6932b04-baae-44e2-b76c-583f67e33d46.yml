@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_assignment
+  uuid: d6932b04-baae-44e2-b76c-583f67e33d46
+  depends:
+    1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b: sub_location
+    6bcbad86-b504-4d41-babc-39771329db6b: sub_shift
+    bf5b02a9-95ca-4085-b889-25f0cedd7569: sub_shift_scheduler
+default:
+  label:
+    -
+      value: 'Assignment item for Raum Rot on Thursday, 2024-12-05, from 14:15 to 17:00'
+  status:
+    -
+      value: true
+  f_location:
+    -
+      entity: 1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b
+  f_shift:
+    -
+      entity: 6bcbad86-b504-4d41-babc-39771329db6b
+  f_assignment_order:
+    -
+      value: 1
+  f_shift_scheduler:
+    -
+      entity: bf5b02a9-95ca-4085-b889-25f0cedd7569
+  f_date:
+    -
+      value: '2024-12-05'
+  f_time_start:
+    -
+      value: '14:15'
+  f_time_end:
+    -
+      value: '17:00'
+  f_datetime_start:
+    -
+      value: '2024-12-05T14:15:00'
+  f_datetime_end:
+    -
+      value: '2024-12-05T17:00:00'
+  f_timestamp_start:
+    -
+      value: 1733408100
+  f_timestamp_end:
+    -
+      value: 1733418000
+  f_duration:
+    -
+      value: 9900
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733733514

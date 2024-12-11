@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: deda0319-a551-4fdd-b469-c7a98807c475
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    4a468046-376f-408a-b9a5-b71e850e2a07: sub_location
+    05b1c3ff-90a0-4ddf-bacd-224072f83f00: sub_location
+default:
+  label:
+    -
+      value: 'Room 401'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730863565
+  field_assignment_count:
+    -
+      value: 5
+  field_deep:
+    -
+      value: 3
+  field_location_trail:
+    -
+      entity: 4a468046-376f-408a-b9a5-b71e850e2a07
+    -
+      entity: 05b1c3ff-90a0-4ddf-bacd-224072f83f00
+  field_order_value:
+    -
+      value: 35001001

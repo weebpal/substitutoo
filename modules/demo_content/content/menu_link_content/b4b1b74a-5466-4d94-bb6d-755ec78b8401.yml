@@ -1,0 +1,62 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: b4b1b74a-5466-4d94-bb6d-755ec78b8401
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    91795de7-1a34-467a-aed8-a6f4af8dfc93: menu_link_content
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Submit leave request'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/submit/leave-request'
+      title: ''
+      options: {  }
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -47
+  expanded:
+    -
+      value: false
+  parent:
+    -
+      value: 'menu_link_content:91795de7-1a34-467a-aed8-a6f4af8dfc93'
+  revision_translation_affected:
+    -
+      value: true
+  menu_item_roles:
+    -
+      target_id: employee
+  menu_item_override_children:
+    -
+      value: false
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  content_translation_uid:
+    -
+      target_id: 1
+  content_translation_status:
+    -
+      value: true
+  content_translation_created:
+    -
+      value: 1733392230

@@ -52,7 +52,7 @@ default:
       value: 1730861893
   field_between_dates:
     -
-      value: '2024-12-01'
+      value: '2024-11-01'
       end_value: '2024-12-31'
   field_calendar_type:
     -
@@ -121,5 +121,5 @@ default:
       entity: 4880c9dd-7b14-4f4a-9857-41d0414ca625
   field_time_frames:
     -
-      from: 39600
-      to: 51300
+      from: 28800
+      to: 43200

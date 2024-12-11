@@ -1,0 +1,57 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_assignment
+  uuid: b6019ce3-3ff2-42e4-b7ed-92339a19042d
+  depends:
+    797383ed-b512-4685-9f02-e1fa9001a4ae: sub_location
+    0b148031-b9de-4c7d-8d6e-8c0b7312ae5d: sub_shift
+    88266377-fe00-4b38-87b9-15909cbe7745: sub_shift_scheduler
+default:
+  label:
+    -
+      value: 'Assignment item for Raum Gelb on Tuesday, 2025-03-25, from 06:45 to 08:15'
+  status:
+    -
+      value: true
+  f_location:
+    -
+      entity: 797383ed-b512-4685-9f02-e1fa9001a4ae
+  f_shift:
+    -
+      entity: 0b148031-b9de-4c7d-8d6e-8c0b7312ae5d
+  f_assignment_order:
+    -
+      value: 1
+  f_shift_scheduler:
+    -
+      entity: 88266377-fe00-4b38-87b9-15909cbe7745
+  f_date:
+    -
+      value: '2025-03-25'
+  f_time_start:
+    -
+      value: '06:45'
+  f_time_end:
+    -
+      value: '08:15'
+  f_datetime_start:
+    -
+      value: '2025-03-25T06:45:00'
+  f_datetime_end:
+    -
+      value: '2025-03-25T08:15:00'
+  f_timestamp_start:
+    -
+      value: 1742885100
+  f_timestamp_end:
+    -
+      value: 1742890500
+  f_duration:
+    -
+      value: 5400
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733396437

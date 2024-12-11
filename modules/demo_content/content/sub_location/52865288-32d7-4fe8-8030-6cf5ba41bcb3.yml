@@ -4,6 +4,7 @@ _meta:
   uuid: 52865288-32d7-4fe8-8030-6cf5ba41bcb3
   depends:
     aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    5833cb6a-3794-4c7d-8fd9-7e011a095ebc: sub_location
     d4ede4fc-ced3-47dc-baa3-3cedcebb2703: sub_location
 default:
   label:
@@ -26,7 +27,7 @@ default:
       value: 3
   field_location_trail:
     -
-      target_id: 38
+      entity: 5833cb6a-3794-4c7d-8fd9-7e011a095ebc
     -
       entity: d4ede4fc-ced3-47dc-baa3-3cedcebb2703
   field_order_value:

@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_activity
+  uuid: dc760943-42bb-4db0-a247-057acf112907
+  bundle: default
+  default_langcode: en
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    dbd7ee9e-40aa-46d0-9146-d1683948f7b2: sub_assignment
+default:
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  name:
+    -
+      value: 'You assigned Johnatan from Raum Gelb > Tagesbetreuung Moos > Trakt C on 2024-12-11 from 06:45 AM to 08:15 AM'
+  f_assignment:
+    -
+      entity: dbd7ee9e-40aa-46d0-9146-d1683948f7b2
+  created:
+    -
+      value: 1733890976

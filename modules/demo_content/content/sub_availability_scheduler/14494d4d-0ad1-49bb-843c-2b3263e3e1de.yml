@@ -30,7 +30,7 @@ default:
       value: 1730862528
   field_between_dates:
     -
-      value: '2024-12-01'
+      value: '2024-11-01'
       end_value: '2024-12-31'
   field_calendar_type:
     -

@@ -4,6 +4,8 @@ _meta:
   uuid: 9814cae3-343e-46b3-9ac9-a9fc39a4cc5e
   bundle: menu_link_content
   default_langcode: en
+  depends:
+    cc36d7de-a522-4a57-a9b6-244c9cb395c6: menu_link_content
 default:
   enabled:
     -
@@ -27,10 +29,13 @@ default:
       value: true
   weight:
     -
-      value: -48
+      value: -50
   expanded:
     -
       value: false
+  parent:
+    -
+      value: 'menu_link_content:cc36d7de-a522-4a57-a9b6-244c9cb395c6'
   revision_translation_affected:
     -
       value: true

@@ -73,7 +73,7 @@ default:
       entity: 379cdbde-f3dd-4c98-9682-ee23e4560e3e
   field_required_number_employees:
     -
-      value: 3
+      value: 5
   field_time_frames:
     -
       from: 39600

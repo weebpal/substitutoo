@@ -32,16 +32,21 @@ default:
       value: 1730094581
   access:
     -
-      value: 1731567376
+      value: 1733891181
   login:
     -
-      value: 1731565727
+      value: 1733890596
   init:
     -
       value: manager1@gmail.com
   roles:
     -
       target_id: manager
+  path:
+    -
+      alias: ''
+      langcode: en
+      pathauto: 0
   field_address:
     -
       langcode: ''

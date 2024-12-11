@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_shift
+  uuid: 97a68a4c-cfaa-4aee-b697-aca408a4ef2d
+  depends:
+    e918c042-531d-4955-9f71-da25ff28703e: sub_location
+    a0a50c31-a3cc-42bc-8736-fa56182d576d: sub_shift_scheduler
+default:
+  label:
+    -
+      value: 'Shift item for Raum Blau on Thursday, 2024-11-21, from 08:00 to 12:00'
+  status:
+    -
+      value: true
+  f_location:
+    -
+      entity: e918c042-531d-4955-9f71-da25ff28703e
+  f_date:
+    -
+      value: '2024-11-21'
+  f_time_start:
+    -
+      value: '08:00'
+  f_time_end:
+    -
+      value: '12:00'
+  f_datetime_start:
+    -
+      value: '2024-11-21T08:00:00'
+  f_datetime_end:
+    -
+      value: '2024-11-21T12:00:00'
+  f_timestamp_start:
+    -
+      value: 1732176000
+  f_timestamp_end:
+    -
+      value: 1732190400
+  f_shift_scheduler:
+    -
+      entity: a0a50c31-a3cc-42bc-8736-fa56182d576d
+  f_duration:
+    -
+      value: 14400
+  f_required_number_employees:
+    -
+      value: 3
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733396392

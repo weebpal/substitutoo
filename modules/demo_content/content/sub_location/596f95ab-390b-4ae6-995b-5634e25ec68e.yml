@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 596f95ab-390b-4ae6-995b-5634e25ec68e
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    db749c06-4f89-4c2c-b304-013dccb00148: sub_location
+    54d2f192-ed92-4573-b6df-df71c8eda3d3: sub_location
+default:
+  label:
+    -
+      value: 'Room 301'
+  status:
+    -
+      value: true
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730860360
+  field_assignment_count:
+    -
+      value: 10
+  field_deep:
+    -
+      value: 3
+  field_location_trail:
+    -
+      entity: db749c06-4f89-4c2c-b304-013dccb00148
+    -
+      entity: 54d2f192-ed92-4573-b6df-df71c8eda3d3
+  field_order_value:
+    -
+      value: 45002001

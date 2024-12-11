@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_shift
+  uuid: 9cba1a2e-db8e-4b3d-9457-4f3b19ae7ef7
+  depends:
+    1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b: sub_location
+    bf5b02a9-95ca-4085-b889-25f0cedd7569: sub_shift_scheduler
+default:
+  label:
+    -
+      value: 'Shift item for Raum Rot on Wednesday, 2024-12-18, from 14:15 to 17:00'
+  status:
+    -
+      value: true
+  f_location:
+    -
+      entity: 1ca29c01-9dc6-47f8-9ee5-6d685bd29c2b
+  f_date:
+    -
+      value: '2024-12-18'
+  f_time_start:
+    -
+      value: '14:15'
+  f_time_end:
+    -
+      value: '17:00'
+  f_datetime_start:
+    -
+      value: '2024-12-18T14:15:00'
+  f_datetime_end:
+    -
+      value: '2024-12-18T17:00:00'
+  f_timestamp_start:
+    -
+      value: 1734531300
+  f_timestamp_end:
+    -
+      value: 1734541200
+  f_shift_scheduler:
+    -
+      entity: bf5b02a9-95ca-4085-b889-25f0cedd7569
+  f_duration:
+    -
+      value: 9900
+  f_required_number_employees:
+    -
+      value: 4
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733733514

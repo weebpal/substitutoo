@@ -1,5 +1,5 @@
 {
-  "name": "weebpal/substitutoo",
+  "name": "drupal/substitutoo",
   "description": "WeebPal Substitutoo profile",
   "type": "drupal-profile",
   "license": "GPL-2.0-or-later",
@@ -28,6 +28,7 @@
     "drupal/lang_dropdown": "^2.1",
     "drupal/menu_item_role_access": "^2.4",
     "drupal/menu_link_attributes": "^1.5",
+    "drupal/pathauto": "^1.13",
     "drupal/smtp": "^1.4",
     "drupal/time_field": "^2.1",
     "drush/drush": "^12.5"

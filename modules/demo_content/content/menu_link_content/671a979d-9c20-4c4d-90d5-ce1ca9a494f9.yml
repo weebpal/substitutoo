@@ -10,7 +10,7 @@ default:
       value: true
   title:
     -
-      value: Plan
+      value: Plans
   menu_name:
     -
       value: main
@@ -27,7 +27,7 @@ default:
       value: false
   weight:
     -
-      value: -45
+      value: -44
   expanded:
     -
       value: true

@@ -24,6 +24,7 @@ default:
     -
       alias: ''
       langcode: en
+      pathauto: 0
   content_translation_source:
     -
       value: und
@@ -48,6 +49,7 @@ translations:
       -
         alias: ''
         langcode: de
+        pathauto: 0
     content_translation_source:
       -
         value: en

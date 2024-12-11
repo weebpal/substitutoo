@@ -5,6 +5,7 @@ _meta:
   depends:
     aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
     4a468046-376f-408a-b9a5-b71e850e2a07: sub_location
+    deda0319-a551-4fdd-b469-c7a98807c475: sub_location
 default:
   label:
     -
@@ -26,7 +27,7 @@ default:
       entity: 4a468046-376f-408a-b9a5-b71e850e2a07
   field_nested_locations:
     -
-      target_id: 50
+      entity: deda0319-a551-4fdd-b469-c7a98807c475
   field_order_value:
     -
       value: 35001000

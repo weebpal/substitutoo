@@ -1,0 +1,24 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_notification
+  uuid: a4224862-c2c2-4e22-896d-e57b87bff966
+  bundle: default
+  default_langcode: en
+  depends:
+    a7286fd0-5b07-49b1-827d-c08473374388: sub_assignment
+default:
+  uid:
+    -
+      target_id: 1
+  f_assignment:
+    -
+      entity: a7286fd0-5b07-49b1-827d-c08473374388
+  name:
+    -
+      value: 'You have been assigned to Raum Gelb (Tagesbetreuung Moos Trakt C ) on 2024-12-22 from 11:00 AM to 02:15 PM.'
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1733733624

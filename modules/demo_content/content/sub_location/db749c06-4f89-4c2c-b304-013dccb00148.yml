@@ -1,0 +1,55 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: db749c06-4f89-4c2c-b304-013dccb00148
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    962b6d11-55f9-4a46-8840-2e64f106443d: sub_location
+    54d2f192-ed92-4573-b6df-df71c8eda3d3: sub_location
+default:
+  label:
+    -
+      value: 'Building D'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Building D Description</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730860269
+  field_address:
+    -
+      langcode: ''
+      country_code: CH
+      administrative_area: ''
+      locality: Berlingen
+      dependent_locality: ''
+      postal_code: '8267'
+      sorting_code: ''
+      address_line1: 'Erlenweg 89'
+      address_line2: ''
+      address_line3: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_deep:
+    -
+      value: 1
+  field_is_root_location:
+    -
+      value: true
+  field_nested_locations:
+    -
+      entity: 962b6d11-55f9-4a46-8840-2e64f106443d
+    -
+      entity: 54d2f192-ed92-4573-b6df-df71c8eda3d3
+  field_order_value:
+    -
+      value: 45000000

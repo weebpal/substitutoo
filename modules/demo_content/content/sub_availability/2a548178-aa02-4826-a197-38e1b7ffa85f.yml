@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_availability
+  uuid: 2a548178-aa02-4826-a197-38e1b7ffa85f
+  depends:
+    955c3073-d4e5-4f67-bb84-06b73d47a482: user
+    2b149967-6b7a-4d20-ad51-604b32dcdf3a: sub_availability_scheduler
+default:
+  label:
+    -
+      value: 'Availability item for Manuela on Wednesday, 2024-11-13, from 13:30 to 17:30'
+  status:
+    -
+      value: true
+  f_employee:
+    -
+      entity: 955c3073-d4e5-4f67-bb84-06b73d47a482
+  f_date:
+    -
+      value: '2024-11-13'
+  f_time_start:
+    -
+      value: '13:30'
+  f_time_end:
+    -
+      value: '17:30'
+  f_datetime_start:
+    -
+      value: '2024-11-13T13:30:00'
+  f_datetime_end:
+    -
+      value: '2024-11-13T17:30:00'
+  f_timestamp_start:
+    -
+      value: 1731504600
+  f_timestamp_end:
+    -
+      value: 1731519000
+  f_duration:
+    -
+      value: 14400
+  f_availability_scheduler:
+    -
+      entity: 2b149967-6b7a-4d20-ad51-604b32dcdf3a
+  uid:
+    -
+      target_id: 1
+  created:
+    -
+      value: 1733733779

@@ -1,0 +1,52 @@
+_meta:
+  version: '1.0'
+  entity_type: sub_location
+  uuid: 5833cb6a-3794-4c7d-8fd9-7e011a095ebc
+  depends:
+    aa3f37a4-123a-4c8b-bd7f-576980ea8738: user
+    d4ede4fc-ced3-47dc-baa3-3cedcebb2703: sub_location
+default:
+  label:
+    -
+      value: 'Building C'
+  status:
+    -
+      value: true
+  description:
+    -
+      value: '<p>Building C description</p>'
+      format: basic_html
+  uid:
+    -
+      entity: aa3f37a4-123a-4c8b-bd7f-576980ea8738
+  created:
+    -
+      value: 1730860130
+  field_address:
+    -
+      langcode: ''
+      country_code: CH
+      administrative_area: ''
+      locality: Berlingen
+      dependent_locality: ''
+      postal_code: '8267'
+      sorting_code: ''
+      address_line1: 'Erlenweg 89'
+      address_line2: ''
+      address_line3: ''
+      organization: ''
+      given_name: ''
+      additional_name: ''
+      family_name: ''
+  field_deep:
+    -
+      value: 1
+  field_is_root_location:
+    -
+      value: true
+  field_nested_locations:
+    -
+      entity: d4ede4fc-ced3-47dc-baa3-3cedcebb2703
+  field_order_value:
+    -
+      value: 38000000
